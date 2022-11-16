@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Eric.W&#39;s Blog</title>
+  
+  
+  <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://callmeeric5.github.io/"/>
+  <updated>2022-11-16T08:58:16.512Z</updated>
+  <id>https://callmeeric5.github.io/</id>
+  
+  <author>
+    <name>Eric.W</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python函数的参数说明</title>
+    <link href="https://callmeeric5.github.io/2022/11/16/python%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/"/>
+    <id>https://callmeeric5.github.io/2022/11/16/python%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/</id>
+    <published>2022-11-16T07:12:47.000Z</published>
+    <updated>2022-11-16T08:58:16.512Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在python3.8之后函数参数中允许出现&amp;#x2F;和*号，&amp;#x2F;之前的形参必须使用位置参数; *出现在函数参数中第一种含义可以表示为可变参数，一般写作*args, &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://callmeeric5.github.io/categories/Python/"/>
+    
+    
+    <category term="Function" scheme="https://callmeeric5.github.io/tags/Function/"/>
+    
+  </entry>
+  
+</feed>
