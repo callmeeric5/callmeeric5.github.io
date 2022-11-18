@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.3.0">
+<link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.10.2/katex.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-icon.png">
@@ -200,6 +201,111 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/18/question1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Eric.W">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eric.W's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/18/question1/" class="post-title-link" itemprop="url">question1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-11-18 19:07:52 / 修改时间：19:20:02" itemprop="dateCreated datePublished" datetime="2022-11-18T19:07:52+08:00">2022-11-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/11/18/question1/" class="post-meta-item leancloud_visitors" data-flag-title="question1" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/11/18/question1/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/18/question1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>690</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="maximum-number-of-balloons"><a class="markdownIt-Anchor" href="#maximum-number-of-balloons"></a> Maximum Number of Balloons</h3>
+<p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>“balloon”</strong> as possible.</p>
+<p>You can use each character in <code>text</code> <strong>at most once</strong>. Return the maximum number of instances that can be formed; <code>1 &lt;= text.length &lt;= 104</code>; <code>text</code> consists of lower case English letters only</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Example1:</span><br><span class="line">Input: text = <span class="string">&quot;leetcode&quot;</span></span><br><span class="line">Output: <span class="number">0</span></span><br><span class="line"></span><br><span class="line">Example2:</span><br><span class="line">Input: text = <span class="string">&quot;nlaebolko&quot;</span></span><br><span class="line">Output: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Solution:</span><br><span class="line">    <span class="comment"># 本题实际上是要求返回text中组成&#x27;balloon&#x27;的最小元素个数,所以我们不在乎其他元素的出现个数,只需统计b,a,l,o,n每个元素出现的次数;并且,其中的最小值就是能组成&#x27;ballon&#x27;的最大个数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">maxNumberOfBalloons</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(text.count(<span class="string">&#x27;b&#x27;</span>), text.count(<span class="string">&#x27;a&#x27;</span>), text.count(<span class="string">&#x27;l&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;o&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;n&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/16/python%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -263,7 +369,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>203</span>
+              <span>193</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -281,7 +387,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在python3.8之后函数参数中允许出现&#x2F;和*号，&#x2F;之前的形参必须使用位置参数; *出现在函数参数中第一种含义可以表示为可变参数，一般写作*args, </p>
+          <p>在python3.8之后函数参数中允许出现/和*号，/之前的形参必须使用位置参数; *出现在函数参数中第一种含义可以表示为可变参数，一般写作*args,</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/11/16/python%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/#more" rel="contents">
@@ -372,20 +478,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -428,14 +534,14 @@
   &copy; 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-umbrella"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Eric.W</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
@@ -452,6 +558,15 @@
       </span>
       <span class="site-uv" title="总访客量">
         <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
 </div>
@@ -533,6 +648,8 @@
 
 
 
+
+  
 
   
 
