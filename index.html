@@ -201,6 +201,122 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/19/question2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Eric.W">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eric.W's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/19/question2/" class="post-title-link" itemprop="url">question2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-11-19 14:58:30 / 修改时间：15:04:33" itemprop="dateCreated datePublished" datetime="2022-11-19T14:58:30+08:00">2022-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/11/19/question2/" class="post-meta-item leancloud_visitors" data-flag-title="question2" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/11/19/question2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/19/question2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="last-stone-weight"><a class="markdownIt-Anchor" href="#last-stone-weight"></a> Last Stone Weight</h3>
+<p>You are given an array of integers <code>stones</code> where <code>stones[i]</code> is the weight of the <code>ith</code> stone.</p>
+<p>We are playing a game with the stones. On each turn, we choose the <strong>heaviest two stones</strong> and smash them together. Suppose the heaviest two stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>. The result of this smash is:</p>
+<ul>
+<li>If <code>x == y</code>, both stones are destroyed, and</li>
+<li>If <code>x != y</code>, the stone of weight <code>x</code> is destroyed, and the stone of weight <code>y</code> has new weight <code>y - x</code>.</li>
+</ul>
+<p>At the end of the game, there is <strong>at most one</strong> stone left.</p>
+<p>Return <em>the weight of the last remaining stone</em>. If there are no stones left, return <code>0</code>.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= stones.length &lt;= 30</code></li>
+<li><code>1 &lt;= stones[i] &lt;= 1000</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Example:</span><br><span class="line">Input: stones = [<span class="number">2</span>,<span class="number">7</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">8</span>,<span class="number">1</span>]</span><br><span class="line">Output: <span class="number">1</span></span><br><span class="line">Explanation: </span><br><span class="line">We combine <span class="number">7</span> <span class="keyword">and</span> <span class="number">8</span> to get <span class="number">1</span> so the array converts to [<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>] then,</span><br><span class="line">we combine <span class="number">2</span> <span class="keyword">and</span> <span class="number">4</span> to get <span class="number">2</span> so the array converts to [<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>] then,</span><br><span class="line">we combine <span class="number">2</span> <span class="keyword">and</span> <span class="number">1</span> to get <span class="number">1</span> so the array converts to [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>] then,</span><br><span class="line">we combine <span class="number">1</span> <span class="keyword">and</span> <span class="number">1</span> to get <span class="number">0</span> so the array converts to [<span class="number">1</span>] then that<span class="string">&#x27;s the value of the last stone.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Solution:</span><br><span class="line"><span class="comment"># 将列表元素倒序排列后,按照规则删除或重新赋值</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lastStoneWeight</span>(<span class="params">stones</span>):</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">len</span>(stones)&gt;<span class="number">1</span>):</span><br><span class="line">        stones.sort(reverse = <span class="literal">True</span>)</span><br><span class="line">        <span class="keyword">if</span> stones[<span class="number">0</span>] == stones[<span class="number">1</span>]:</span><br><span class="line">            stones.pop(<span class="number">0</span>)</span><br><span class="line">            stones.pop(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            stones[<span class="number">0</span>] = stones[<span class="number">0</span>]-stones[<span class="number">1</span>]</span><br><span class="line">            stones.pop(<span class="number">1</span>)</span><br><span class="line">     <span class="keyword">return</span> stones[<span class="number">0</span>] <span class="keyword">if</span> stones <span class="keyword">else</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/18/question1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -226,7 +342,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-11-18 19:07:52 / 修改时间：19:20:02" itemprop="dateCreated datePublished" datetime="2022-11-18T19:07:52+08:00">2022-11-18</time>
+              <time title="创建时间：2022-11-18 19:07:52 / 修改时间：19:21:02" itemprop="dateCreated datePublished" datetime="2022-11-18T19:07:52+08:00">2022-11-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -478,7 +594,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -541,12 +657,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
 
         

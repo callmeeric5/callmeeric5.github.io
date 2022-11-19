@@ -6,7 +6,7 @@
   <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
   
   <link href="https://callmeeric5.github.io/"/>
-  <updated>2022-11-18T11:20:02.559Z</updated>
+  <updated>2022-11-19T07:04:33.424Z</updated>
   <id>https://callmeeric5.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>question2</title>
+    <link href="https://callmeeric5.github.io/2022/11/19/question2/"/>
+    <id>https://callmeeric5.github.io/2022/11/19/question2/</id>
+    <published>2022-11-19T06:58:30.000Z</published>
+    <updated>2022-11-19T07:04:33.424Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;last-stone-weight&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#last-stone-weight&quot;&gt;&lt;/a&gt; Last Stone Weight&lt;/h3&gt;
+&lt;p&gt;You are given an array of</summary>
+        
+      
+    
+    
+    
+    <category term="Python Tests" scheme="https://callmeeric5.github.io/categories/Python-Tests/"/>
+    
+    
+    <category term="Leetcode" scheme="https://callmeeric5.github.io/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>question1</title>
     <link href="https://callmeeric5.github.io/2022/11/18/question1/"/>
     <id>https://callmeeric5.github.io/2022/11/18/question1/</id>
     <published>2022-11-18T11:07:52.000Z</published>
-    <updated>2022-11-18T11:20:02.559Z</updated>
+    <updated>2022-11-18T11:21:02.082Z</updated>
     
     
       
