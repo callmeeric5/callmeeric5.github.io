@@ -6,7 +6,7 @@
   <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
   
   <link href="https://callmeeric5.github.io/"/>
-  <updated>2022-11-19T07:04:33.424Z</updated>
+  <updated>2022-11-20T15:41:25.390Z</updated>
   <id>https://callmeeric5.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>question3</title>
+    <link href="https://callmeeric5.github.io/2022/11/20/question3/"/>
+    <id>https://callmeeric5.github.io/2022/11/20/question3/</id>
+    <published>2022-11-20T14:39:26.000Z</published>
+    <updated>2022-11-20T15:41:25.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Given a &lt;strong&gt;0-indexed&lt;/strong&gt; integer array &lt;code&gt;nums&lt;/code&gt;, return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt; quadruplets&lt;/em&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Python Test" scheme="https://callmeeric5.github.io/categories/Python-Test/"/>
+    
+    
+    <category term="Leetcode" scheme="https://callmeeric5.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>question2</title>
