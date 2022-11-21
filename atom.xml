@@ -6,7 +6,7 @@
   <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
   
   <link href="https://callmeeric5.github.io/"/>
-  <updated>2022-11-20T15:41:25.390Z</updated>
+  <updated>2022-11-21T14:05:47.430Z</updated>
   <id>https://callmeeric5.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二叉树遍历</title>
+    <link href="https://callmeeric5.github.io/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/"/>
+    <id>https://callmeeric5.github.io/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/</id>
+    <published>2022-11-21T12:28:46.000Z</published>
+    <updated>2022-11-21T14:05:47.430Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;二叉树理解&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#二叉树理解&quot;&gt;&lt;/a&gt; 二叉树理解&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;树(Tree):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是存在n(n&amp;gt;=0)个节点的集合结构, 从视觉上看,</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://callmeeric5.github.io/categories/Python/"/>
+    
+    
+    <category term="Data Structure" scheme="https://callmeeric5.github.io/tags/Data-Structure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>question4</title>
+    <link href="https://callmeeric5.github.io/2022/11/21/question4/"/>
+    <id>https://callmeeric5.github.io/2022/11/21/question4/</id>
+    <published>2022-11-21T12:14:29.000Z</published>
+    <updated>2022-11-21T14:04:18.142Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;binary-tree-postorder-traversal&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#binary-tree-postorder-traversal&quot;&gt;&lt;/a&gt; Binary Tree Postorder</summary>
+        
+      
+    
+    
+    
+    <category term="Python Test" scheme="https://callmeeric5.github.io/categories/Python-Test/"/>
+    
+    
+    <category term="Leetcode" scheme="https://callmeeric5.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>question3</title>
