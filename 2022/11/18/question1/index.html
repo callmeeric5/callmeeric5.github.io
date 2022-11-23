@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"callmeeric5.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Maximum Number of Balloons Given a string text, you want to use the characters of text to form as many instances of the word &quot;balloon&quot; as possible. You can use each character in text at most once. Ret">
+  <meta name="description" content="Maximum Number of Balloons Given a string text, you want to use the characters of text to form as many instances of the word “balloon” as possible. You can use each character in text at most once. Re">
 <meta property="og:type" content="article">
 <meta property="og:title" content="question1">
 <meta property="og:url" content="https://callmeeric5.github.io/2022/11/18/question1/index.html">
 <meta property="og:site_name" content="Eric.W&#39;s Blog">
-<meta property="og:description" content="Maximum Number of Balloons Given a string text, you want to use the characters of text to form as many instances of the word &quot;balloon&quot; as possible. You can use each character in text at most once. Ret">
+<meta property="og:description" content="Maximum Number of Balloons Given a string text, you want to use the characters of text to form as many instances of the word “balloon” as possible. You can use each character in text at most once. Re">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-18T11:07:52.000Z">
 <meta property="article:modified_time" content="2022-11-18T11:21:02.082Z">
@@ -287,14 +287,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="maximum-number-of-balloons">Maximum Number of Balloons</h3>
-<p>Given a string <code>text</code>, you want to use the characters of
-<code>text</code> to form as many instances of the word
-<strong>"balloon"</strong> as possible.</p>
-<p>You can use each character in <code>text</code> <strong>at most
-once</strong>. Return the maximum number of instances that can be
-formed; <code>1 &lt;= text.length &lt;= 104</code>; <code>text</code>
-consists of lower case English letters only</p>
+        <h3 id="maximum-number-of-balloons"><a class="markdownIt-Anchor" href="#maximum-number-of-balloons"></a> Maximum Number of Balloons</h3>
+<p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>“balloon”</strong> as possible.</p>
+<p>You can use each character in <code>text</code> <strong>at most once</strong>. Return the maximum number of instances that can be formed; <code>1 &lt;= text.length &lt;= 104</code>; <code>text</code> consists of lower case English letters only</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Example1:</span><br><span class="line">Input: text = <span class="string">&quot;leetcode&quot;</span></span><br><span class="line">Output: <span class="number">0</span></span><br><span class="line"></span><br><span class="line">Example2:</span><br><span class="line">Input: text = <span class="string">&quot;nlaebolko&quot;</span></span><br><span class="line">Output: <span class="number">1</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Solution:</span><br><span class="line">    <span class="comment"># 本题实际上是要求返回text中组成&#x27;balloon&#x27;的最小元素个数,所以我们不在乎其他元素的出现个数,只需统计b,a,l,o,n每个元素出现的次数;并且,其中的最小值就是能组成&#x27;ballon&#x27;的最大个数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">maxNumberOfBalloons</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(text.count(<span class="string">&#x27;b&#x27;</span>), text.count(<span class="string">&#x27;a&#x27;</span>), text.count(<span class="string">&#x27;l&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;o&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;n&#x27;</span>))</span><br></pre></td></tr></table></figure>
 
@@ -409,7 +404,7 @@ consists of lower case English letters only</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#maximum-number-of-balloons"><span class="nav-number">1.</span> <span class="nav-text">Maximum Number of Balloons</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#maximum-number-of-balloons"><span class="nav-number">1.</span> <span class="nav-text"> Maximum Number of Balloons</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -425,7 +420,7 @@ consists of lower case English letters only</p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -488,12 +483,12 @@ consists of lower case English letters only</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">9 分钟</span>
 </div>
 
         
@@ -599,6 +594,61 @@ consists of lower case English letters only</p>
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

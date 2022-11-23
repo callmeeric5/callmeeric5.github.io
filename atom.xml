@@ -6,7 +6,7 @@
   <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
   
   <link href="https://callmeeric5.github.io/"/>
-  <updated>2022-11-22T14:26:10.505Z</updated>
+  <updated>2022-11-23T12:41:20.331Z</updated>
   <id>https://callmeeric5.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>question6</title>
+    <link href="https://callmeeric5.github.io/2022/11/23/question6/"/>
+    <id>https://callmeeric5.github.io/2022/11/23/question6/</id>
+    <published>2022-11-23T12:24:00.000Z</published>
+    <updated>2022-11-23T12:41:20.331Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly</summary>
+        
+      
+    
+    
+    
+    <category term="Python Tests" scheme="https://callmeeric5.github.io/categories/Python-Tests/"/>
+    
+    
+    <category term="Leetcode" scheme="https://callmeeric5.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>question5</title>
@@ -28,8 +53,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;apply-operations-to-an-array&quot;&gt;Apply Operations to an Array&lt;/h3&gt;
-&lt;p&gt;You are given a &lt;strong&gt;0-indexed&lt;/strong&gt; array</summary>
+    <summary type="html">&lt;h3 id=&quot;apply-operations-to-an-array&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#apply-operations-to-an-array&quot;&gt;&lt;/a&gt; Apply Operations to an</summary>
         
       
     
@@ -47,16 +71,15 @@
     <link href="https://callmeeric5.github.io/2022/11/22/%E6%9E%81%E9%99%90/"/>
     <id>https://callmeeric5.github.io/2022/11/22/%E6%9E%81%E9%99%90/</id>
     <published>2022-11-22T06:20:31.000Z</published>
-    <updated>2022-11-22T15:45:16.551Z</updated>
+    <updated>2022-11-23T11:54:54.632Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;The graph of the function is contributed by many points in the same
-set. It is a straight line,</summary>
+    <summary type="html">&lt;h3 id=&quot;introduction&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#introduction&quot;&gt;&lt;/a&gt; Introduction&lt;/h3&gt;
+&lt;p&gt;The graph of the function is contributed</summary>
         
       
     
@@ -81,7 +104,7 @@ set. It is a straight line,</summary>
       
         
         
-    <summary type="html">&lt;h3 id=&quot;二叉树理解&quot;&gt;二叉树理解&lt;/h3&gt;
+    <summary type="html">&lt;h3 id=&quot;二叉树理解&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#二叉树理解&quot;&gt;&lt;/a&gt; 二叉树理解&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;树(Tree):&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;是存在n(n&amp;gt;=0)个节点的集合结构, 从视觉上看,</summary>
         
@@ -108,9 +131,7 @@ set. It is a straight line,</summary>
       
         
         
-    <summary type="html">&lt;h3 id=&quot;binary-tree-postorder-traversal&quot;&gt;Binary Tree Postorder
-Traversal&lt;/h3&gt;
-&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return</summary>
+    <summary type="html">&lt;h3 id=&quot;binary-tree-postorder-traversal&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#binary-tree-postorder-traversal&quot;&gt;&lt;/a&gt; Binary Tree Postorder</summary>
         
       
     
@@ -135,8 +156,7 @@ Traversal&lt;/h3&gt;
       
         
         
-    <summary type="html">&lt;p&gt;Given a &lt;strong&gt;0-indexed&lt;/strong&gt; integer array &lt;code&gt;nums&lt;/code&gt;,
-return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt;</summary>
+    <summary type="html">&lt;p&gt;Given a &lt;strong&gt;0-indexed&lt;/strong&gt; integer array &lt;code&gt;nums&lt;/code&gt;, return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt; quadruplets&lt;/em&gt;</summary>
         
       
     
@@ -161,9 +181,8 @@ return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt;</summary>
       
         
         
-    <summary type="html">&lt;h3 id=&quot;last-stone-weight&quot;&gt;Last Stone Weight&lt;/h3&gt;
-&lt;p&gt;You are given an array of integers &lt;code&gt;stones&lt;/code&gt; where
-&lt;code&gt;stones[i]&lt;/code&gt; is</summary>
+    <summary type="html">&lt;h3 id=&quot;last-stone-weight&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#last-stone-weight&quot;&gt;&lt;/a&gt; Last Stone Weight&lt;/h3&gt;
+&lt;p&gt;You are given an array of</summary>
         
       
     
@@ -188,8 +207,7 @@ return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt;</summary>
       
         
         
-    <summary type="html">&lt;h3 id=&quot;maximum-number-of-balloons&quot;&gt;Maximum Number of Balloons&lt;/h3&gt;
-&lt;p&gt;Given a string &lt;code&gt;text&lt;/code&gt;, you want to use the characters</summary>
+    <summary type="html">&lt;h3 id=&quot;maximum-number-of-balloons&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#maximum-number-of-balloons&quot;&gt;&lt;/a&gt; Maximum Number of</summary>
         
       
     
@@ -210,8 +228,7 @@ return &lt;em&gt;the number of &lt;strong&gt;distinct&lt;/strong&gt;</summary>
     <updated>2022-11-16T08:58:16.512Z</updated>
     
     
-    <summary type="html">&lt;p&gt;在python3.8之后函数参数中允许出现/和*号，/之前的形参必须使用位置参数;
-*出现在函数参数中第一种含义可以表示为可变参数，一般写作*args,&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;在python3.8之后函数参数中允许出现/和*号，/之前的形参必须使用位置参数; *出现在函数参数中第一种含义可以表示为可变参数，一般写作*args,&lt;/p&gt;</summary>
     
     
     

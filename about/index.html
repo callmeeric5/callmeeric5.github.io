@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"callmeeric5.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Hi, I&#39;m Eric! I&#39;m a product manager and interested in Data Science. I&#39;ll keep recording something cool and useful from the studying process on Product Design, Math, Python, Data., etc. You can get an">
+  <meta name="description" content="Hi, I’m Eric! I’m a product manager and interested in Data Science. I’ll keep recording something cool and useful from the studying process on Product Design, Math, Python, Data., etc. You can get an">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About me">
 <meta property="og:url" content="https://callmeeric5.github.io/about/index.html">
 <meta property="og:site_name" content="Eric.W&#39;s Blog">
-<meta property="og:description" content="Hi, I&#39;m Eric! I&#39;m a product manager and interested in Data Science. I&#39;ll keep recording something cool and useful from the studying process on Product Design, Math, Python, Data., etc. You can get an">
+<meta property="og:description" content="Hi, I’m Eric! I’m a product manager and interested in Data Science. I’ll keep recording something cool and useful from the studying process on Product Design, Math, Python, Data., etc. You can get an">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-16T06:22:43.000Z">
 <meta property="article:modified_time" content="2022-11-16T06:40:54.373Z">
@@ -225,12 +225,10 @@
       
       
       <div class="post-body">
-          <p>Hi, I'm Eric!</p>
-<p>I'm a product manager and interested in Data Science. I'll keep
-recording something cool and useful from the studying process on Product
-Design, Math, Python, Data., etc.</p>
+          <p>Hi, I’m Eric!</p>
+<p>I’m a product manager and interested in Data Science. I’ll keep recording something cool and useful from the studying process on Product Design, Math, Python, Data., etc.</p>
 <p>You can get an RSS URL to follow the new blog from the sidebar.</p>
-<p>Also, I'd be glad to answer any questions about the article.</p>
+<p>Also, I’d be glad to answer any questions about the article.</p>
 
       </div>
       
@@ -308,7 +306,7 @@ Design, Math, Python, Data., etc.</p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -371,12 +369,12 @@ Design, Math, Python, Data., etc.</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">9 分钟</span>
 </div>
 
         
@@ -482,6 +480,61 @@ Design, Math, Python, Data., etc.</p>
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
