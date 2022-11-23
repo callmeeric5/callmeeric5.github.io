@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"callmeeric5.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Last Stone Weight You are given an array of integers stones where stones[i] is the weight of the ith stone. We are playing a game with the stones. On each turn, we choose the heaviest two stones and">
+  <meta name="description" content="Last Stone Weight You are given an array of integers stones where stones[i] is the weight of the ith stone. We are playing a game with the stones. On each turn, we choose the heaviest two stones and s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="question2">
 <meta property="og:url" content="https://callmeeric5.github.io/2022/11/19/question2/index.html">
 <meta property="og:site_name" content="Eric.W&#39;s Blog">
-<meta property="og:description" content="Last Stone Weight You are given an array of integers stones where stones[i] is the weight of the ith stone. We are playing a game with the stones. On each turn, we choose the heaviest two stones and">
+<meta property="og:description" content="Last Stone Weight You are given an array of integers stones where stones[i] is the weight of the ith stone. We are playing a game with the stones. On each turn, we choose the heaviest two stones and s">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-19T06:58:30.000Z">
 <meta property="article:modified_time" content="2022-11-19T07:04:33.424Z">
@@ -287,15 +287,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="last-stone-weight"><a class="markdownIt-Anchor" href="#last-stone-weight"></a> Last Stone Weight</h3>
-<p>You are given an array of integers <code>stones</code> where <code>stones[i]</code> is the weight of the <code>ith</code> stone.</p>
-<p>We are playing a game with the stones. On each turn, we choose the <strong>heaviest two stones</strong> and smash them together. Suppose the heaviest two stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>. The result of this smash is:</p>
+        <h3 id="last-stone-weight">Last Stone Weight</h3>
+<p>You are given an array of integers <code>stones</code> where
+<code>stones[i]</code> is the weight of the <code>ith</code> stone.</p>
+<p>We are playing a game with the stones. On each turn, we choose the
+<strong>heaviest two stones</strong> and smash them together. Suppose
+the heaviest two stones have weights <code>x</code> and <code>y</code>
+with <code>x &lt;= y</code>. The result of this smash is:</p>
 <ul>
 <li>If <code>x == y</code>, both stones are destroyed, and</li>
-<li>If <code>x != y</code>, the stone of weight <code>x</code> is destroyed, and the stone of weight <code>y</code> has new weight <code>y - x</code>.</li>
+<li>If <code>x != y</code>, the stone of weight <code>x</code> is
+destroyed, and the stone of weight <code>y</code> has new weight
+<code>y - x</code>.</li>
 </ul>
-<p>At the end of the game, there is <strong>at most one</strong> stone left.</p>
-<p>Return <em>the weight of the last remaining stone</em>. If there are no stones left, return <code>0</code>.</p>
+<p>At the end of the game, there is <strong>at most one</strong> stone
+left.</p>
+<p>Return <em>the weight of the last remaining stone</em>. If there are
+no stones left, return <code>0</code>.</p>
 <p><strong>Constraints:</strong></p>
 <ul>
 <li><code>1 &lt;= stones.length &lt;= 30</code></li>
@@ -415,7 +423,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#last-stone-weight"><span class="nav-number">1.</span> <span class="nav-text"> Last Stone Weight</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#last-stone-weight"><span class="nav-number">1.</span> <span class="nav-text">Last Stone Weight</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

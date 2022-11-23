@@ -287,11 +287,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>在python3.8之后函数参数中允许出现/和*号，/之前的形参必须使用位置参数; *出现在函数参数中第一种含义可以表示为可变参数，一般写作*args,</p>
+        <p>在python3.8之后函数参数中允许出现/和*号，/之前的形参必须使用位置参数;
+*出现在函数参数中第一种含义可以表示为可变参数，一般写作*args,</p>
 <span id="more"></span>
 <p>对于单独出现在参数中的*参数，则表示，*后面的参数必须为关键字参数的形式</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>(<span class="params">a, b, /, c, *, d, e</span>) :</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<p>其中: a,b参数必须以位置参数形式传入；c可以为任意型python所支持的值, 而d,e只能以关键字参数传参</p>
+<p>其中: a,b参数必须以位置参数形式传入；c可以为任意型python所支持的值,
+而d,e只能以关键字参数传参</p>
 
     </div>
 
