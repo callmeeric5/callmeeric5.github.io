@@ -6,7 +6,7 @@
   <link href="https://callmeeric5.github.io/atom.xml" rel="self"/>
   
   <link href="https://callmeeric5.github.io/"/>
-  <updated>2022-11-24T16:19:43.006Z</updated>
+  <updated>2022-11-26T04:13:48.522Z</updated>
   <id>https://callmeeric5.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>question8</title>
+    <link href="https://callmeeric5.github.io/2022/11/26/question8/"/>
+    <id>https://callmeeric5.github.io/2022/11/26/question8/</id>
+    <published>2022-11-26T03:49:56.000Z</published>
+    <updated>2022-11-26T04:13:48.522Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;sum-of-left-leaves&quot;&gt;Sum of Left Leaves&lt;/h3&gt;
+&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return &lt;em&gt;the sum of
+all left</summary>
+        
+      
+    
+    
+    
+    <category term="Python Tests" scheme="https://callmeeric5.github.io/categories/Python-Tests/"/>
+    
+    
+    <category term="Leetcode" scheme="https://callmeeric5.github.io/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Derivative</title>
+    <link href="https://callmeeric5.github.io/2022/11/25/Derivative/"/>
+    <id>https://callmeeric5.github.io/2022/11/25/Derivative/</id>
+    <published>2022-11-25T06:04:05.000Z</published>
+    <updated>2022-11-26T17:13:27.210Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
+&lt;p&gt;Instantaneous rate of change at the point of the function.
+Presentation in Math,&lt;span
+class=&quot;math</summary>
+        
+      
+    
+    
+    
+    <category term="Calculus" scheme="https://callmeeric5.github.io/categories/Calculus/"/>
+    
+    
+    <category term="Derivatives of function" scheme="https://callmeeric5.github.io/tags/Derivatives-of-function/"/>
+    
+  </entry>
   
   <entry>
     <title>question7</title>
