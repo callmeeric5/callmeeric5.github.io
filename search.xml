@@ -31,16 +31,18 @@ x^x(lnx+1)
 \]</span></p>
 <h3 id="provertives-of-drivatives">Provertives of Drivatives</h3>
 <p><span class="math display">\[
-\text{Sum Rule:}\hfill \\
-\frac d {dx}(f(x)\pm g(x)) = \frac d {dx}(f(x))\pm \frac d
+\begin{aligned}
+&amp;\text{Sum Rule:} \\
+&amp;\frac d {dx}(f(x)\pm g(x)) = \frac d {dx}(f(x))\pm \frac d
 {dx}(g(x))=f&#39;(x) \pm g&#39;(x)\\
-\text{Constant Multiple Rule:}\hfill \\
-\frac d {dx}(cf(x)) = c\frac d {dx}(f(x)) = cf&#39;(x)\hfill \\
-\text{Product Rule:}\hfill\\
-\frac d {dx}(f(x)g(x)) = f&#39;(x)g(x)+f(x)g&#39;(x)\hfill\\
-\text{Quotient Rule:}\hfill \\
-\frac d {dx}(\frac {f(x)} {g(x)}) = \frac {f&#39;(x)g(x)-f(x)g&#39;(x)}
-{g^2(x)} \hfill
+&amp;\text{Constant Multiple Rule:} \\
+&amp;\frac d {dx}(cf(x)) = c\frac d {dx}(f(x)) = cf&#39;(x) \\
+&amp;\text{Product Rule:}\\
+&amp;\frac d {dx}(f(x)g(x)) = f&#39;(x)g(x)+f(x)g&#39;(x)\\
+&amp;\text{Quotient Rule:} \\
+&amp;\frac d {dx}(\frac {f(x)} {g(x)}) = \frac
+{f&#39;(x)g(x)-f(x)g&#39;(x)} {g^2(x)}
+\end{aligned}
 \]</span></p>
 <h3 id="chain-rule">Chain Rule</h3>
 <p><span class="math inline">\(f\circ g=f(g(x))\)</span> means the
@@ -157,31 +159,6 @@ consists of lower case English letters only</p>
       </tags>
   </entry>
   <entry>
-    <title>question3</title>
-    <url>/2022/11/20/question3/</url>
-    <content><![CDATA[<p>Given a <strong>0-indexed</strong> integer array <code>nums</code>,
-return <em>the number of <strong>distinct</strong> quadruplets</em>
-<code>(a, b, c, d)</code> <em>such that:</em></p>
-<ul>
-<li><code>nums[a] + nums[b] + nums[c] == nums[d]</code>, and</li>
-<li><code>a &lt; b &lt; c &lt; d</code></li>
-<li><strong>Constraints:</strong>
-<ul>
-<li><code>4 &lt;= nums.length &lt;= 50</code></li>
-<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
-</ul></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Output: <span class="number">1</span></span><br><span class="line">Explanation: The only quadruplet that satisfies the requirement <span class="keyword">is</span> (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) because <span class="number">1</span> + <span class="number">2</span> + <span class="number">3</span> == <span class="number">6</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>]</span><br><span class="line">Output: <span class="number">4</span></span><br><span class="line">Explanation: The <span class="number">4</span> quadruplets that satisfy the requirement are:</span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">1</span> == <span class="number">3</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Solution</span></span><br><span class="line"><span class="comment">#对有限长度的列表任取4个元素,如果能满足a+b+c=d,则计数器+1;</span></span><br><span class="line"><span class="comment">#使用迭代器构建长度为4的元组,并遍历元组即可</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> a,b,c,d <span class="keyword">in</span> itertools.combinations(nums,<span class="number">4</span>):</span><br><span class="line">        <span class="keyword">if</span> (a+b+c) == d:</span><br><span class="line">            count +=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> count        </span><br><span class="line"></span><br><span class="line"><span class="comment"># 当然,还可以使用更粗暴的解法,循环嵌套的方式把列表中的每个元素排列组合的可能性计算出来,再判断是否满足规则</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count,n=<span class="number">0</span>,<span class="built_in">len</span>(nums)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>,n):</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(j+<span class="number">1</span>,n):</span><br><span class="line">                <span class="keyword">for</span> l <span class="keyword">in</span> <span class="built_in">range</span>(k+<span class="number">1</span>,n):</span><br><span class="line">                    <span class="keyword">if</span> (nums[i]+nums[j]+nums[k])==nums[l]:</span><br><span class="line">                        count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python Tests</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>question2</title>
     <url>/2022/11/19/question2/</url>
     <content><![CDATA[<h3 id="last-stone-weight">Last Stone Weight</h3>
@@ -217,54 +194,22 @@ no stones left, return <code>0</code>.</p>
       </tags>
   </entry>
   <entry>
-    <title>question4</title>
-    <url>/2022/11/21/question4/</url>
-    <content><![CDATA[<h3 id="binary-tree-postorder-traversal">Binary Tree Postorder
-Traversal</h3>
-<p>Given the <code>root</code> of a binary tree, return <em>the
-postorder traversal of its nodes' values</em>.</p>
-<p><strong>Constraints:</strong></p>
+    <title>question3</title>
+    <url>/2022/11/20/question3/</url>
+    <content><![CDATA[<p>Given a <strong>0-indexed</strong> integer array <code>nums</code>,
+return <em>the number of <strong>distinct</strong> quadruplets</em>
+<code>(a, b, c, d)</code> <em>such that:</em></p>
 <ul>
-<li>The number of the nodes in the tree is in the range
-<code>[0, 100]</code>.</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example 1</span></span><br><span class="line">Input: root = [<span class="number">1</span>,null,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="comment"># Example 2</span></span><br><span class="line">Input: root = []</span><br><span class="line">Output: []</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, left=None, right=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.left = left</span></span><br><span class="line"><span class="comment">#         self.right = right</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">postorderTraversal</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">if</span> root <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> self.res</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.postorderTraversal(root.left)</span><br><span class="line">            self.postorderTraversal(root.right)</span><br><span class="line">            self.res.append(root.val)</span><br><span class="line">        <span class="keyword">return</span> self.res</span><br></pre></td></tr></table></figure>
-<p>二叉树的后序遍历法, 使用了递归的思路去获得每一个叶节点的值,
-相关内容见<a href="/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" title="二叉树遍历">二叉树遍历</a></p>
-]]></content>
-      <categories>
-        <category>Python Tests</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>question6</title>
-    <url>/2022/11/23/question6/</url>
-    <content><![CDATA[<p>Given a non-empty special binary tree consisting of nodes with the
-non-negative value, where each node in this tree has exactly
-<code>two</code> or <code>zero</code> sub-node. If the node has two
-sub-nodes, then this node's value is the smaller value among its two
-sub-nodes. More formally, the property
-<code>root.val = min(root.left.val, root.right.val)</code> always
-holds.</p>
-<p>Given such a binary tree, you need to output the <strong>second
-minimum</strong> value in the set made of all the nodes' value in the
-whole tree.</p>
-<p>If no such second minimum value exists, output -1 instead.</p>
-<p><strong>Constraints:</strong></p>
+<li><code>nums[a] + nums[b] + nums[c] == nums[d]</code>, and</li>
+<li><code>a &lt; b &lt; c &lt; d</code></li>
+<li><strong>Constraints:</strong>
 <ul>
-<li>The number of nodes in the tree is in the range
-<code>[1, 25]</code>.</li>
-<li><code>1 &lt;= Node.val &lt;= 231 - 1</code></li>
-<li><code>root.val == min(root.left.val, root.right.val)</code> for each
-internal node of the tree.</li>
+<li><code>4 &lt;= nums.length &lt;= 50</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
+</ul></li>
 </ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: root = [<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>]</span><br><span class="line">Output: -<span class="number">1</span></span><br><span class="line">Explanation: The smallest value <span class="keyword">is</span> <span class="number">2</span>, but there isn<span class="string">&#x27;t any second smallest value.</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">findSecondMinimumValue</span>(<span class="params">root</span>):</span><br><span class="line"><span class="comment"># 遍历二叉树,返回结果即可; 因为返回的是第二小的数值,所以需要去重</span></span><br><span class="line">    res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">preorder_ergodic_recursion</span>(<span class="params">node,res</span>):</span><br><span class="line">        <span class="keyword">if</span> node:</span><br><span class="line">            <span class="keyword">if</span> root.value <span class="keyword">not</span> <span class="keyword">in</span> res:</span><br><span class="line">                res.append(root.value) </span><br><span class="line">                preorder_ergodic_recursion(node.left,res)</span><br><span class="line">                preorder_ergodic_recursion(node.right,res)</span><br><span class="line">    preorder_ergodic_recursion(root,res)</span><br><span class="line">    res.sort()</span><br><span class="line">    <span class="keyword">return</span> res[<span class="number">1</span>] <span class="keyword">if</span> <span class="built_in">len</span>(res)&gt;<span class="number">1</span> <span class="keyword">else</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Output: <span class="number">1</span></span><br><span class="line">Explanation: The only quadruplet that satisfies the requirement <span class="keyword">is</span> (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) because <span class="number">1</span> + <span class="number">2</span> + <span class="number">3</span> == <span class="number">6</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>]</span><br><span class="line">Output: <span class="number">4</span></span><br><span class="line">Explanation: The <span class="number">4</span> quadruplets that satisfy the requirement are:</span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">1</span> == <span class="number">3</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Solution</span></span><br><span class="line"><span class="comment">#对有限长度的列表任取4个元素,如果能满足a+b+c=d,则计数器+1;</span></span><br><span class="line"><span class="comment">#使用迭代器构建长度为4的元组,并遍历元组即可</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> a,b,c,d <span class="keyword">in</span> itertools.combinations(nums,<span class="number">4</span>):</span><br><span class="line">        <span class="keyword">if</span> (a+b+c) == d:</span><br><span class="line">            count +=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> count        </span><br><span class="line"></span><br><span class="line"><span class="comment"># 当然,还可以使用更粗暴的解法,循环嵌套的方式把列表中的每个元素排列组合的可能性计算出来,再判断是否满足规则</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count,n=<span class="number">0</span>,<span class="built_in">len</span>(nums)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>,n):</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(j+<span class="number">1</span>,n):</span><br><span class="line">                <span class="keyword">for</span> l <span class="keyword">in</span> <span class="built_in">range</span>(k+<span class="number">1</span>,n):</span><br><span class="line">                    <span class="keyword">if</span> (nums[i]+nums[j]+nums[k])==nums[l]:</span><br><span class="line">                        count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Python Tests</category>
@@ -312,6 +257,38 @@ its <code>0</code>'s to the end, is <code>[1,2,1,0,0,0]</code>.</li>
 在上面的解法就是运用了这一点, 判断列表中元素是否为0,
 这样就把0全部移到最后面去啦; 如果不适用这个点,同样可以再次遍历列表,
 进行判断, 再进行列表的增删操作</p>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>question6</title>
+    <url>/2022/11/23/question6/</url>
+    <content><![CDATA[<p>Given a non-empty special binary tree consisting of nodes with the
+non-negative value, where each node in this tree has exactly
+<code>two</code> or <code>zero</code> sub-node. If the node has two
+sub-nodes, then this node's value is the smaller value among its two
+sub-nodes. More formally, the property
+<code>root.val = min(root.left.val, root.right.val)</code> always
+holds.</p>
+<p>Given such a binary tree, you need to output the <strong>second
+minimum</strong> value in the set made of all the nodes' value in the
+whole tree.</p>
+<p>If no such second minimum value exists, output -1 instead.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the tree is in the range
+<code>[1, 25]</code>.</li>
+<li><code>1 &lt;= Node.val &lt;= 231 - 1</code></li>
+<li><code>root.val == min(root.left.val, root.right.val)</code> for each
+internal node of the tree.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: root = [<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>]</span><br><span class="line">Output: -<span class="number">1</span></span><br><span class="line">Explanation: The smallest value <span class="keyword">is</span> <span class="number">2</span>, but there isn<span class="string">&#x27;t any second smallest value.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">findSecondMinimumValue</span>(<span class="params">root</span>):</span><br><span class="line"><span class="comment"># 遍历二叉树,返回结果即可; 因为返回的是第二小的数值,所以需要去重</span></span><br><span class="line">    res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">preorder_ergodic_recursion</span>(<span class="params">node,res</span>):</span><br><span class="line">        <span class="keyword">if</span> node:</span><br><span class="line">            <span class="keyword">if</span> root.value <span class="keyword">not</span> <span class="keyword">in</span> res:</span><br><span class="line">                res.append(root.value) </span><br><span class="line">                preorder_ergodic_recursion(node.left,res)</span><br><span class="line">                preorder_ergodic_recursion(node.right,res)</span><br><span class="line">    preorder_ergodic_recursion(root,res)</span><br><span class="line">    res.sort()</span><br><span class="line">    <span class="keyword">return</span> res[<span class="number">1</span>] <span class="keyword">if</span> <span class="built_in">len</span>(res)&gt;<span class="number">1</span> <span class="keyword">else</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Python Tests</category>
@@ -528,6 +505,48 @@ points nearby.</p>
       </categories>
       <tags>
         <tag>Limits of function</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>question4</title>
+    <url>/2022/11/21/question4/</url>
+    <content><![CDATA[<h3 id="binary-tree-postorder-traversal">Binary Tree Postorder
+Traversal</h3>
+<p>Given the <code>root</code> of a binary tree, return <em>the
+postorder traversal of its nodes' values</em>.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of the nodes in the tree is in the range
+<code>[0, 100]</code>.</li>
+<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example 1</span></span><br><span class="line">Input: root = [<span class="number">1</span>,null,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="comment"># Example 2</span></span><br><span class="line">Input: root = []</span><br><span class="line">Output: []</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, left=None, right=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.left = left</span></span><br><span class="line"><span class="comment">#         self.right = right</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">postorderTraversal</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">if</span> root <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> self.res</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.postorderTraversal(root.left)</span><br><span class="line">            self.postorderTraversal(root.right)</span><br><span class="line">            self.res.append(root.val)</span><br><span class="line">        <span class="keyword">return</span> self.res</span><br></pre></td></tr></table></figure>
+<p>二叉树的后序遍历法, 使用了递归的思路去获得每一个叶节点的值,
+相关内容见<a href="/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" title="二叉树遍历">二叉树遍历</a></p>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>question9</title>
+    <url>/2022/11/29/question9/</url>
+    <content><![CDATA[<h3 id="power-of-four">Power of Four</h3>
+<p>Given an integer <code>n</code>, return <em><code>true</code> if it
+is a power of four. Otherwise, return <code>false</code></em>.</p>
+<p>An integer <code>n</code> is a power of four, if there exists an
+integer <code>x</code> such that <code>n == 4x</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment">#使用对数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">        <span class="keyword">return</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> log(n, <span class="number">4</span>).is_integer()</span><br><span class="line"><span class="comment">#使用递归</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">       <span class="keyword">while</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> n % <span class="number">4</span>==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> isPowerOfFour(n/<span class="number">4</span>)</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">1</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
       </tags>
   </entry>
 </search>
