@@ -17,7 +17,7 @@ class="math inline">\(f&#39;(x)=\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)}
 h\)</span>, It also writen as <span
 class="math inline">\(f&#39;(x)=y&#39;=\dfrac {dy} {dx}=\dfrac {df}
 {dx}=\dfrac d {dx}(y)=\dfrac d {dx}(f)\)</span></p>
-<h3 id="common-drtivative-functions">Common Drtivative Functions</h3>
+<h3 id="common-derivative-functions">Common Derivative Functions</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;\frac d {dx}(c) = 0 \qquad &amp;\frac d {dx}(ax) = a\\
@@ -29,7 +29,7 @@ x\\
 x^x(lnx+1)
 \end{aligned}
 \]</span></p>
-<h3 id="provertives-of-drivatives">Provertives of Drivatives</h3>
+<h3 id="provertives-of-derivatives">Provertives of Derivatives</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;\text{Sum Rule:} \\
@@ -50,7 +50,7 @@ composition of <span class="math inline">\(f(x)\)</span> and <span
 class="math inline">\(g(x)\)</span>, the range of <span
 class="math inline">\(g(x)\)</span> is the interval of <span
 class="math inline">\(f(x)\)</span>.</p>
-<p>If we want to get the dervative of <span
+<p>If we want to get the derivative of <span
 class="math inline">\(y=f(g(x))\)</span>, use the <strong>chain
 rule</strong>:</p>
 <p><span class="math inline">\(y&#39;=f&#39;(g(x))\cdot g(x)\)</span>,
@@ -89,9 +89,9 @@ class="math inline">\(g(x)\)</span> are inverses of each other. We
 denote <span class="math inline">\(g(x)\)</span> (the inverse of <span
 class="math inline">\(f(x)\)</span> by <span
 class="math inline">\(g(x)=f^{−1}(x)\)</span>.</p>
-<p>*** Attention: <span class="math inline">\(f^{-1}(x) \neq \dfrac 1
-{f(x)}\)</span>, <span class="math inline">\(f^{-1}\)</span> is a symbol
-not a exponentiation.***</p>
+<p><strong><em>Attention: <span class="math inline">\(f^{-1}(x) \neq
+\dfrac 1 {f(x)}\)</span>, <span class="math inline">\(f^{-1}\)</span> is
+a symbol not a exponentiation.</em></strong></p>
 <p>Let <span class="math inline">\(y=g(x)\)</span> and we have know
 <span class="math inline">\(f(y)=x\)</span> so that <span
 class="math display">\[
@@ -102,7 +102,7 @@ y&#39; &amp;=\frac 1 {f&#39;(y)}\\
 y&#39;&amp;=(f^{-1})&#39;(x)=g&#39;(x)=\frac 1 {f&#39;(g(x))}
 \end{aligned}
 \]</span></p>
-<h3 id="common-inverse-drtivative-functions">Common Inverse Drtivative
+<h3 id="common-inverse-derivative-functions">Common Inverse Derivative
 Functions</h3>
 <p><span class="math display">\[
 \begin{aligned}
@@ -111,6 +111,28 @@ Functions</h3>
 &amp;\frac d {dx}(tan^{-1}x) = \dfrac 1 {1+x^2} \qquad
 \end{aligned}
 \]</span></p>
+<h3 id="extreme-value">Extreme Value</h3>
+<p>If <span class="math inline">\(f\)</span> is continious in a closed
+interval <span class="math inline">\(I=[a,b]\)</span>, <span
+class="math inline">\(f\)</span> has both maximum and minimum value
+called extreme value.</p>
+<p>We can find the extreme value by derivative. When <span
+class="math inline">\(f&#39;(c)=0 \ or\ f&#39;(c)\ is \ not \
+definied\)</span>, <span class="math inline">\(c\)</span> is the
+critical value of the function. We will get the extreme value from <span
+class="math inline">\(a\)</span> or <span
+class="math inline">\(b\)</span> or the critical value <span
+class="math inline">\(c\)</span>.</p>
+<h3 id="mean-value-theorom">Mean value theorom</h3>
+<p>If <span class="math inline">\(f\)</span> is continious in a closed
+interval <span class="math inline">\(I=[a,b]\)</span>, and
+differentiable on open interval <span class="math inline">\(I\)</span>,
+it exists a value <span class="math inline">\(c\)</span> in interval
+<span class="math inline">\(I\)</span>(a&lt;c&lt;b), such that <span
+class="math inline">\(f&#39;(c) =\dfrac {f(b)-f(a)} {b-a}\)</span>.
+Also, if <span class="math inline">\(f(a) = f(b)\)</span>, there is some
+c in <span class="math inline">\((a,b)\)</span>, such that <span
+class="math inline">\(f&#39;(c) = 0\)</span></p>
 ]]></content>
       <categories>
         <category>Calculus</category>
@@ -138,18 +160,48 @@ Functions</h3>
       </tags>
   </entry>
   <entry>
-    <title>question1</title>
-    <url>/2022/11/18/question1/</url>
-    <content><![CDATA[<h3 id="maximum-number-of-balloons">Maximum Number of Balloons</h3>
-<p>Given a string <code>text</code>, you want to use the characters of
-<code>text</code> to form as many instances of the word
-<strong>"balloon"</strong> as possible.</p>
-<p>You can use each character in <code>text</code> <strong>at most
-once</strong>. Return the maximum number of instances that can be
-formed; <code>1 &lt;= text.length &lt;= 104</code>; <code>text</code>
-consists of lower case English letters only</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Example1:</span><br><span class="line">Input: text = <span class="string">&quot;leetcode&quot;</span></span><br><span class="line">Output: <span class="number">0</span></span><br><span class="line"></span><br><span class="line">Example2:</span><br><span class="line">Input: text = <span class="string">&quot;nlaebolko&quot;</span></span><br><span class="line">Output: <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Solution:</span><br><span class="line">    <span class="comment"># 本题实际上是要求返回text中组成&#x27;balloon&#x27;的最小元素个数,所以我们不在乎其他元素的出现个数,只需统计b,a,l,o,n每个元素出现的次数;并且,其中的最小值就是能组成&#x27;ballon&#x27;的最大个数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">maxNumberOfBalloons</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(text.count(<span class="string">&#x27;b&#x27;</span>), text.count(<span class="string">&#x27;a&#x27;</span>), text.count(<span class="string">&#x27;l&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;o&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;n&#x27;</span>))</span><br></pre></td></tr></table></figure>
+    <title>question10</title>
+    <url>/2022/11/29/question10/</url>
+    <content><![CDATA[<h3 id="middle-of-the-linked-list">Middle of the Linked List</h3>
+<p>Given the <code>head</code> of a singly linked list, return <em>the
+middle node of the linked list</em>.</p>
+<p>If there are two middle nodes, return <strong>the second
+middle</strong> node.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the list is in the range
+<code>[1, 100]</code>.</li>
+<li><code>1 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: head = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">Explanation: The middle node of the <span class="built_in">list</span> <span class="keyword">is</span> node <span class="number">3.</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: head = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">Output: [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">Explanation: Since the <span class="built_in">list</span> has two middle nodes <span class="keyword">with</span> values <span class="number">3</span> <span class="keyword">and</span> <span class="number">4</span>, we <span class="keyword">return</span> the second one.</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Solution:</span></span><br><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, next=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.next = next</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">找出链表的长度,单指针走到中间</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">middleNode</span>(<span class="params">head</span>):</span><br><span class="line">    ls = head</span><br><span class="line">    length = <span class="number">0</span> </span><br><span class="line">    <span class="keyword">while</span> ls:</span><br><span class="line">        length+=<span class="number">1</span></span><br><span class="line">        ls = ls.<span class="built_in">next</span></span><br><span class="line">        <span class="comment"># </span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(length//<span class="number">2</span>):</span><br><span class="line">        head = head.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">双指针逼近,对于一个有限链表,设置快指针速度/慢指针速度=2,只要快指针到底了(所在的node不为空且没有下一个node),取出慢指针以后的全部node</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"> <span class="keyword">def</span> <span class="title function_">middleNode</span>(<span class="params">head</span>):</span><br><span class="line">        fast = slow = head</span><br><span class="line">        <span class="keyword">while</span> fast <span class="keyword">and</span> fast.<span class="built_in">next</span>:</span><br><span class="line">            fast = fast.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            slow = slow.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> slow</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>question11</title>
+    <url>/2022/12/04/question11/</url>
+    <content><![CDATA[<h3
+id="find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">Find
+a Corresponding Node of a Binary Tree in a Clone of That Tree</h3>
+<p>Given two binary trees <code>original</code> and <code>cloned</code>
+and given a reference to a node <code>target</code> in the original
+tree.</p>
+<p>The <code>cloned</code> tree is a <strong>copy of</strong> the
+<code>original</code> tree.</p>
+<p>Return <em>a reference to the same node</em> in the
+<code>cloned</code> tree.</p>
+<p><strong>Note</strong> that you are <strong>not allowed</strong> to
+change any of the two trees or the <code>target</code> node and the
+answer <strong>must be</strong> a reference to a node in the
+<code>cloned</code> tree.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: tree = [<span class="number">7</span>,<span class="number">4</span>,<span class="number">3</span>,null,null,<span class="number">6</span>,<span class="number">19</span>], target = <span class="number">3</span></span><br><span class="line">Output: <span class="number">3</span></span><br><span class="line">Explanation: In <span class="built_in">all</span> examples the original <span class="keyword">and</span> cloned trees are shown. The target node <span class="keyword">is</span> a green node <span class="keyword">from</span> the original tree. The answer <span class="keyword">is</span> the yellow node <span class="keyword">from</span> the cloned tree.</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"> <span class="keyword">def</span> <span class="title function_">getTargetCopy</span>(<span class="params">self, original: TreeNode, cloned: TreeNode, target: TreeNode</span>) -&gt; TreeNode:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        如果original为空,那么copy也为空;</span></span><br><span class="line"><span class="string">        如果original当前的Node正好是target,那么返回Copy的Node</span></span><br><span class="line"><span class="string">        剩下的就不断递归去处理啦</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> original  <span class="keyword">or</span> target == original: </span><br><span class="line">            <span class="keyword">return</span> cloned        </span><br><span class="line">        <span class="keyword">return</span> self.getTargetCopy(original.left, cloned.left, target) </span><br><span class="line">    <span class="keyword">or</span> self.getTargetCopy(original.right, cloned.right, target)        </span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Python Tests</category>
@@ -194,6 +246,27 @@ no stones left, return <code>0</code>.</p>
       </tags>
   </entry>
   <entry>
+    <title>question1</title>
+    <url>/2022/11/18/question1/</url>
+    <content><![CDATA[<h3 id="maximum-number-of-balloons">Maximum Number of Balloons</h3>
+<p>Given a string <code>text</code>, you want to use the characters of
+<code>text</code> to form as many instances of the word
+<strong>"balloon"</strong> as possible.</p>
+<p>You can use each character in <code>text</code> <strong>at most
+once</strong>. Return the maximum number of instances that can be
+formed; <code>1 &lt;= text.length &lt;= 104</code>; <code>text</code>
+consists of lower case English letters only</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Example1:</span><br><span class="line">Input: text = <span class="string">&quot;leetcode&quot;</span></span><br><span class="line">Output: <span class="number">0</span></span><br><span class="line"></span><br><span class="line">Example2:</span><br><span class="line">Input: text = <span class="string">&quot;nlaebolko&quot;</span></span><br><span class="line">Output: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Solution:</span><br><span class="line">    <span class="comment"># 本题实际上是要求返回text中组成&#x27;balloon&#x27;的最小元素个数,所以我们不在乎其他元素的出现个数,只需统计b,a,l,o,n每个元素出现的次数;并且,其中的最小值就是能组成&#x27;ballon&#x27;的最大个数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">maxNumberOfBalloons</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(text.count(<span class="string">&#x27;b&#x27;</span>), text.count(<span class="string">&#x27;a&#x27;</span>), text.count(<span class="string">&#x27;l&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;o&#x27;</span>)//<span class="number">2</span>, text.count(<span class="string">&#x27;n&#x27;</span>))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>question3</title>
     <url>/2022/11/20/question3/</url>
     <content><![CDATA[<p>Given a <strong>0-indexed</strong> integer array <code>nums</code>,
@@ -210,6 +283,31 @@ return <em>the number of <strong>distinct</strong> quadruplets</em>
 </ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Output: <span class="number">1</span></span><br><span class="line">Explanation: The only quadruplet that satisfies the requirement <span class="keyword">is</span> (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) because <span class="number">1</span> + <span class="number">2</span> + <span class="number">3</span> == <span class="number">6</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>]</span><br><span class="line">Output: <span class="number">4</span></span><br><span class="line">Explanation: The <span class="number">4</span> quadruplets that satisfy the requirement are:</span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">1</span> == <span class="number">3</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Solution</span></span><br><span class="line"><span class="comment">#对有限长度的列表任取4个元素,如果能满足a+b+c=d,则计数器+1;</span></span><br><span class="line"><span class="comment">#使用迭代器构建长度为4的元组,并遍历元组即可</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> a,b,c,d <span class="keyword">in</span> itertools.combinations(nums,<span class="number">4</span>):</span><br><span class="line">        <span class="keyword">if</span> (a+b+c) == d:</span><br><span class="line">            count +=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> count        </span><br><span class="line"></span><br><span class="line"><span class="comment"># 当然,还可以使用更粗暴的解法,循环嵌套的方式把列表中的每个元素排列组合的可能性计算出来,再判断是否满足规则</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count,n=<span class="number">0</span>,<span class="built_in">len</span>(nums)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>,n):</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(j+<span class="number">1</span>,n):</span><br><span class="line">                <span class="keyword">for</span> l <span class="keyword">in</span> <span class="built_in">range</span>(k+<span class="number">1</span>,n):</span><br><span class="line">                    <span class="keyword">if</span> (nums[i]+nums[j]+nums[k])==nums[l]:</span><br><span class="line">                        count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>question4</title>
+    <url>/2022/11/21/question4/</url>
+    <content><![CDATA[<h3 id="binary-tree-postorder-traversal">Binary Tree Postorder
+Traversal</h3>
+<p>Given the <code>root</code> of a binary tree, return <em>the
+postorder traversal of its nodes' values</em>.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of the nodes in the tree is in the range
+<code>[0, 100]</code>.</li>
+<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example 1</span></span><br><span class="line">Input: root = [<span class="number">1</span>,null,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="comment"># Example 2</span></span><br><span class="line">Input: root = []</span><br><span class="line">Output: []</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, left=None, right=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.left = left</span></span><br><span class="line"><span class="comment">#         self.right = right</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">postorderTraversal</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">if</span> root <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> self.res</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.postorderTraversal(root.left)</span><br><span class="line">            self.postorderTraversal(root.right)</span><br><span class="line">            self.res.append(root.val)</span><br><span class="line">        <span class="keyword">return</span> self.res</span><br></pre></td></tr></table></figure>
+<p>二叉树的后序遍历法, 使用了递归的思路去获得每一个叶节点的值,
+相关内容见<a href="/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" title="二叉树遍历">二叉树遍历</a></p>
 ]]></content>
       <categories>
         <category>Python Tests</category>
@@ -266,6 +364,39 @@ its <code>0</code>'s to the end, is <code>[1,2,1,0,0,0]</code>.</li>
       </tags>
   </entry>
   <entry>
+    <title>question7</title>
+    <url>/2022/11/25/question7/</url>
+    <content><![CDATA[<h3 id="remove-palindromic-subsequences">Remove Palindromic
+Subsequences</h3>
+<p>You are given a string <code>s</code> consisting
+<strong>only</strong> of letters <code>'a'</code> and <code>'b'</code>.
+In a single step you can remove one <strong>palindromic
+subsequence</strong> from <code>s</code>.</p>
+<p>Return <em>the <strong>minimum</strong> number of steps to make the
+given string empty</em>.</p>
+<p>A string is a <strong>subsequence</strong> of a given string if it is
+generated by deleting some characters of a given string without changing
+its order. Note that a subsequence does <strong>not</strong> necessarily
+need to be contiguous.</p>
+<p>A string is called <strong>palindrome</strong> if is one that reads
+the same backward as well as forward.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= s.length &lt;= 1000</code></li>
+<li><code>s[i]</code> is either <code>'a'</code> or
+<code>'b'</code>.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: s = <span class="string">&quot;baabb&quot;</span></span><br><span class="line">Output: <span class="number">2</span></span><br><span class="line">Explanation: <span class="string">&quot;baabb&quot;</span> -&gt; <span class="string">&quot;b&quot;</span> -&gt; <span class="string">&quot;&quot;</span>. </span><br><span class="line">Remove palindromic subsequence <span class="string">&quot;baab&quot;</span> then <span class="string">&quot;b&quot;</span>.</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">初看是一个很复杂的题,但其实很简单,原因在于字符串只有a,b两个值;所以构成这个字符串的必定是一个</span></span><br><span class="line"><span class="string">回文字符+(&#x27;&#x27;/&#x27;a&#x27;/&#x27;b&#x27;)的形式;换句话说,step=1or2</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">removePalindromeSub</span>(<span class="params">s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line"><span class="comment">#str[start:end:step]</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> <span class="keyword">if</span> s == s[::-<span class="number">1</span>] <span class="keyword">else</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python Tests</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>question6</title>
     <url>/2022/11/23/question6/</url>
     <content><![CDATA[<p>Given a non-empty special binary tree consisting of nodes with the
@@ -298,30 +429,14 @@ internal node of the tree.</li>
       </tags>
   </entry>
   <entry>
-    <title>question7</title>
-    <url>/2022/11/25/question7/</url>
-    <content><![CDATA[<h3 id="remove-palindromic-subsequences">Remove Palindromic
-Subsequences</h3>
-<p>You are given a string <code>s</code> consisting
-<strong>only</strong> of letters <code>'a'</code> and <code>'b'</code>.
-In a single step you can remove one <strong>palindromic
-subsequence</strong> from <code>s</code>.</p>
-<p>Return <em>the <strong>minimum</strong> number of steps to make the
-given string empty</em>.</p>
-<p>A string is a <strong>subsequence</strong> of a given string if it is
-generated by deleting some characters of a given string without changing
-its order. Note that a subsequence does <strong>not</strong> necessarily
-need to be contiguous.</p>
-<p>A string is called <strong>palindrome</strong> if is one that reads
-the same backward as well as forward.</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li><code>1 &lt;= s.length &lt;= 1000</code></li>
-<li><code>s[i]</code> is either <code>'a'</code> or
-<code>'b'</code>.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: s = <span class="string">&quot;baabb&quot;</span></span><br><span class="line">Output: <span class="number">2</span></span><br><span class="line">Explanation: <span class="string">&quot;baabb&quot;</span> -&gt; <span class="string">&quot;b&quot;</span> -&gt; <span class="string">&quot;&quot;</span>. </span><br><span class="line">Remove palindromic subsequence <span class="string">&quot;baab&quot;</span> then <span class="string">&quot;b&quot;</span>.</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">初看是一个很复杂的题,但其实很简单,原因在于字符串只有a,b两个值;所以构成这个字符串的必定是一个</span></span><br><span class="line"><span class="string">回文字符+(&#x27;&#x27;/&#x27;a&#x27;/&#x27;b&#x27;)的形式;换句话说,step=1or2</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">removePalindromeSub</span>(<span class="params">s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line"><span class="comment">#str[start:end:step]</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> <span class="keyword">if</span> s == s[::-<span class="number">1</span>] <span class="keyword">else</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+    <title>question9</title>
+    <url>/2022/11/29/question9/</url>
+    <content><![CDATA[<h3 id="power-of-four">Power of Four</h3>
+<p>Given an integer <code>n</code>, return <em><code>true</code> if it
+is a power of four. Otherwise, return <code>false</code></em>.</p>
+<p>An integer <code>n</code> is a power of four, if there exists an
+integer <code>x</code> such that <code>n == 4x</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment">#使用对数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">        <span class="keyword">return</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> log(n, <span class="number">4</span>).is_integer()</span><br><span class="line"><span class="comment">#使用递归</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">       <span class="keyword">while</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> n % <span class="number">4</span>==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> isPowerOfFour(n/<span class="number">4</span>)</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">1</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Python Tests</category>
@@ -505,48 +620,6 @@ points nearby.</p>
       </categories>
       <tags>
         <tag>Limits of function</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>question4</title>
-    <url>/2022/11/21/question4/</url>
-    <content><![CDATA[<h3 id="binary-tree-postorder-traversal">Binary Tree Postorder
-Traversal</h3>
-<p>Given the <code>root</code> of a binary tree, return <em>the
-postorder traversal of its nodes' values</em>.</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li>The number of the nodes in the tree is in the range
-<code>[0, 100]</code>.</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Example 1</span></span><br><span class="line">Input: root = [<span class="number">1</span>,null,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="comment"># Example 2</span></span><br><span class="line">Input: root = []</span><br><span class="line">Output: []</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, left=None, right=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.left = left</span></span><br><span class="line"><span class="comment">#         self.right = right</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">postorderTraversal</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">if</span> root <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> self.res</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.postorderTraversal(root.left)</span><br><span class="line">            self.postorderTraversal(root.right)</span><br><span class="line">            self.res.append(root.val)</span><br><span class="line">        <span class="keyword">return</span> self.res</span><br></pre></td></tr></table></figure>
-<p>二叉树的后序遍历法, 使用了递归的思路去获得每一个叶节点的值,
-相关内容见<a href="/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" title="二叉树遍历">二叉树遍历</a></p>
-]]></content>
-      <categories>
-        <category>Python Tests</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>question9</title>
-    <url>/2022/11/29/question9/</url>
-    <content><![CDATA[<h3 id="power-of-four">Power of Four</h3>
-<p>Given an integer <code>n</code>, return <em><code>true</code> if it
-is a power of four. Otherwise, return <code>false</code></em>.</p>
-<p>An integer <code>n</code> is a power of four, if there exists an
-integer <code>x</code> such that <code>n == 4x</code>.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment">#使用对数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">        <span class="keyword">return</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> log(n, <span class="number">4</span>).is_integer()</span><br><span class="line"><span class="comment">#使用递归</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">isPowerOfFour</span>(<span class="params">n: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">       <span class="keyword">while</span> n &gt; <span class="number">0</span> <span class="keyword">and</span> n % <span class="number">4</span>==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> isPowerOfFour(n/<span class="number">4</span>)</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">1</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python Tests</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
       </tags>
   </entry>
 </search>

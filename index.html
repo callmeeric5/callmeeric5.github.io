@@ -201,6 +201,235 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/12/04/question11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Eric.W">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eric.W's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/04/question11/" class="post-title-link" itemprop="url">question11</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-04 14:53:40 / 修改时间：14:58:14" itemprop="dateCreated datePublished" datetime="2022-12-04T14:53:40+08:00">2022-12-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/12/04/question11/" class="post-meta-item leancloud_visitors" data-flag-title="question11" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/12/04/question11/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/04/question11/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>922</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3
+id="find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">Find
+a Corresponding Node of a Binary Tree in a Clone of That Tree</h3>
+<p>Given two binary trees <code>original</code> and <code>cloned</code>
+and given a reference to a node <code>target</code> in the original
+tree.</p>
+<p>The <code>cloned</code> tree is a <strong>copy of</strong> the
+<code>original</code> tree.</p>
+<p>Return <em>a reference to the same node</em> in the
+<code>cloned</code> tree.</p>
+<p><strong>Note</strong> that you are <strong>not allowed</strong> to
+change any of the two trees or the <code>target</code> node and the
+answer <strong>must be</strong> a reference to a node in the
+<code>cloned</code> tree.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Example:</span></span><br><span class="line">Input: tree = [<span class="number">7</span>,<span class="number">4</span>,<span class="number">3</span>,null,null,<span class="number">6</span>,<span class="number">19</span>], target = <span class="number">3</span></span><br><span class="line">Output: <span class="number">3</span></span><br><span class="line">Explanation: In <span class="built_in">all</span> examples the original <span class="keyword">and</span> cloned trees are shown. The target node <span class="keyword">is</span> a green node <span class="keyword">from</span> the original tree. The answer <span class="keyword">is</span> the yellow node <span class="keyword">from</span> the cloned tree.</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"> <span class="keyword">def</span> <span class="title function_">getTargetCopy</span>(<span class="params">self, original: TreeNode, cloned: TreeNode, target: TreeNode</span>) -&gt; TreeNode:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        如果original为空,那么copy也为空;</span></span><br><span class="line"><span class="string">        如果original当前的Node正好是target,那么返回Copy的Node</span></span><br><span class="line"><span class="string">        剩下的就不断递归去处理啦</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> original  <span class="keyword">or</span> target == original: </span><br><span class="line">            <span class="keyword">return</span> cloned        </span><br><span class="line">        <span class="keyword">return</span> self.getTargetCopy(original.left, cloned.left, target) </span><br><span class="line">    <span class="keyword">or</span> self.getTargetCopy(original.right, cloned.right, target)        </span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/29/question10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Eric.W">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eric.W's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/29/question10/" class="post-title-link" itemprop="url">question10</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-11-29 20:28:49 / 修改时间：20:56:54" itemprop="dateCreated datePublished" datetime="2022-11-29T20:28:49+08:00">2022-11-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/11/29/question10/" class="post-meta-item leancloud_visitors" data-flag-title="question10" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/11/29/question10/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/29/question10/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>981</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="middle-of-the-linked-list">Middle of the Linked List</h3>
+<p>Given the <code>head</code> of a singly linked list, return <em>the
+middle node of the linked list</em>.</p>
+<p>If there are two middle nodes, return <strong>the second
+middle</strong> node.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the list is in the range
+<code>[1, 100]</code>.</li>
+<li><code>1 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: head = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">Explanation: The middle node of the <span class="built_in">list</span> <span class="keyword">is</span> node <span class="number">3.</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: head = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">Output: [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">Explanation: Since the <span class="built_in">list</span> has two middle nodes <span class="keyword">with</span> values <span class="number">3</span> <span class="keyword">and</span> <span class="number">4</span>, we <span class="keyword">return</span> the second one.</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Solution:</span></span><br><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, next=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.next = next</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">找出链表的长度,单指针走到中间</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">middleNode</span>(<span class="params">head</span>):</span><br><span class="line">    ls = head</span><br><span class="line">    length = <span class="number">0</span> </span><br><span class="line">    <span class="keyword">while</span> ls:</span><br><span class="line">        length+=<span class="number">1</span></span><br><span class="line">        ls = ls.<span class="built_in">next</span></span><br><span class="line">        <span class="comment"># </span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(length//<span class="number">2</span>):</span><br><span class="line">        head = head.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">双指针逼近,对于一个有限链表,设置快指针速度/慢指针速度=2,只要快指针到底了(所在的node不为空且没有下一个node),取出慢指针以后的全部node</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"> <span class="keyword">def</span> <span class="title function_">middleNode</span>(<span class="params">head</span>):</span><br><span class="line">        fast = slow = head</span><br><span class="line">        <span class="keyword">while</span> fast <span class="keyword">and</span> fast.<span class="built_in">next</span>:</span><br><span class="line">            fast = fast.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            slow = slow.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> slow</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/29/question9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -457,7 +686,7 @@ alt="img" />
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-28 21:59:41" itemprop="dateModified" datetime="2022-11-28T21:59:41+08:00">2022-11-28</time>
+                <time title="修改时间：2022-12-04 23:58:44" itemprop="dateModified" datetime="2022-12-04T23:58:44+08:00">2022-12-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -495,7 +724,7 @@ alt="img" />
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>2.8k</span>
+              <span>3.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -527,7 +756,7 @@ class="math inline">\(f&#39;(x)=\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)}
 h\)</span>, It also writen as <span
 class="math inline">\(f&#39;(x)=y&#39;=\dfrac {dy} {dx}=\dfrac {df}
 {dx}=\dfrac d {dx}(y)=\dfrac d {dx}(f)\)</span></p>
-<h3 id="common-drtivative-functions">Common Drtivative Functions</h3>
+<h3 id="common-derivative-functions">Common Derivative Functions</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;\frac d {dx}(c) = 0 \qquad &amp;\frac d {dx}(ax) = a\\
@@ -539,7 +768,7 @@ x\\
 x^x(lnx+1)
 \end{aligned}
 \]</span></p>
-<h3 id="provertives-of-drivatives">Provertives of Drivatives</h3>
+<h3 id="provertives-of-derivatives">Provertives of Derivatives</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;\text{Sum Rule:} \\
@@ -560,7 +789,7 @@ composition of <span class="math inline">\(f(x)\)</span> and <span
 class="math inline">\(g(x)\)</span>, the range of <span
 class="math inline">\(g(x)\)</span> is the interval of <span
 class="math inline">\(f(x)\)</span>.</p>
-<p>If we want to get the dervative of <span
+<p>If we want to get the derivative of <span
 class="math inline">\(y=f(g(x))\)</span>, use the <strong>chain
 rule</strong>:</p>
 <p><span class="math inline">\(y&#39;=f&#39;(g(x))\cdot g(x)\)</span>,
@@ -599,9 +828,9 @@ class="math inline">\(g(x)\)</span> are inverses of each other. We
 denote <span class="math inline">\(g(x)\)</span> (the inverse of <span
 class="math inline">\(f(x)\)</span> by <span
 class="math inline">\(g(x)=f^{−1}(x)\)</span>.</p>
-<p>*** Attention: <span class="math inline">\(f^{-1}(x) \neq \dfrac 1
-{f(x)}\)</span>, <span class="math inline">\(f^{-1}\)</span> is a symbol
-not a exponentiation.***</p>
+<p><strong><em>Attention: <span class="math inline">\(f^{-1}(x) \neq
+\dfrac 1 {f(x)}\)</span>, <span class="math inline">\(f^{-1}\)</span> is
+a symbol not a exponentiation.</em></strong></p>
 <p>Let <span class="math inline">\(y=g(x)\)</span> and we have know
 <span class="math inline">\(f(y)=x\)</span> so that <span
 class="math display">\[
@@ -612,7 +841,7 @@ y&#39; &amp;=\frac 1 {f&#39;(y)}\\
 y&#39;&amp;=(f^{-1})&#39;(x)=g&#39;(x)=\frac 1 {f&#39;(g(x))}
 \end{aligned}
 \]</span></p>
-<h3 id="common-inverse-drtivative-functions">Common Inverse Drtivative
+<h3 id="common-inverse-derivative-functions">Common Inverse Derivative
 Functions</h3>
 <p><span class="math display">\[
 \begin{aligned}
@@ -621,6 +850,28 @@ Functions</h3>
 &amp;\frac d {dx}(tan^{-1}x) = \dfrac 1 {1+x^2} \qquad
 \end{aligned}
 \]</span></p>
+<h3 id="extreme-value">Extreme Value</h3>
+<p>If <span class="math inline">\(f\)</span> is continious in a closed
+interval <span class="math inline">\(I=[a,b]\)</span>, <span
+class="math inline">\(f\)</span> has both maximum and minimum value
+called extreme value.</p>
+<p>We can find the extreme value by derivative. When <span
+class="math inline">\(f&#39;(c)=0 \ or\ f&#39;(c)\ is \ not \
+definied\)</span>, <span class="math inline">\(c\)</span> is the
+critical value of the function. We will get the extreme value from <span
+class="math inline">\(a\)</span> or <span
+class="math inline">\(b\)</span> or the critical value <span
+class="math inline">\(c\)</span>.</p>
+<h3 id="mean-value-theorom">Mean value theorom</h3>
+<p>If <span class="math inline">\(f\)</span> is continious in a closed
+interval <span class="math inline">\(I=[a,b]\)</span>, and
+differentiable on open interval <span class="math inline">\(I\)</span>,
+it exists a value <span class="math inline">\(c\)</span> in interval
+<span class="math inline">\(I\)</span>(a&lt;c&lt;b), such that <span
+class="math inline">\(f&#39;(c) =\dfrac {f(b)-f(a)} {b-a}\)</span>.
+Also, if <span class="math inline">\(f(a) = f(b)\)</span>, there is some
+c in <span class="math inline">\((a,b)\)</span>, such that <span
+class="math inline">\(f&#39;(c) = 0\)</span></p>
 
       
     </div>
@@ -1346,240 +1597,6 @@ target="_blank" rel="noopener" href="https://blog.csdn.net/chinesekobe/article/d
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/21/question4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Eric.W">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric.W's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/11/21/question4/" class="post-title-link" itemprop="url">question4</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-11-21 20:14:29 / 修改时间：22:53:41" itemprop="dateCreated datePublished" datetime="2022-11-21T20:14:29+08:00">2022-11-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/11/21/question4/" class="post-meta-item leancloud_visitors" data-flag-title="question4" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/11/21/question4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/21/question4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>699</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="binary-tree-postorder-traversal">Binary Tree Postorder
-Traversal</h3>
-<p>Given the <code>root</code> of a binary tree, return <em>the
-postorder traversal of its nodes' values</em>.</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li>The number of the nodes in the tree is in the range
-<code>[0, 100]</code>.</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Example 1</span></span><br><span class="line">Input: root = [<span class="number">1</span>,null,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="comment"># Example 2</span></span><br><span class="line">Input: root = []</span><br><span class="line">Output: []</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Solution:</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, left=None, right=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.left = left</span></span><br><span class="line"><span class="comment">#         self.right = right</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.res = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">postorderTraversal</span>(<span class="params">self, root: <span class="type">Optional</span>[TreeNode]</span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">if</span> root <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> self.res</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.postorderTraversal(root.left)</span><br><span class="line">            self.postorderTraversal(root.right)</span><br><span class="line">            self.res.append(root.val)</span><br><span class="line">        <span class="keyword">return</span> self.res</span><br></pre></td></tr></table></figure>
-<p>二叉树的后序遍历法, 使用了递归的思路去获得每一个叶节点的值,
-相关内容见<a href="/2022/11/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/" title="二叉树遍历">二叉树遍历</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://callmeeric5.github.io/2022/11/20/question3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Eric.W">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric.W's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/11/20/question3/" class="post-title-link" itemprop="url">question3</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-11-20 22:39:26" itemprop="dateCreated datePublished" datetime="2022-11-20T22:39:26+08:00">2022-11-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-21 22:53:49" itemprop="dateModified" datetime="2022-11-21T22:53:49+08:00">2022-11-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python-Tests/" itemprop="url" rel="index"><span itemprop="name">Python Tests</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/11/20/question3/" class="post-meta-item leancloud_visitors" data-flag-title="question3" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/11/20/question3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/20/question3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>936</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Given a <strong>0-indexed</strong> integer array <code>nums</code>,
-return <em>the number of <strong>distinct</strong> quadruplets</em>
-<code>(a, b, c, d)</code> <em>such that:</em></p>
-<ul>
-<li><code>nums[a] + nums[b] + nums[c] == nums[d]</code>, and</li>
-<li><code>a &lt; b &lt; c &lt; d</code></li>
-<li><strong>Constraints:</strong>
-<ul>
-<li><code>4 &lt;= nums.length &lt;= 50</code></li>
-<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
-</ul></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Example1:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Output: <span class="number">1</span></span><br><span class="line">Explanation: The only quadruplet that satisfies the requirement <span class="keyword">is</span> (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) because <span class="number">1</span> + <span class="number">2</span> + <span class="number">3</span> == <span class="number">6</span></span><br><span class="line"><span class="comment">#Example2:</span></span><br><span class="line">Input: nums = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>]</span><br><span class="line">Output: <span class="number">4</span></span><br><span class="line">Explanation: The <span class="number">4</span> quadruplets that satisfy the requirement are:</span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">1</span> == <span class="number">3</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br><span class="line">- (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>): <span class="number">1</span> + <span class="number">1</span> + <span class="number">3</span> == <span class="number">5</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Solution</span></span><br><span class="line"><span class="comment">#对有限长度的列表任取4个元素,如果能满足a+b+c=d,则计数器+1;</span></span><br><span class="line"><span class="comment">#使用迭代器构建长度为4的元组,并遍历元组即可</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> a,b,c,d <span class="keyword">in</span> itertools.combinations(nums,<span class="number">4</span>):</span><br><span class="line">        <span class="keyword">if</span> (a+b+c) == d:</span><br><span class="line">            count +=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> count        </span><br><span class="line"></span><br><span class="line"><span class="comment"># 当然,还可以使用更粗暴的解法,循环嵌套的方式把列表中的每个元素排列组合的可能性计算出来,再判断是否满足规则</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">countQuadruplets</span>(<span class="params">nums</span>):</span><br><span class="line">    count,n=<span class="number">0</span>,<span class="built_in">len</span>(nums)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>,n):</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(j+<span class="number">1</span>,n):</span><br><span class="line">                <span class="keyword">for</span> l <span class="keyword">in</span> <span class="built_in">range</span>(k+<span class="number">1</span>,n):</span><br><span class="line">                    <span class="keyword">if</span> (nums[i]+nums[j]+nums[k])==nums[l]:</span><br><span class="line">                        count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1651,7 +1668,7 @@ return <em>the number of <strong>distinct</strong> quadruplets</em>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1714,12 +1731,12 @@ return <em>the number of <strong>distinct</strong> quadruplets</em>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">18k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">14 分钟</span>
+    <span title="站点阅读时长">17 分钟</span>
 </div>
 
         
