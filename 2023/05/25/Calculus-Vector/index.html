@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Defination of VectorA vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vector">
+<meta property="og:url" content="http://example.com/2023/05/25/Calculus-Vector/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="Defination of VectorA vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-25T06:42:28.000Z">
+<meta property="article:modified_time" content="2023-06-17T16:23:46.946Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="Vector">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Category: Calculus</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+      "CommonHTML": { linebreaks: { automatic: true } }
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/06/12/Calculus-Multiple-integration/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2023/05/21/Calculus-Sequences/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/05/25/Calculus-Vector/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/05/25/Calculus-Vector/&text=Vector"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/05/25/Calculus-Vector/&is_video=false&description=Vector"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Vector&body=Check out this article: http://example.com/2023/05/25/Calculus-Vector/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/05/25/Calculus-Vector/&name=Vector&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/05/25/Calculus-Vector/&t=Vector"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Defination-of-Vector"><span class="toc-number">1.</span> <span class="toc-text">Defination of Vector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vector-Algebra"><span class="toc-number">2.</span> <span class="toc-text">Vector Algebra</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unit-Vectors"><span class="toc-number">3.</span> <span class="toc-text">Unit Vectors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Standard-Unit-Vectors"><span class="toc-number">4.</span> <span class="toc-text">Standard Unit Vectors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dot-Product"><span class="toc-number">5.</span> <span class="toc-text">Dot Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Orthogonal-Projection"><span class="toc-number">6.</span> <span class="toc-text">Orthogonal Projection</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cross-Product"><span class="toc-number">7.</span> <span class="toc-text">Cross Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-the-Cross-Product"><span class="toc-number">8.</span> <span class="toc-text">Properties of the Cross Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Cross-Product-and-Angles"><span class="toc-number">9.</span> <span class="toc-text">The Cross Product and Angles</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Equations-of-Lines-in-Space"><span class="toc-number">10.</span> <span class="toc-text">Equations of Lines in Space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Equations-of-a-Plane-in-Standard-and-General-Forms"><span class="toc-number">11.</span> <span class="toc-text">Equations of a Plane in Standard and General Forms</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Distance-from-a-Point-to-a-Plane"><span class="toc-number">12.</span> <span class="toc-text">Distance from a Point to a Plane</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vector%E2%80%93Valued-Functions"><span class="toc-number">13.</span> <span class="toc-text">Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Operations-on-Vector%E2%80%93Valued-Functions"><span class="toc-number">14.</span> <span class="toc-text">Operations on Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Average-Rate-of-Change"><span class="toc-number">15.</span> <span class="toc-text">Average Rate of Change</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limits-of-Vector%E2%80%93Valued-Functions"><span class="toc-number">16.</span> <span class="toc-text">Limits of Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limits-of-Vector%E2%80%93Valued-Functions-1"><span class="toc-number">17.</span> <span class="toc-text">Limits of Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Function-of-Two-Variables"><span class="toc-number">18.</span> <span class="toc-text">Function of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limit-of-a-Function-of-Two-Variables"><span class="toc-number">19.</span> <span class="toc-text">Limit of a Function of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic-Limit-Properties-of-Functions-of-Two-Variables"><span class="toc-number">20.</span> <span class="toc-text">Basic Limit Properties of Functions of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Continuous"><span class="toc-number">21.</span> <span class="toc-text">Continuous</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Partial-Derivative"><span class="toc-number">22.</span> <span class="toc-text">Partial Derivative</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Second-Partial-Derivative-Mixed-Partial-Derivative"><span class="toc-number">23.</span> <span class="toc-text">Second Partial Derivative, Mixed Partial Derivative</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mixed-Partial-Derivatives"><span class="toc-number">24.</span> <span class="toc-text">Mixed Partial Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Total-Di%EF%AC%80erential"><span class="toc-number">25.</span> <span class="toc-text">Total Diﬀerential</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multivariable-Di%EF%AC%80erentiability"><span class="toc-number">26.</span> <span class="toc-text">Multivariable Diﬀerentiability</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multivariable-Chain-Rule"><span class="toc-number">27.</span> <span class="toc-text">Multivariable Chain Rule</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implicit-Di%EF%AC%80erentiation"><span class="toc-number">28.</span> <span class="toc-text">Implicit Diﬀerentiation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Directional-Derivatives"><span class="toc-number">29.</span> <span class="toc-text">Directional Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gradient"><span class="toc-number">30.</span> <span class="toc-text">Gradient</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Gradient-and-Directional-Derivatives"><span class="toc-number">31.</span> <span class="toc-text">The Gradient and Directional Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Directional-Tangent-Line"><span class="toc-number">32.</span> <span class="toc-text">Directional Tangent Line</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tangent-Plane"><span class="toc-number">33.</span> <span class="toc-text">Tangent Plane</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Vector
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-05-25T06:42:28.000Z" class="dt-published" itemprop="datePublished">2023-05-25</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Calculus/">Calculus</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Vector/" rel="tag">Vector</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Defination-of-Vector"><a href="#Defination-of-Vector" class="headerlink" title="Defination of Vector"></a>Defination of Vector</h3><p>A vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be the initial point of the vector, and the point $Q$ is the terminal point.</p>
+<p>The magnitude, length or norm of $\vec {PQ}$ is the length of the line segment $\overline {PQ}$: $|| \overline{PQ} ||$ &#x3D; $||\vec {PQ} ||$ .</p>
+<p>Two vectors are equal if they have the same magnitude and direction.</p>
+<h3 id="Vector-Algebra"><a href="#Vector-Algebra" class="headerlink" title="Vector Algebra"></a>Vector Algebra</h3><ol>
+<li>Let $\vec u &#x3D; ⟨ u_1 , u_2 ⟩\quad \text{and} \quad v &#x3D; ⟨ v_1 , v_2 ⟩$ be vectors in $\mathbb{R}^2$ , and let $c$ be a scalar.</li>
+</ol>
+<p>​	a. The addition, or sum, of the vectors $\vec u$ and $\vec v$ is the vector</p>
+<p>​		$\vec u + \vec v &#x3D; ⟨ u_1 + v_1 , u_2 + v_2⟩ $</p>
+<p>​	b.  The scalar product of $c$ and $\vec v$ is the vector</p>
+<p>​		$c\vec v &#x3D; c ⟨ v_1, v_2⟩ &#x3D; ⟨ cv_1, cv_2⟩$</p>
+<ol start="2">
+<li>Let $u &#x3D; ⟨ u_1, u_2, u_3⟩ \quad \text{and}\quad \vec v &#x3D; ⟨ v_1, v_2, v_3⟩$ be vectors in $\mathbb{R}^3$, and let $c$ be a scalar.</li>
+</ol>
+<p>​	a. The addition, or sum, of the vectors $\vec u$ and $\vec v$ is the vector</p>
+<p>​		$ \vec u+\vec v &#x3D; ⟨ u_1 + v_1 , u_2 + v_2 , u_3 + v_3 ⟩ $</p>
+<p>​	b. The scalar product of $c$ and $\vec v$ is the vector</p>
+<p>​		$c\vec v &#x3D; c ⟨ v_1 , v_2 , v_3 ⟩ &#x3D; ⟨ cv_1 , cv_2 , cv_3 ⟩ $</p>
+<h3 id="Unit-Vectors"><a href="#Unit-Vectors" class="headerlink" title="Unit Vectors"></a>Unit Vectors</h3><p>The unit vector in the direction of a nonzero vector $\vec v$ is $ \vec u &#x3D; \vec v \displaystyle \frac 1 {||\vec v ||}$</p>
+<h3 id="Standard-Unit-Vectors"><a href="#Standard-Unit-Vectors" class="headerlink" title="Standard Unit Vectors"></a>Standard Unit Vectors</h3><ol>
+<li>In $\mathbb{R}^2$, the standard unit vectors are $\vec i &#x3D; ⟨ 1, 0 ⟩\quad\text{and}\quad\vec j &#x3D; ⟨ 0, 1 ⟩$</li>
+<li>In $\mathbb{R}^3$, the standard unit vectors are $\vec i &#x3D; ⟨ 1, 0,0 ⟩\quad\text{and}\quad\vec j &#x3D; ⟨ 0, 1,0 ⟩ \quad\text{and}\quad\vec k &#x3D; ⟨ 0,0, 1 ⟩$</li>
+</ol>
+<h3 id="Dot-Product"><a href="#Dot-Product" class="headerlink" title="Dot Product"></a>Dot Product</h3><ol>
+<li>Let $\vec u &#x3D; ⟨ u _1, u _2 ⟩$ and $\vec v &#x3D; ⟨ v_1 , v_2 ⟩$ in $\mathbb{R}^2$  . The dot product of $\vec u$ and $\vec v$, denoted $\vec u\cdot \vec  v$, is</li>
+</ol>
+<p>$\vec u\cdot \vec  v&#x3D;u_1v_1+u_2v_2$</p>
+<ol start="2">
+<li>Let $\vec u &#x3D; ⟨ u _1, u _2,u_3 ⟩$ and $\vec v &#x3D; ⟨ v_1 , v_2,v_3 ⟩$ in $\mathbb{R}^3$  . The dot product of $\vec u$ and $\vec v$, denoted $\vec u\cdot \vec  v$, is</li>
+</ol>
+<p>$\vec u\cdot \vec  v&#x3D;u_1v_1+u_2v_2+u_3v_3$</p>
+<ol start="3">
+<li>Let $\vec u$ and $\vec v $ in $\mathbb{R}^2$ or $\mathbb{R}^3$. Then $\vec u\cdot \vec  v&#x3D;||\vec u||||\vec v||cos\theta$, where $θ$, $0 ≤ θ ≤ π$, is the angle between $\vec u$ and $\vec v$.</li>
+</ol>
+<h3 id="Orthogonal-Projection"><a href="#Orthogonal-Projection" class="headerlink" title="Orthogonal Projection"></a>Orthogonal Projection</h3><p>Let nonzero vectors $\vec u$ and $\vec v$ be given. The orthogonal projection of $\vec u$ onto $\vec v$, denoted $proj_{\vec v} \vec u$, is</p>
+<p>$proj_{\vec v} \vec u&#x3D;\displaystyle\frac {\vec u \vec v}{\vec v \vec v}\vec v$</p>
+<p>$\vec u$ can be written as the sum of two vectors, one of which is parallel to $\vec v$, and one of which is orthogonal to $\vec v$, $$\vec u &#x3D; \underset{\parallel \vec v}{\underbrace{proj_{\vec v} \vec u}}+\underset{\perp \vec v}{\underbrace{(\vec u - proj_{\vec v} \vec u)}}$$</p>
+<h3 id="Cross-Product"><a href="#Cross-Product" class="headerlink" title="Cross Product"></a>Cross Product</h3><p>Let $\vec u &#x3D; ⟨ u_1 , u_2 , u_3 ⟩$ and $\vec v &#x3D; ⟨ v_1 , v_2 , v_3 ⟩$ be vectors in $\mathbb{R}^3 $ . The cross product of $u$ and $v$, denoted $\vec u$ x $\vec v$, is the vector</p>
+<p>$\vec u$ x $\vec v$ &#x3D; $⟨ u_2 v_3 − u_3 v_2 , −(u_1 v_3 − u_3 v_1 ), u_1 v_2− u_2 v_1⟩ $</p>
+<h3 id="Properties-of-the-Cross-Product"><a href="#Properties-of-the-Cross-Product" class="headerlink" title="Properties of the Cross Product"></a>Properties of the Cross Product</h3><p>$$<br>(\vec u \times \vec v)\cdot \vec u &#x3D;0\<br>(\vec u \times \vec v)\cdot \vec v &#x3D;0<br>\vec u \times \vec u &#x3D; \vec 0\<br>\vec u \times \vec 0 &#x3D; \vec 0\<br>\vec u \cdot (\vec v \times \vec w) &#x3D; (\vec u \times \vec v) \cdot \vec w<br>$$</p>
+<h3 id="The-Cross-Product-and-Angles"><a href="#The-Cross-Product-and-Angles" class="headerlink" title="The Cross Product and Angles"></a>The Cross Product and Angles</h3><p>Let $\vec u$ and $\vec v$ be nonzero vectors in $\mathbb{R}^3$ . Then $||\vec u \times \vec v||&#x3D;||\vec u||||\vec v||sin\theta$, where $θ$, $0 ≤ θ ≤ π,$ is the angle between $\vec u$ and $\vec v$.</p>
+<h3 id="Equations-of-Lines-in-Space"><a href="#Equations-of-Lines-in-Space" class="headerlink" title="Equations of Lines in Space"></a>Equations of Lines in Space</h3><p>Consider the line in space that passes through $p &#x3D; ⟨ x_0 , y_0 , z_0 ⟩$ in the direction of $d &#x3D; ⟨ a, b, c ⟩$ .<br>$$<br>\text{ The vector equation of the line is}\</p>
+<p>\vec {\ell}(t) &#x3D; \vec p + t\vec d\</p>
+<p>\text{The parametric equations of the line are}\</p>
+<p>x &#x3D; x_0 + at, y &#x3D; y_0 + bt, z &#x3D; z_0 + ct.\</p>
+<p>\text{ The symmetric equations of the line are}\</p>
+<p>\frac {x−x_0} a &#x3D; \frac{y−y_0} b &#x3D; \frac{z-z_0} c<br>$$</p>
+<h3 id="Equations-of-a-Plane-in-Standard-and-General-Forms"><a href="#Equations-of-a-Plane-in-Standard-and-General-Forms" class="headerlink" title="Equations of a Plane in Standard and General Forms"></a>Equations of a Plane in Standard and General Forms</h3><p>The plane passing through the point $P &#x3D; (x_0 , y_0 , z_0 )$ with <strong>normal vector</strong> (that is orthogonal to the plane.) $\vec n &#x3D; ⟨ a, b, c ⟩$ can be described by an equation with standard form</p>
+<p>$a(x − x_0 ) + b(y − y_0 ) + c(z − z_0 ) &#x3D; 0$;</p>
+<p>the equation’s general form is</p>
+<p>$ax + by + cz &#x3D; d$.</p>
+<h3 id="Distance-from-a-Point-to-a-Plane"><a href="#Distance-from-a-Point-to-a-Plane" class="headerlink" title="Distance from a Point to a Plane"></a>Distance from a Point to a Plane</h3><p>Let a plane with normal vector $\vec n$ be given, and let $Q$ be a point. The distance $h$ from $Q$ to the plane is $h&#x3D; \displaystyle\frac {|\vec n \vec {PQ} |}{||\vec n||}$</p>
+<h3 id="Vector–Valued-Functions"><a href="#Vector–Valued-Functions" class="headerlink" title="Vector–Valued Functions"></a>Vector–Valued Functions</h3><p>A vector-valued function is a function of the form</p>
+<p>$\vec r (t) &#x3D; \langle f(t),g(t)\rangle \quad \text{or} \quad \vec r(t)&#x3D; \langle f(t),g(t),h(t) \rangle $ </p>
+<p>where $f, g$ and $h$ are real valued functions. The domain of $\vec r$ is the set of all values of t for which $\vec r(t)$ is deﬁned. The range of $\vec r$ is the set of all possible output vector $\vec r(t)$.</p>
+<h3 id="Operations-on-Vector–Valued-Functions"><a href="#Operations-on-Vector–Valued-Functions" class="headerlink" title="Operations on Vector–Valued Functions"></a>Operations on Vector–Valued Functions</h3><p>Let $\vec r_1 (t) &#x3D; \langle f_1(t),g_1(t)\rangle$ and $\vec r_2 (t) &#x3D; \langle f_2(t),g_2(t)\rangle$ be vector–valued functions in $\mathbb{R} ^2$ and let c be a scalar. Then:<br>$$<br>\vec r_1 (t) \pm r_2(t) &#x3D; \langle f_1(t)\pm f_2(t),g_1(t)\pm g_2(t)\rangle\<br>\vec r_1(t) &#x3D; \langle cf_1(t),cg_1(t)\rangle<br>$$<br>A similar deﬁnition holds for vector–valued functions in $\mathbb{R}^3$ .</p>
+<h3 id="Average-Rate-of-Change"><a href="#Average-Rate-of-Change" class="headerlink" title="Average Rate of Change"></a>Average Rate of Change</h3><p>Let $\vec r(t)$ be a vector–valued function, where each of its component functions is continuous on its domain, and let $t_0 &lt; t_1$ . The average rate of change of $\vec r(t)$ on $[t_0 , t_1 ]$ is</p>
+<p>average rate of change &#x3D; $\displaystyle \frac {\vec r (t_1)-\vec r(t_0)}{t_1-t_0}$</p>
+<h3 id="Limits-of-Vector–Valued-Functions"><a href="#Limits-of-Vector–Valued-Functions" class="headerlink" title="Limits of Vector–Valued Functions"></a>Limits of Vector–Valued Functions</h3><p>Let I be an open interval containing $c$, and let $\vec  r(t)$ be a vector–valued function deﬁned on $I$, except possibly at $c$. The limit of $ \vec r(t)$, as $t$ approaches $c$, is $L$, expressed as $\displaystyle\lim_{t \to c}{\vec r(t)}&#x3D; \vec L$ means that given any $\epsilon &gt; 0$, there exists a $δ &gt; 0$ such that for all $t \neq c$, if $| t − c | &lt; δ$, we have $||\vec r(t) − L || &lt; \epsilon$.</p>
+<h3 id="Limits-of-Vector–Valued-Functions-1"><a href="#Limits-of-Vector–Valued-Functions-1" class="headerlink" title="Limits of Vector–Valued Functions"></a>Limits of Vector–Valued Functions</h3><p>Let $\vec r(t) &#x3D; ⟨ f(t), g(t) ⟩$ be a vector–valued function in $\mathbb{R}^2$ deﬁned on an open interval $I$ containing $c$, except possibly at $c$. Then<br>$$<br>\begin{align*}<br>\lim_{t \to c}\vec r(t) &amp;&#x3D; \langle \lim_{t \to c} f(t), \lim_{t \to c} g(t)\rangle\</p>
+<p>\vec r’(t) &amp;&#x3D; \lim_{h \to 0} \frac {\vec r(t+h)-\vec r(t)} {h} \</p>
+<p>\vec r’(t) &amp;&#x3D; \langle f’(t), g’(t) \rangle<br>\end{align*}<br>$$</p>
+<h3 id="Function-of-Two-Variables"><a href="#Function-of-Two-Variables" class="headerlink" title="Function of Two Variables"></a>Function of Two Variables</h3><p>Let $D$ be a subset of $\mathbb{R}^2$ . A function f of two variables is a rule that assigns each pair $(x, y)$ in $D$ a value $z &#x3D; f(x, y)$ in $\mathbb{R}$. $D$ is the domain of $f$; the set of all outputs of f is the range.</p>
+<h3 id="Limit-of-a-Function-of-Two-Variables"><a href="#Limit-of-a-Function-of-Two-Variables" class="headerlink" title="Limit of a Function of Two Variables"></a>Limit of a Function of Two Variables</h3><p>Let $S$ be a set containing $P &#x3D; (x_0 , y_0 )$ where every open disk centered at $P$ contains points in $S$ other than $P$, let $f$ be a function of two variables deﬁned on $S$, except possibly at $P$, and let $L$ be a real number. The limit of $f(x, y)$ as $(x, y)$ approaches $(x_0 , y_0 )$ is $L$, denoted<br>$$<br>\lim_{(x,y)\to(x_0,y_0)}f(x,y) &#x3D; L<br>$$<br>means that given any $\epsilon &gt; 0$, there exists $\delta &gt; 0$ such that for all $(x, y)$ in $S$, where $(x, y) \neq (x_0 , y_0 )$, if $(x, y)$ is in the open disk centered at $(x_0 , y_0 )$ with radius $\delta$, then $| f(x, y) − L | &lt; \epsilon$.</p>
+<h3 id="Basic-Limit-Properties-of-Functions-of-Two-Variables"><a href="#Basic-Limit-Properties-of-Functions-of-Two-Variables" class="headerlink" title="Basic Limit Properties of Functions of Two Variables"></a>Basic Limit Properties of Functions of Two Variables</h3><p>Let b, $x_0$, $y_0$, $L$, and $K$ be real numbers, let $n$ be a positive integer, and let $f$ and $g$ be functions with the following limits: $\lim_{(x,y)\rightarrow (x_0,y_0)} f(x,y) &#x3D; L$, $\lim_{(x,y)\rightarrow (x_0,y_0)} g(x,y)&#x3D;K$</p>
+<p>Constants: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} c &#x3D; c$, where $c$ is a constant.</p>
+<p>Identity: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} x &#x3D; x_0,\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} y &#x3D; y_0$.</p>
+<p>Sums&#x2F;Differences: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} [f(x,y) \pm g(x,y)] &#x3D;   L \pm K$.</p>
+<p>Scalar Multiples:</p>
+<p> $\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} [cf(x,y)] &#x3D; cL$, where $c$ is a constant.</p>
+<p>Products: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} [f(x,y) \cdot g(x,y)] &#x3D; L \cdot K$.</p>
+<p>Quotients: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} \frac{f(x,y)}{g(x,y)}&#x3D; \frac{L}{K}$, provided that $K\neq 0$.</p>
+<p>Powers: </p>
+<p>$\displaystyle\lim_{(x,y)\rightarrow (x_0,y_0)} [f(x,y)]^n &#x3D; L^n$.</p>
+<h3 id="Continuous"><a href="#Continuous" class="headerlink" title="Continuous"></a>Continuous</h3><p>Let a function $f(x, y)$ be deﬁned on a set $S$ containing the point $(x_0 , y_0 )$.</p>
+<ol>
+<li><p>$f$ is continuous at $(x_0,y_0)$ if $\displaystyle\lim_{(x,y)\to(x_0,y_0)}f(x,y)&#x3D;f(x_0,y_0)$</p>
+</li>
+<li><p>$f$ is continuous on $S$ if f is continuous at all points in S. If f is continuous at all points in $\mathbb{R}^2$ , we say that f is continuous everywhere.</p>
+</li>
+</ol>
+<h3 id="Partial-Derivative"><a href="#Partial-Derivative" class="headerlink" title="Partial Derivative"></a>Partial Derivative</h3><p>Let $z &#x3D; f(x, y)$ be a continuous function on a set $S$ in $\mathbb{R}^2$ .</p>
+<ol>
+<li>The partial derivative of $f$ with respect to $x$ is:</li>
+</ol>
+<p>$$<br>f_x(x,y)&#x3D; \lim_{h\to0}\frac{f(x+h,y)-f(x,y)}h<br>$$</p>
+<ol start="2">
+<li>The partial derivative of $f$ with respect to $y$ is:<br>$$<br>f_y(x,y)&#x3D; \lim_{h\to0}\frac{f(x,y+h)-f(x,y)}h<br>$$</li>
+</ol>
+<h3 id="Second-Partial-Derivative-Mixed-Partial-Derivative"><a href="#Second-Partial-Derivative-Mixed-Partial-Derivative" class="headerlink" title="Second Partial Derivative, Mixed Partial Derivative"></a>Second Partial Derivative, Mixed Partial Derivative</h3><p>Let $z &#x3D; f(x, y)$ be continuous on a set $S$.</p>
+<ol>
+<li>The second partial derivative of f with respect to $x$ then $x$ is</li>
+</ol>
+<p>$$<br>\frac \partial {\partial x}(\frac {\partial f}{\partial x})&#x3D;(\frac {\partial^2 f}{\partial x^2})&#x3D;(f_x)<em>x&#x3D;f</em>{xx}<br>$$</p>
+<ol start="2">
+<li>The second partial derivative of f with respect to $x$ then $y$ is</li>
+</ol>
+<p>$$<br>\frac \partial {\partial y}(\frac {\partial f}{\partial x})&#x3D;(\frac {\partial^2 f}{\partial x \partial y})&#x3D;(f_x)<em>y&#x3D;f</em>{xy}<br>$$</p>
+<h3 id="Mixed-Partial-Derivatives"><a href="#Mixed-Partial-Derivatives" class="headerlink" title="Mixed Partial Derivatives"></a>Mixed Partial Derivatives</h3><p>Let $f$ be deﬁned such that $f <em>{xy}$ and $f <em>{yx}$ are continuous on a set $S$. Then for each point $(x, y)$ in $S$, $f</em>{xy} (x, y) &#x3D; f</em>{yx} (x, y)$.</p>
+<h3 id="Total-Diﬀerential"><a href="#Total-Diﬀerential" class="headerlink" title="Total Diﬀerential"></a>Total Diﬀerential</h3><p>Let $z &#x3D; f(x, y)$ be continuous on a set $S$. Let $dx$ and $dy$ represent changes in $x$ and $y$, respectively. Where the partial derivatives $f_x$ and $f_y$ exist, the total diﬀerential of $z$ is $dz &#x3D; f_x(x,y)dx+f_y(x,y)dy$</p>
+<h3 id="Multivariable-Diﬀerentiability"><a href="#Multivariable-Diﬀerentiability" class="headerlink" title="Multivariable Diﬀerentiability"></a>Multivariable Diﬀerentiability</h3><p>Let $z &#x3D; f(x, y)$ be deﬁned on a set $S$ containing $(x_0 , y_0 )$ where $f_x (x_0 , y_0 )$ and $f_y (x_0 , y_0 )$ exist. Let $dz$ be the total diﬀerential of $z$ at $(x_0 , y _0)$, let $\Delta z &#x3D; f(x_0 + dx, y_0 + dy) − f(x_0 , y_0 )$, and let $E_x$ and $E_y$ be functions of $dx$ and $dy$ such that $\Delta z &#x3D; dz+E_xdx+E_ydy $</p>
+<ol>
+<li><p>We say $f$ is diﬀerentiable at $(x_0, y_0)$ if, given $\epsilon &gt; 0$, there is a $\delta &gt; 0$ such that if $|| ⟨ dx, dy ⟩ || $&lt; δ, then $|| ⟨ E_x , E_y ⟩ || &lt; \epsilon$. That is, as $dx$ and $dy$ go to 0, so do $E_x$ and $E_y$ .</p>
+</li>
+<li><p>We say $f$ is diﬀerentiable on $S$ if f is diﬀerentiable at every point in $S$. If f is diﬀerentiable on $\mathbb{R}^2$ , we say that f is diﬀerentiable everywhere.</p>
+</li>
+</ol>
+<h3 id="Multivariable-Chain-Rule"><a href="#Multivariable-Chain-Rule" class="headerlink" title="Multivariable Chain Rule"></a>Multivariable Chain Rule</h3><p>Suppose $z &#x3D; f(x,y)$ and $x &#x3D; g(t)$ and $y &#x3D; h(t)$. Then, the chain rule for the partial derivative of $z$ with respect to $t$ is:</p>
+<p>$\frac{\partial z}{\partial t} &#x3D; \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t}&#x3D;\langle f_x,f_y \rangle \cdot \langle x’,y’ \rangle$</p>
+<h3 id="Implicit-Diﬀerentiation"><a href="#Implicit-Diﬀerentiation" class="headerlink" title="Implicit Diﬀerentiation"></a>Implicit Diﬀerentiation</h3><p>Let $f$ be a diﬀerentiable function of $x$ and $y$, where $f(x, y) &#x3D; c$ deﬁnes $y$ as an implicit function of $x$, for some constant $c$. Then $ \frac {dy} {dx} &#x3D; - \frac {f_x(x,y)}{f_y(x,y)}$</p>
+<h3 id="Directional-Derivatives"><a href="#Directional-Derivatives" class="headerlink" title="Directional Derivatives"></a>Directional Derivatives</h3><p>Let $z &#x3D; f(x, y)$ be continuous on a set $S$ and let $\vec u &#x3D; ⟨ u_1 , u_2 ⟩$ be a unit vector. For all points $(x, y$), the directional derivative of $f$ at $(x, y)$ in the direction of $\vec u$ is<br>$$<br>D_{\vec u}f(x,y &#x3D; \lim_{h \to 0} \frac {f(x+hu_1,y+hu_2)-f(x,y)} h&#x3D;f_x(x_0,y_0)u_1+f_y(x_0,y_0)u_2<br>$$</p>
+<h3 id="Gradient"><a href="#Gradient" class="headerlink" title="Gradient"></a>Gradient</h3><p>Let $z &#x3D; f(x, y)$ be diﬀerentiable on a set $S$ that contains the point (x_0 , y_0 ).</p>
+<ol>
+<li><p>The gradient of $f$ is $\nabla (x, y) &#x3D; ⟨ f <em>x (x, y), f</em> y (x, y) ⟩$ .</p>
+</li>
+<li><p>The gradient of $f$ at $(x_0 , y _0 )$ is $\nabla f(x_0 , y_0 )$ &#x3D;$ ⟨ f _x (x _0 , y_0 ), f _y (x _0, y_0 ) ⟩$ .</p>
+</li>
+</ol>
+<p>so the directional derivative of $f$ can be rewritten as $D_{\vec u }f &#x3D; \nabla f \cdot \vec u$</p>
+<h3 id="The-Gradient-and-Directional-Derivatives"><a href="#The-Gradient-and-Directional-Derivatives" class="headerlink" title="The Gradient and Directional Derivatives"></a>The Gradient and Directional Derivatives</h3><p>Let $z &#x3D; f(x, y)$ be diﬀerentiable on a set $S$ with gradient $\nabla f$, let $P &#x3D; (x_0 , y_0 )$ be a point in $S$ and let $u$ be a unit vector.</p>
+<ol>
+<li><p>The maximum value of $D_{\vec u}  f(x_0 , y _0)$ is $|| \nabla f(x_0 , y_0 ) ||$ ; the direction of maximal $z$ increase is $ \nabla f(x_0 , y_0 )$.</p>
+</li>
+<li><p>The minimum value of $D_{\vec u}  f(x_0 , y _0)$) is $-|| \nabla f(x_0 , y_0 ) ||$; the direction of minimal $z $ increase is $- \nabla f(x_0 , y_0 )$..</p>
+</li>
+<li><p>At $P$, $\nabla f(x_0 , y_0 )$. is orthogonal to the level curve passing through $( x_0 , y_0 , f(x_0 , y_0 ) )$ .</p>
+</li>
+</ol>
+<h3 id="Directional-Tangent-Line"><a href="#Directional-Tangent-Line" class="headerlink" title="Directional Tangent Line"></a>Directional Tangent Line</h3><p>Let $z &#x3D; f(x, y)$ be diﬀerentiable on a set $S$ containing $(x _0 , y_0 )$ and let$ \vec u &#x3D; ⟨ u_1 , u_2 ⟩$ be a unit vector.</p>
+<p>$l_x(t) &#x3D; \begin{cases}<br>x &#x3D; x_0 + at \<br>y &#x3D; y_0 + bt \<br>z &#x3D; f(x_0 + at, y_0 + bt)<br>\end{cases}$</p>
+<p>$l_y(t) &#x3D; \begin{cases}<br>x &#x3D; x_0 \<br>y &#x3D; y_0 + bt \<br>z &#x3D; f(x_0, y_0 + bt)<br>\end{cases}$</p>
+<p>$l_{\mathbf{u}}(t) &#x3D; \begin{cases}<br>x &#x3D; x_0 + at \<br>y &#x3D; y_0 + bt \<br>z &#x3D; f(x_0 + at, y_0 + bt)<br>\end{cases}$</p>
+<h3 id="Tangent-Plane"><a href="#Tangent-Plane" class="headerlink" title="Tangent Plane"></a>Tangent Plane</h3><p>Let $z &#x3D; f(x,y)$ be differentiable on a set $S$ containing $(x_0, y_0)$, where $a &#x3D; f_x(x_0, y_0)$, $b &#x3D; f_y(x_0, y_0)$, $\vec n &#x3D; \langle a, b, -1 \rangle$, and $P &#x3D; (x_0, y_0, f(x_0,y_0))$. The plane through $P$ with normal vector $\vec n$ is the tangent plane to $f$ at $P$. The standard form of this plane is:</p>
+<p>$a(x - x_0) + b(y - y_0) - (z - f(x_0, y_0)) &#x3D; 0$</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Defination-of-Vector"><span class="toc-number">1.</span> <span class="toc-text">Defination of Vector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vector-Algebra"><span class="toc-number">2.</span> <span class="toc-text">Vector Algebra</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unit-Vectors"><span class="toc-number">3.</span> <span class="toc-text">Unit Vectors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Standard-Unit-Vectors"><span class="toc-number">4.</span> <span class="toc-text">Standard Unit Vectors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dot-Product"><span class="toc-number">5.</span> <span class="toc-text">Dot Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Orthogonal-Projection"><span class="toc-number">6.</span> <span class="toc-text">Orthogonal Projection</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cross-Product"><span class="toc-number">7.</span> <span class="toc-text">Cross Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-the-Cross-Product"><span class="toc-number">8.</span> <span class="toc-text">Properties of the Cross Product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Cross-Product-and-Angles"><span class="toc-number">9.</span> <span class="toc-text">The Cross Product and Angles</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Equations-of-Lines-in-Space"><span class="toc-number">10.</span> <span class="toc-text">Equations of Lines in Space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Equations-of-a-Plane-in-Standard-and-General-Forms"><span class="toc-number">11.</span> <span class="toc-text">Equations of a Plane in Standard and General Forms</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Distance-from-a-Point-to-a-Plane"><span class="toc-number">12.</span> <span class="toc-text">Distance from a Point to a Plane</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vector%E2%80%93Valued-Functions"><span class="toc-number">13.</span> <span class="toc-text">Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Operations-on-Vector%E2%80%93Valued-Functions"><span class="toc-number">14.</span> <span class="toc-text">Operations on Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Average-Rate-of-Change"><span class="toc-number">15.</span> <span class="toc-text">Average Rate of Change</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limits-of-Vector%E2%80%93Valued-Functions"><span class="toc-number">16.</span> <span class="toc-text">Limits of Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limits-of-Vector%E2%80%93Valued-Functions-1"><span class="toc-number">17.</span> <span class="toc-text">Limits of Vector–Valued Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Function-of-Two-Variables"><span class="toc-number">18.</span> <span class="toc-text">Function of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limit-of-a-Function-of-Two-Variables"><span class="toc-number">19.</span> <span class="toc-text">Limit of a Function of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic-Limit-Properties-of-Functions-of-Two-Variables"><span class="toc-number">20.</span> <span class="toc-text">Basic Limit Properties of Functions of Two Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Continuous"><span class="toc-number">21.</span> <span class="toc-text">Continuous</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Partial-Derivative"><span class="toc-number">22.</span> <span class="toc-text">Partial Derivative</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Second-Partial-Derivative-Mixed-Partial-Derivative"><span class="toc-number">23.</span> <span class="toc-text">Second Partial Derivative, Mixed Partial Derivative</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mixed-Partial-Derivatives"><span class="toc-number">24.</span> <span class="toc-text">Mixed Partial Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Total-Di%EF%AC%80erential"><span class="toc-number">25.</span> <span class="toc-text">Total Diﬀerential</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multivariable-Di%EF%AC%80erentiability"><span class="toc-number">26.</span> <span class="toc-text">Multivariable Diﬀerentiability</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multivariable-Chain-Rule"><span class="toc-number">27.</span> <span class="toc-text">Multivariable Chain Rule</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implicit-Di%EF%AC%80erentiation"><span class="toc-number">28.</span> <span class="toc-text">Implicit Diﬀerentiation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Directional-Derivatives"><span class="toc-number">29.</span> <span class="toc-text">Directional Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gradient"><span class="toc-number">30.</span> <span class="toc-text">Gradient</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Gradient-and-Directional-Derivatives"><span class="toc-number">31.</span> <span class="toc-text">The Gradient and Directional Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Directional-Tangent-Line"><span class="toc-number">32.</span> <span class="toc-text">Directional Tangent Line</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tangent-Plane"><span class="toc-number">33.</span> <span class="toc-text">Tangent Plane</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/05/25/Calculus-Vector/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/05/25/Calculus-Vector/&text=Vector"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/05/25/Calculus-Vector/&is_video=false&description=Vector"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Vector&body=Check out this article: http://example.com/2023/05/25/Calculus-Vector/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/05/25/Calculus-Vector/&title=Vector"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/05/25/Calculus-Vector/&name=Vector&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/05/25/Calculus-Vector/&t=Vector"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2020-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

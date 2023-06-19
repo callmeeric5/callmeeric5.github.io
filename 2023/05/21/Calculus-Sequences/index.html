@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="SequenceA sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$. The terms of a sequence are the values $a(1), a(2), …,a(n)$ whi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sequences">
+<meta property="og:url" content="http://example.com/2023/05/21/Calculus-Sequences/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="SequenceA sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$. The terms of a sequence are the values $a(1), a(2), …,a(n)$ whi">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-21T14:23:53.000Z">
+<meta property="article:modified_time" content="2023-05-25T06:40:53.512Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="Sequences&amp;Series">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Sequences</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+      "CommonHTML": { linebreaks: { automatic: true } }
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/05/25/Calculus-Vector/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2023/05/16/Calculus-Antidifferentiation/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/05/21/Calculus-Sequences/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/05/21/Calculus-Sequences/&text=Sequences"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/05/21/Calculus-Sequences/&is_video=false&description=Sequences"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Sequences&body=Check out this article: http://example.com/2023/05/21/Calculus-Sequences/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/05/21/Calculus-Sequences/&name=Sequences&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/05/21/Calculus-Sequences/&t=Sequences"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Sequence"><span class="toc-number">1.</span> <span class="toc-text">Sequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limit-of-a-Sequence"><span class="toc-number">2.</span> <span class="toc-text">Limit of a Sequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Important-Series"><span class="toc-number">3.</span> <span class="toc-text">Important Series</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Important-Taylor-Series-Expansions"><span class="toc-number">4.</span> <span class="toc-text">Important Taylor Series Expansions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Algebra-of-Power-Series"><span class="toc-number">5.</span> <span class="toc-text">Algebra of Power Series</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Sequences
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-05-21T14:23:53.000Z" class="dt-published" itemprop="datePublished">2023-05-21</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Calculus/">Calculus</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Sequences-Series/" rel="tag">Sequences&Series</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Sequence"><a href="#Sequence" class="headerlink" title="Sequence"></a>Sequence</h3><p>A sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$.</p>
+<p>The terms of a sequence are the values $a(1), a(2), …,a(n)$ which are usually denoted with subscripts as $a_1 , a_2 , ….a_n$</p>
+<p>A sequence $a(n)$ is often denoted as ${a_n}$ .</p>
+<h3 id="Limit-of-a-Sequence"><a href="#Limit-of-a-Sequence" class="headerlink" title="Limit of a Sequence"></a>Limit of a Sequence</h3><p>Let ${a_n}$ be a sequence and let $L$ be a real number. Given any $ε &gt; 0$, if an m can be found such that $| a_n − L | &lt; ε$ for all $n &gt; m$, then we say the limit of ${ a_n }$ , as n approaches inﬁnity, is $L$, denoted $\displaystyle\lim_{n\to\infty}a_n &#x3D; L$</p>
+<p>If $\displaystyle\lim_{n\to\infty}a_n &#x3D; L$exists, we say the sequence <strong>converges</strong>; otherwise, the sequence <strong>diverges</strong>.</p>
+<p>Let ${ a_n }$ be a sequence and let $f(x)$ be a function whose domain contains the positive real numbers where $f(n) &#x3D; a_n$ for all $n$ in $\mathbb{N}$.</p>
+<p>if $\displaystyle\lim_{x\to\infty}f(x) &#x3D; L$, then $\displaystyle\lim_{n\to\infty}a_n &#x3D; L$</p>
+<p><strong>Absolute Value Theorem</strong></p>
+<p>Let ${ a_n }$ be a sequence. If $\displaystyle\lim_{n\to\infty}|a_n| &#x3D; 0$, then$\displaystyle\lim_{n\to\infty}a_n &#x3D; 0$</p>
+<p><strong>Properties of the Limits of Sequences</strong></p>
+<p>Let ${ a_n }$ and ${ b_n}$ be sequences such that $\displaystyle\lim_{n\to\infty}a_n &#x3D; L$ , and $\displaystyle\lim_{n\to\infty}b_n &#x3D; K$ and let c be a real number.</p>
+<p>$$<br>\begin{align*}<br>&amp;\displaystyle\lim_{n\to\infty}(a_n \pm b_n)&#x3D; L \pm K &amp;\displaystyle\lim_{n\to\infty}(a_n&#x2F;b_n) &#x3D; L&#x2F;K (l\neq 0)\<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot b_n &#x3D; L \cdot K<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot c &#x3D; c \cdot L<br>\end{align*}<br>$$<br><strong>Bounded and Unbounded Sequences</strong></p>
+<p>A sequence ${ a_n }$ is said to be bounded if there exist real numbers $m$ and $M$ such that $m &lt; a_n &lt; M$ for all $n$ in $\mathbb{N}$.</p>
+<p>A sequence ${ a_n }$ is said to be unbounded if it is not bounded.</p>
+<p>A sequence ${ a_n }$ is said to be bounded above if there exists an $M$ such that $a_n &lt; M$ for all $n$ in $\mathbb{N}$; it is bounded below if there exists an $m$ such that $m &lt; a_n$ for all $n$ in $\mathbb{N}$.</p>
+<p><strong>Geometric Series Test</strong></p>
+<p>Consider the geometric series $\displaystyle\sum_{n&#x3D;0}^\infty r^n$</p>
+<p>The $n^{th}$ partial sum is: $S_n &#x3D; \displaystyle \frac {1-r^{n+1} }{1-r} (r \neq 1) $. </p>
+<p>The series converges if, and only if, $| r | &lt; 1$.  When $| r | &lt; 1$, $\displaystyle\sum_{n&#x3D;0}^\infty r^n &#x3D; \frac 1 {1-r}$</p>
+<p><strong>p–Series Test</strong></p>
+<p> A general p–series $\displaystyle\sum_{n&#x3D;1}^\infty \frac 1 {(an + b)^p}$ will converge if, and only if $p &gt; 1$.</p>
+<h3 id="Important-Series"><a href="#Important-Series" class="headerlink" title="Important Series"></a>Important Series</h3><ol>
+<li>Geometric series:</li>
+</ol>
+<p>The formula for a geometric series is given by: </p>
+<p>$$\sum_{n&#x3D;0}^{\infty} ar^n &#x3D; \frac{a}{1-r}, \quad \text{if } |r| &lt; 1$$</p>
+<ol start="2">
+<li>Harmonic series:</li>
+</ol>
+<p>The formula for the harmonic series is given by:</p>
+<p>$$\sum_{n&#x3D;1}^{\infty} \frac{1}{n} &#x3D; \infty$$</p>
+<ol start="3">
+<li>Alternating series:</li>
+</ol>
+<p>The formula for an alternating series is given by:</p>
+<p>$$\sum_{n&#x3D;0}^{\infty} (-1)^n a_n &#x3D; a_0 - a_1 + a_2 - a_3 + \cdots$$</p>
+<p>If the alternating series satisfies the conditions of the Alternating Series Test, then the series converges to a value between the first two partial sums.</p>
+<ol start="4">
+<li>Riemann zeta function:</li>
+</ol>
+<p>The Riemann zeta function is given by:</p>
+<p>$$\zeta(s) &#x3D; \sum_{n&#x3D;1}^{\infty} \frac{1}{n^s}$$</p>
+<p>The Riemann zeta function converges for all values of $s$ with real part greater than $1$. In particular, $\zeta(2) &#x3D; \frac{\pi^2}{6}$.</p>
+<ol start="5">
+<li>Taylor series:</li>
+</ol>
+<p>The Taylor seriesof a function $f(x)$ centered at $a$ is given by:</p>
+<p>$$f(x) &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$$</p>
+<p>The value of the Taylor series at $x&#x3D;a$ is equal to $f(a)$.</p>
+<ol start="6">
+<li>Fourier series:</li>
+</ol>
+<p>The Fourier series of a function $f(x)$ with period $2\pi$ is given by:</p>
+<p>$$f(x) &#x3D; \frac{a_0}{2} + \sum_{n&#x3D;1}^{\infty} \left(a_n \cos(nx) + b_n \sin(nx)\right)$$</p>
+<p>where</p>
+<p>$$a_0 &#x3D; \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) dx$$</p>
+<p>$$a_n &#x3D; \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) dx$$</p>
+<p>$$b_n &#x3D; \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) dx$$</p>
+<ol start="7">
+<li>Power series:</li>
+</ol>
+<p>A power series centered at $a$ is given by:</p>
+<p>$$\sum_{n&#x3D;0}^{\infty} c_n (x-a)^n$$</p>
+<p>The value of the power series at $x&#x3D;a$ is equal to $c_0$.</p>
+<ol start="8">
+<li>Binomial series:</li>
+</ol>
+<p>The binomial series is given by:</p>
+<p>$$(1+x)^n &#x3D; \sum_{k&#x3D;0}^{n} \binom{n}{k} x^k$$</p>
+<p>where $\binom{n}{k}$ is the binomial coefficient. In particular,</p>
+<p>$$(1+x)^{-1} &#x3D; \sum_{n&#x3D;0}^{\infty} (-1)^n x^n, \quad \text{if } |x| &lt; 1$$</p>
+<p>$$(1+x)^{1&#x2F;2} &#x3D; \sum_{n&#x3D;0}^{\infty} \binom{1&#x2F;2}{n} x^n, \quad \text{if } |x| &lt; 1$$</p>
+<p>where $\binom{1&#x2F;2}{n} &#x3D; \frac{(-1)^n (2n-1)!!}{2^n n!}$ is the generalized binomial coefficient.</p>
+<ol start="9">
+<li>Exponential series:</li>
+</ol>
+<p>The exponential series is given by:</p>
+<p>$$e^x &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{x^n}{n!}$$</p>
+<p>In particular,</p>
+<p>$$e &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{1}{n!}$$</p>
+<ol start="10">
+<li>Trigonometric series:</li>
+</ol>
+<p>A trigonometric series is given by:</p>
+<p>$$a_0 + \sum_{n&#x3D;1}^{\infty} \left(a_n \cos(nx) + b_n \sin(nx)\right)$$</p>
+<p>where $a_n$ and $b_n$ are constants. The value of the trigonometric series depends on the specific values of $a_n$ and $b_n$, and the function being approximated.</p>
+<p><strong>Taylor’s Theorem</strong></p>
+<p>Let $f(x)$ be a function that is $n+1$ times differentiable on an interval containing $a$. Then, for any $x$ in that interval, there exists a number $c$ between $x$ and $a$ such that</p>
+<p>$$f(x) &#x3D; \sum_{k&#x3D;0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + R_n(x)$$</p>
+<p>where $f^{(k)}(a)$ denotes the $k$th derivative of $f$ evaluated at $a$, and $R_n(x)$ is the remainder term, given by</p>
+<p>$$R_n(x) &#x3D; \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$$</p>
+<p>The remainder term represents the difference between the actual value of $f(x)$ and its Taylor series approximation. The size of the remainder term depends on the value of $f^{(n+1)}(c)$, which can be difficult to estimate in practice.</p>
+<p>The special case $n&#x3D;0$ gives us the first order approximation of $f(x)$ around $a$, which is the linearization of $f$ at $a$:</p>
+<p>$$f(x) \approx f(a) + f’(a)(x-a)$$</p>
+<p>This is the equation for the tangent line to the graph of $f$ at $(a,f(a))$.</p>
+<p><strong>Taylor and Maclaurin Series</strong></p>
+<p>Let f(x) have derivatives of all orders at $x &#x3D; c$.</p>
+<ol>
+<li>The Taylor Series of $f(x)$, centred at $c$ is</li>
+</ol>
+<p>$$<br>\sum_{n&#x3D;0}^\infty \frac {f^{(n)}(c)} {n!}(x-c)^n<br>$$</p>
+<ol start="2">
+<li>Setting c &#x3D; 0 gives the Maclaurin Series of $f(x)$:</li>
+</ol>
+<p>$$<br>\sum_{n&#x3D;0}^\infty \frac {f^{(n)}(0)} {n!}(x-c)^n<br>$$</p>
+<h3 id="Important-Taylor-Series-Expansions"><a href="#Important-Taylor-Series-Expansions" class="headerlink" title="Important Taylor Series Expansions"></a>Important Taylor Series Expansions</h3><ol>
+<li>$\displaystyle e^x &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{x^n}{n!}$, for $-\infty &lt; x &lt; \infty$</li>
+<li>$\displaystyle \sin x &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}$, for $-\infty &lt; x &lt; \infty$</li>
+<li>$\displaystyle \cos x &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n}$, for $-\infty &lt; x &lt; \infty$</li>
+<li>$\displaystyle \frac{1}{1-x} &#x3D; \sum_{n&#x3D;0}^{\infty} x^n$, for $-1 &lt; x &lt; 1$</li>
+<li>$\displaystyle \ln(1+x) &#x3D; \sum_{n&#x3D;1}^{\infty} \frac{(-1)^{n+1}}{n}x^n$, for $-1 &lt; x \leq 1$</li>
+<li>$\displaystyle \arctan x &#x3D; \sum_{n&#x3D;0}^{\infty} \frac{(-1)^n}{2n+1} x^{2n+1}$, for $-1 \leq x \leq 1$</li>
+<li>$\displaystyle \frac{1}{1+x^2} &#x3D; \sum_{n&#x3D;0}^{\infty} (-1)^n x^{2n}$, for $-1 \leq x \leq 1$</li>
+<li>$\displaystyle \sqrt{1+x} &#x3D; \sum_{n&#x3D;0}^{\infty} \binom{1&#x2F;2}{n} x^n$, for $-1 &lt; x \leq 1$</li>
+</ol>
+<h3 id="Algebra-of-Power-Series"><a href="#Algebra-of-Power-Series" class="headerlink" title="Algebra of Power Series"></a>Algebra of Power Series</h3><p>Let $f(x) &#x3D;\displaystyle \sum_{n&#x3D;0}^{\infty} a_nx^n$ and $g(x) &#x3D;\displaystyle \sum_{n&#x3D;0}^{\infty} b_nx^n$ converge absolutely for $| x | &lt; R$, and let $h(x)$ be continuous.<br>$$<br>\begin{align*}</p>
+<ol>
+<li>&amp;f(x) \pm g(x) &#x3D; \sum_{n&#x3D;0}^{\infty} (a_n \pm b_n)x^n \qquad\text{for} |x|&lt;R\</li>
+<li>&amp;f(x) \cdot g(x) &#x3D; (\sum_{n&#x3D;0}^{\infty} a_nx^n)(\sum_{n&#x3D;0}^{\infty} b_nx^n)&#x3D;\sum_{n&#x3D;0}^{\infty} (a_0b_n+a_1b_{n-1}+…+a_nb_0)x^n \quad\text{for} |x|&lt;R\</li>
+<li>&amp;f(h(x))&#x3D;\sum_{n&#x3D;0}^{\infty} (a_n)(h(x))^n \quad\text{for} |h(x)|&lt;R\<br>\end{align*}<br>$$</li>
+</ol>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Sequence"><span class="toc-number">1.</span> <span class="toc-text">Sequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Limit-of-a-Sequence"><span class="toc-number">2.</span> <span class="toc-text">Limit of a Sequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Important-Series"><span class="toc-number">3.</span> <span class="toc-text">Important Series</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Important-Taylor-Series-Expansions"><span class="toc-number">4.</span> <span class="toc-text">Important Taylor Series Expansions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Algebra-of-Power-Series"><span class="toc-number">5.</span> <span class="toc-text">Algebra of Power Series</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/05/21/Calculus-Sequences/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/05/21/Calculus-Sequences/&text=Sequences"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/05/21/Calculus-Sequences/&is_video=false&description=Sequences"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Sequences&body=Check out this article: http://example.com/2023/05/21/Calculus-Sequences/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/05/21/Calculus-Sequences/&title=Sequences"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/05/21/Calculus-Sequences/&name=Sequences&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/05/21/Calculus-Sequences/&t=Sequences"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2020-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
