@@ -14,7 +14,7 @@
 <meta property="og:description" content="SequenceA sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$. The terms of a sequence are the values $a(1), a(2), …,a(n)$ whi">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-05-21T14:23:53.000Z">
-<meta property="article:modified_time" content="2023-05-25T06:40:53.512Z">
+<meta property="article:modified_time" content="2023-06-19T15:49:25.101Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Sequences&amp;Series">
 <meta name="twitter:card" content="summary">
@@ -64,10 +64,10 @@
         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
         processEscapes: true
 			},
-      "CommonHTML": { linebreaks: { automatic: true } }
 		  });
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js' async></script> -->
 	
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -189,7 +189,7 @@
 <p>Let ${ a_n }$ be a sequence. If $\displaystyle\lim_{n\to\infty}|a_n| &#x3D; 0$, then$\displaystyle\lim_{n\to\infty}a_n &#x3D; 0$</p>
 <p><strong>Properties of the Limits of Sequences</strong></p>
 <p>Let ${ a_n }$ and ${ b_n}$ be sequences such that $\displaystyle\lim_{n\to\infty}a_n &#x3D; L$ , and $\displaystyle\lim_{n\to\infty}b_n &#x3D; K$ and let c be a real number.</p>
-<p>$$<br>\begin{align*}<br>&amp;\displaystyle\lim_{n\to\infty}(a_n \pm b_n)&#x3D; L \pm K &amp;\displaystyle\lim_{n\to\infty}(a_n&#x2F;b_n) &#x3D; L&#x2F;K (l\neq 0)\<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot b_n &#x3D; L \cdot K<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot c &#x3D; c \cdot L<br>\end{align*}<br>$$<br><strong>Bounded and Unbounded Sequences</strong></p>
+<p>$$<br>\begin{align*}<br>&amp;\displaystyle\lim_{n\to\infty}(a_n \pm b_n)&#x3D; L \pm K &amp;\displaystyle\lim_{n\to\infty}(a_n&#x2F;b_n) &#x3D; L&#x2F;K (l\neq 0)\\<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot b_n &#x3D; L \cdot K<br>&amp;\displaystyle\lim_{n\to\infty}a_n \cdot c &#x3D; c \cdot L<br>\end{align*}<br>$$<br><strong>Bounded and Unbounded Sequences</strong></p>
 <p>A sequence ${ a_n }$ is said to be bounded if there exist real numbers $m$ and $M$ such that $m &lt; a_n &lt; M$ for all $n$ in $\mathbb{N}$.</p>
 <p>A sequence ${ a_n }$ is said to be unbounded if it is not bounded.</p>
 <p>A sequence ${ a_n }$ is said to be bounded above if there exists an $M$ such that $a_n &lt; M$ for all $n$ in $\mathbb{N}$; it is bounded below if there exists an $m$ such that $m &lt; a_n$ for all $n$ in $\mathbb{N}$.</p>
@@ -295,9 +295,9 @@
 </ol>
 <h3 id="Algebra-of-Power-Series"><a href="#Algebra-of-Power-Series" class="headerlink" title="Algebra of Power Series"></a>Algebra of Power Series</h3><p>Let $f(x) &#x3D;\displaystyle \sum_{n&#x3D;0}^{\infty} a_nx^n$ and $g(x) &#x3D;\displaystyle \sum_{n&#x3D;0}^{\infty} b_nx^n$ converge absolutely for $| x | &lt; R$, and let $h(x)$ be continuous.<br>$$<br>\begin{align*}</p>
 <ol>
-<li>&amp;f(x) \pm g(x) &#x3D; \sum_{n&#x3D;0}^{\infty} (a_n \pm b_n)x^n \qquad\text{for} |x|&lt;R\</li>
-<li>&amp;f(x) \cdot g(x) &#x3D; (\sum_{n&#x3D;0}^{\infty} a_nx^n)(\sum_{n&#x3D;0}^{\infty} b_nx^n)&#x3D;\sum_{n&#x3D;0}^{\infty} (a_0b_n+a_1b_{n-1}+…+a_nb_0)x^n \quad\text{for} |x|&lt;R\</li>
-<li>&amp;f(h(x))&#x3D;\sum_{n&#x3D;0}^{\infty} (a_n)(h(x))^n \quad\text{for} |h(x)|&lt;R\<br>\end{align*}<br>$$</li>
+<li>&amp;f(x) \pm g(x) &#x3D; \sum_{n&#x3D;0}^{\infty} (a_n \pm b_n)x^n \qquad\text{for} |x|&lt;R\\</li>
+<li>&amp;f(x) \cdot g(x) &#x3D; (\sum_{n&#x3D;0}^{\infty} a_nx^n)(\sum_{n&#x3D;0}^{\infty} b_nx^n)&#x3D;\sum_{n&#x3D;0}^{\infty} (a_0b_n+a_1b_{n-1}+…+a_nb_0)x^n \quad\text{for} |x|&lt;R\\</li>
+<li>&amp;f(h(x))&#x3D;\sum_{n&#x3D;0}^{\infty} (a_n)(h(x))^n \quad\text{for} |h(x)|&lt;R\\<br>\end{align*}<br>$$</li>
 </ol>
 
   </div>
