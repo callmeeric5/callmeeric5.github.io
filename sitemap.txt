@@ -11,12 +11,12 @@ http://callmeeric5.github.io/search/index.html
 http://callmeeric5.github.io/tags/index.html
 http://callmeeric5.github.io/categories/index.html
 http://callmeeric5.github.io/
-http://callmeeric5.github.io/tags/Application/
+http://callmeeric5.github.io/tags/Basic/
 http://callmeeric5.github.io/tags/Derivatives-of-function/
 http://callmeeric5.github.io/tags/Integration/
 http://callmeeric5.github.io/tags/Limits-of-function/
 http://callmeeric5.github.io/tags/Vector/
-http://callmeeric5.github.io/tags/Basic/
+http://callmeeric5.github.io/tags/Application/
 http://callmeeric5.github.io/tags/Sequences-Series/
-http://callmeeric5.github.io/categories/Calculus/
 http://callmeeric5.github.io/categories/French/
+http://callmeeric5.github.io/categories/Calculus/
