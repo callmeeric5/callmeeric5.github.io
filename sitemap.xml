@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://callmeeric5.github.io/about/index.html</loc>
+    <loc>http://callmeeric5.life/about/index.html</loc>
     
     <lastmod>2023-06-29</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/05/25/Calculus/Vector/</loc>
+    <loc>http://callmeeric5.life/2023/05/25/Calculus/Vector/</loc>
     
     <lastmod>2023-06-27</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/06/25/Pronunciation/</loc>
+    <loc>http://callmeeric5.life/2023/06/25/Pronunciation/</loc>
     
     <lastmod>2023-06-27</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/05/21/Calculus/Sequences/</loc>
+    <loc>http://callmeeric5.life/2023/05/21/Calculus/Sequences/</loc>
     
     <lastmod>2023-06-20</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2022/11/22/Calculus/Limit/</loc>
+    <loc>http://callmeeric5.life/2022/11/22/Calculus/Limit/</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/06/12/Calculus/Multiple%20integration/</loc>
+    <loc>http://callmeeric5.life/2023/06/12/Calculus/Multiple%20integration/</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/05/16/Calculus/Antidifferentiation/</loc>
+    <loc>http://callmeeric5.life/2023/05/16/Calculus/Antidifferentiation/</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2023/04/25/Calculus/Integration/</loc>
+    <loc>http://callmeeric5.life/2023/04/25/Calculus/Integration/</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/2022/11/25/Calculus/Derivative/</loc>
+    <loc>http://callmeeric5.life/2022/11/25/Calculus/Derivative/</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/search/index.html</loc>
+    <loc>http://callmeeric5.life/search/index.html</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/index.html</loc>
+    <loc>http://callmeeric5.life/tags/index.html</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/categories/index.html</loc>
+    <loc>http://callmeeric5.life/categories/index.html</loc>
     
     <lastmod>2023-06-19</lastmod>
     
@@ -111,7 +111,7 @@
   
 
   <url>
-    <loc>http://callmeeric5.github.io/</loc>
+    <loc>http://callmeeric5.life/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -119,49 +119,49 @@
 
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Basic/</loc>
+    <loc>http://callmeeric5.life/tags/Basic/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Application/</loc>
+    <loc>http://callmeeric5.life/tags/Derivatives-of-function/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Derivatives-of-function/</loc>
+    <loc>http://callmeeric5.life/tags/Application/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Limits-of-function/</loc>
+    <loc>http://callmeeric5.life/tags/Limits-of-function/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Integration/</loc>
+    <loc>http://callmeeric5.life/tags/Integration/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Sequences-Series/</loc>
+    <loc>http://callmeeric5.life/tags/Sequences-Series/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Vector/</loc>
+    <loc>http://callmeeric5.life/tags/Vector/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -170,14 +170,14 @@
 
   
   <url>
-    <loc>http://callmeeric5.github.io/categories/French/</loc>
+    <loc>http://callmeeric5.life/categories/French/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/categories/Calculus/</loc>
+    <loc>http://callmeeric5.life/categories/Calculus/</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
