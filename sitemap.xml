@@ -112,7 +112,7 @@
 
   <url>
     <loc>http://callmeeric5.github.io/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,49 +120,49 @@
   
   <url>
     <loc>http://callmeeric5.github.io/tags/Basic/</loc>
-    <lastmod>2023-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.github.io/tags/Derivatives-of-function/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://callmeeric5.github.io/tags/Application/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.github.io/tags/Integration/</loc>
-    <lastmod>2023-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.github.io/tags/Sequences-Series/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <loc>http://callmeeric5.github.io/tags/Derivatives-of-function/</loc>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://callmeeric5.github.io/tags/Limits-of-function/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.github.io/tags/Integration/</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.github.io/tags/Sequences-Series/</loc>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://callmeeric5.github.io/tags/Vector/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -171,14 +171,14 @@
   
   <url>
     <loc>http://callmeeric5.github.io/categories/French/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://callmeeric5.github.io/categories/Calculus/</loc>
-    <lastmod>2023-06-27</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
