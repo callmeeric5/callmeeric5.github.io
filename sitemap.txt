@@ -1,10 +1,10 @@
+http://callmeeric5.life/2023/05/21/Calculus/Sequences/
+http://callmeeric5.life/2023/05/16/Calculus/Antidifferentiation/
 http://callmeeric5.life/about/index.html
 http://callmeeric5.life/2023/05/25/Calculus/Vector/
 http://callmeeric5.life/2023/06/25/Pronunciation/
-http://callmeeric5.life/2023/05/21/Calculus/Sequences/
 http://callmeeric5.life/2022/11/22/Calculus/Limit/
 http://callmeeric5.life/2023/06/12/Calculus/Multiple%20integration/
-http://callmeeric5.life/2023/05/16/Calculus/Antidifferentiation/
 http://callmeeric5.life/2023/04/25/Calculus/Integration/
 http://callmeeric5.life/2022/11/25/Calculus/Derivative/
 http://callmeeric5.life/search/index.html
@@ -12,11 +12,11 @@ http://callmeeric5.life/tags/index.html
 http://callmeeric5.life/categories/index.html
 http://callmeeric5.life/
 http://callmeeric5.life/tags/Basic/
-http://callmeeric5.life/tags/Application/
-http://callmeeric5.life/tags/Limits-of-function/
 http://callmeeric5.life/tags/Derivatives-of-function/
-http://callmeeric5.life/tags/Sequences-Series/
+http://callmeeric5.life/tags/Limits-of-function/
 http://callmeeric5.life/tags/Integration/
 http://callmeeric5.life/tags/Vector/
+http://callmeeric5.life/tags/Application/
+http://callmeeric5.life/tags/Sequences-Series/
 http://callmeeric5.life/categories/French/
 http://callmeeric5.life/categories/Calculus/
