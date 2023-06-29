@@ -1,7 +1,7 @@
+http://callmeeric5.github.io/about/index.html
 http://callmeeric5.github.io/2023/05/25/Calculus/Vector/
 http://callmeeric5.github.io/2023/06/25/Pronunciation/
 http://callmeeric5.github.io/2023/05/21/Calculus/Sequences/
-http://callmeeric5.github.io/about/index.html
 http://callmeeric5.github.io/2022/11/22/Calculus/Limit/
 http://callmeeric5.github.io/2023/06/12/Calculus/Multiple%20integration/
 http://callmeeric5.github.io/2023/05/16/Calculus/Antidifferentiation/
@@ -12,11 +12,11 @@ http://callmeeric5.github.io/tags/index.html
 http://callmeeric5.github.io/categories/index.html
 http://callmeeric5.github.io/
 http://callmeeric5.github.io/tags/Basic/
-http://callmeeric5.github.io/tags/Application/
 http://callmeeric5.github.io/tags/Derivatives-of-function/
+http://callmeeric5.github.io/tags/Application/
 http://callmeeric5.github.io/tags/Limits-of-function/
-http://callmeeric5.github.io/tags/Integration/
 http://callmeeric5.github.io/tags/Sequences-Series/
+http://callmeeric5.github.io/tags/Integration/
 http://callmeeric5.github.io/tags/Vector/
 http://callmeeric5.github.io/categories/French/
 http://callmeeric5.github.io/categories/Calculus/
