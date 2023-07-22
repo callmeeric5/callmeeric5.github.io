@@ -18,8 +18,8 @@ http://callmeeric5.life/tags/Application/
 http://callmeeric5.life/tags/Derivatives-of-function/
 http://callmeeric5.life/tags/Limits-of-function/
 http://callmeeric5.life/tags/Integration/
-http://callmeeric5.life/tags/Basic/
 http://callmeeric5.life/tags/Sequences-Series/
+http://callmeeric5.life/tags/Basic/
 http://callmeeric5.life/categories/Linear-Algebra/
 http://callmeeric5.life/categories/Calculus/
 http://callmeeric5.life/categories/French/
