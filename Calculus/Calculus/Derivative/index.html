@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="DefinitionInstantaneous rate of change at the point of the function. Presentation in Math,$f’(c)&#x3D;\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Derivative">
+<meta property="og:url" content="http://callmeeric5.life/Calculus/Calculus/Derivative/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="DefinitionInstantaneous rate of change at the point of the function. Presentation in Math,$f’(c)&#x3D;\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-11-25T06:04:05.000Z">
+<meta property="article:modified_time" content="2023-06-19T15:46:59.490Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="Derivatives of function">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Derivative</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M8HRCVL2N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3M8HRCVL2N');
+</script>
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js' async></script> -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/Calculus/Calculus/Integration/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/Calculus/Calculus/Limit/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Calculus/Calculus/Derivative/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&text=Derivative"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&is_video=false&description=Derivative"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Derivative&body=Check out this article: http://callmeeric5.life/Calculus/Calculus/Derivative/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&name=Derivative&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Calculus/Calculus/Derivative/&t=Derivative"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Definition"><span class="toc-number">1.</span> <span class="toc-text">Definition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Common-Derivative-Functions"><span class="toc-number">2.</span> <span class="toc-text">Common Derivative Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-Derivatives"><span class="toc-number">3.</span> <span class="toc-text">Properties of Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chain-Rule"><span class="toc-number">4.</span> <span class="toc-text">Chain Rule</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implicit-Di%EF%AC%80erentiation"><span class="toc-number">5.</span> <span class="toc-text">Implicit Diﬀerentiation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Inverse-Function"><span class="toc-number">6.</span> <span class="toc-text">Inverse Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Common-Inverse-Derivative-Functions"><span class="toc-number">7.</span> <span class="toc-text">Common Inverse Derivative Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extreme-Value"><span class="toc-number">8.</span> <span class="toc-text">Extreme Value</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mean-value-theorem"><span class="toc-number">9.</span> <span class="toc-text">Mean value theorem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Increasing-or-Decreasing"><span class="toc-number">10.</span> <span class="toc-text">Increasing or Decreasing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Concavity"><span class="toc-number">11.</span> <span class="toc-text">Concavity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Newton%E2%80%99s-Method"><span class="toc-number">12.</span> <span class="toc-text">Newton’s Method</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Related-Rates"><span class="toc-number">13.</span> <span class="toc-text">Related Rates</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Differentials"><span class="toc-number">14.</span> <span class="toc-text">Differentials</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Numerical-Integration"><span class="toc-number">15.</span> <span class="toc-text">Numerical Integration</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Derivative
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-11-25T06:04:05.000Z" class="dt-published" itemprop="datePublished">2022-11-25</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Calculus/">Calculus</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Derivatives-of-function/" rel="tag">Derivatives of function</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><p>Instantaneous rate of change at the point of the function. Presentation in Math,$f’(c)&#x3D;\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c))$, the equation is $l(x)&#x3D;f’(c)(x-c)+f(c)$.</p>
+<p>If we draw the derivatives of each point in the graph, we can get a new function called the derivative function, the equation is $f’(x)&#x3D;\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)} h$, It also writen as $f’(x)&#x3D;y’&#x3D;\dfrac {dy} {dx}&#x3D;\dfrac {df} {dx}&#x3D;\dfrac d {dx}(y)&#x3D;\dfrac d {dx}(f)$</p>
+<h3 id="Common-Derivative-Functions"><a href="#Common-Derivative-Functions" class="headerlink" title="Common Derivative Functions"></a>Common Derivative Functions</h3><p>$$<br>\begin{aligned}<br>&amp;\frac d {dx}(c) &#x3D; 0 \qquad &amp;\frac d {dx}(ax) &#x3D; a\\<br>&amp;\frac d {dx}(x^n) &#x3D; nx^{n-1} \qquad &amp;\frac d {dx}(e^x) &#x3D; e^x\\<br>&amp;\frac d {dx}(sinx) &#x3D; cosx \qquad &amp;\frac d {dx}(cosx) &#x3D; -sinx\\<br>&amp;\frac d {dx}(tanx) &#x3D; sec^2x \qquad &amp;\frac d {dx}(lnx) &#x3D; \frac 1 x\\<br>&amp;\frac d {dx}(a^x) &#x3D; a^xlna \qquad &amp;\frac d{dx}(x^x) &#x3D; x^x(lnx+1)<br>\end{aligned}<br>$$</p>
+<h3 id="Properties-of-Derivatives"><a href="#Properties-of-Derivatives" class="headerlink" title="Properties of Derivatives"></a>Properties of Derivatives</h3><p>$$<br>\begin{aligned}<br>&amp;\text{Sum Rule:} \\<br>&amp;\frac d {dx}(f(x)\pm g(x)) &#x3D; \frac d {dx}(f(x))\pm \frac d {dx}(g(x))&#x3D;f’(x) \pm g’(x)\\<br>&amp;\text{Constant Multiple Rule:} \\<br>&amp;\frac d {dx}(cf(x)) &#x3D; c\frac d {dx}(f(x)) &#x3D; cf’(x) \\<br>&amp;\text{Product Rule:}\\<br>&amp;\frac d {dx}(f(x)g(x)) &#x3D; f’(x)g(x)+f(x)g’(x)\\<br>&amp;\text{Quotient Rule:} \\<br>&amp;\frac d {dx}(\frac {f(x)} {g(x)}) &#x3D; \frac {f’(x)g(x)-f(x)g’(x)} {g^2(x)}<br>\end{aligned}<br>$$</p>
+<h3 id="Chain-Rule"><a href="#Chain-Rule" class="headerlink" title="Chain Rule"></a>Chain Rule</h3><p>$f\circ g&#x3D;f(g(x))$ means the composition of $f(x)$ and $g(x)$, the range of $g(x)$ is the interval of $f(x)$.</p>
+<p>If we want to get the derivative of $y&#x3D;f(g(x))$, use the <strong>chain rule</strong>:</p>
+<p>$y’&#x3D;f’(g(x))\cdot g’(x)$, we often use $u&#x3D;g(x)$ to present it:<br>$$<br>\begin{aligned}<br>&amp;\frac d {dy} u^n &#x3D; n(u)^{n-1}\cdot u’ \qquad &amp;\frac d {dy} cosu &#x3D; -sinu\cdot u’\\<br>&amp;\frac d {dy} e^{u} &#x3D; e^u\cdot u’\qquad &amp;\frac d {dy} tanu &#x3D; sec^2u\cdot u’\\<br>&amp;\frac d {dy} sinu &#x3D; cosu\cdot u’\\<br>\end{aligned}<br>$$</p>
+<h3 id="Implicit-Diﬀerentiation"><a href="#Implicit-Diﬀerentiation" class="headerlink" title="Implicit Diﬀerentiation"></a>Implicit Diﬀerentiation</h3><p>We have known $\dfrac d {dx} f(g(x)) &#x3D; f’(g(x))\cdot g’(x)$, let $y&#x3D;g(x)$, we can write as $\dfrac d {dx} f(y) &#x3D; f’(y)\cdot y’&#x3D;f’(y) \dfrac {dy} {dx}$ </p>
+<p>For instance, how to get $y’$ of the function $x^2+y^2&#x3D;1$?<br>$$<br>\begin{aligned}<br>&amp;(x^2+y^2)’&#x3D;1’\\<br>&amp;2x+2y\cdot y’&#x3D;0 \qquad…….\text{Let $f(y)&#x3D;y^2$}\\<br>&amp;y’&#x3D;-\frac y x<br>\end{aligned}<br>$$</p>
+<h3 id="Inverse-Function"><a href="#Inverse-Function" class="headerlink" title="Inverse Function"></a>Inverse Function</h3><p>Let $f(x)$and $g(x)$ be two <strong>one-to-one</strong> functions. If $(f\circ g)(x)&#x3D;f(g(x))&#x3D;x$  then we say that $f(x)$ and $g(x)$ are inverses of each other. We denote $g(x)$ (the inverse of $f(x)$ by $g(x)&#x3D;f^{−1}(x)$.</p>
+<p><em><strong>Attention: $f^{-1}(x) \neq \dfrac 1 {f(x)}$, $f^{-1}$ is a symbol not a exponentiation.</strong></em></p>
+<p>Let $y&#x3D;g(x)$ and we have known $f(y)&#x3D;x$ so that<br>$$<br>\begin{aligned}<br>\dfrac d {dx} f(y) &amp;&#x3D; \dfrac d {dx} x\\<br>f’(y)\cdot y’ &amp;&#x3D; 1\\<br>y’ &amp;&#x3D;\frac 1 {f’(y)}\\<br>y’&amp;&#x3D;(f^{-1})’(x)&#x3D;g’(x)&#x3D;\frac 1 {f’(g(x))}<br>\end{aligned}<br>$$</p>
+<h3 id="Common-Inverse-Derivative-Functions"><a href="#Common-Inverse-Derivative-Functions" class="headerlink" title="Common Inverse Derivative Functions"></a>Common Inverse Derivative Functions</h3><p>$$<br>\begin{aligned}<br>&amp;\frac d {dx}(sin^{-1}x) &#x3D; \dfrac 1 {\sqrt {1-x^2}} \qquad &amp;\frac d {dx}(cos^{-1}x) &#x3D; -\dfrac 1 {\sqrt {1-x^2}}\\<br>&amp;\frac d {dx}(tan^{-1}x) &#x3D; \dfrac 1 {1+x^2} \qquad<br>\end{aligned}<br>$$</p>
+<h3 id="Extreme-Value"><a href="#Extreme-Value" class="headerlink" title="Extreme Value"></a>Extreme Value</h3><p>If $f$ is continuous in a closed interval $I&#x3D;[a,b]$, $f$ has both maximum and minimum values called extreme values.</p>
+<p>We can find the extreme value by derivative. When $f’(c)&#x3D;0 \ or\ f’(c)\ is \ not \ definied$, $c$ is the critical value of the function. We will get extreme value from $a$ or $b$ or the critical value $c$.</p>
+<h3 id="Mean-value-theorem"><a href="#Mean-value-theorem" class="headerlink" title="Mean value theorem"></a>Mean value theorem</h3><p>If $f$ is continuous in a closed interval $I&#x3D;[a,b]$, and differentiable on an open interval $I$, it exists a value $c$ in interval $I$(a&lt;c&lt;b), such that $f’(c) &#x3D;\dfrac {f(b)-f(a)} {b-a}$. Also, if $f(a) &#x3D; f(b)$, there is some c in $(a,b)$, such that $f’(c) &#x3D; 0$</p>
+<h3 id="Increasing-or-Decreasing"><a href="#Increasing-or-Decreasing" class="headerlink" title="Increasing or Decreasing"></a>Increasing or Decreasing</h3><p>Let $f$ be a continuous function on $[a,b]$ and differentiable on $(a,b)$:</p>
+<ul>
+<li>$f’(c)&gt;0$ for all $c \ in \ (a,b)$, then $f$ is increasing on $[a,b]$</li>
+<li>$f’(c)&lt;0$ for all $c \ in \ (a,b)$, then $f$ is decreasing on $[a,b]$</li>
+<li>$f’(c)&#x3D;0$ for all $c \ in \ (a,b)$, then $f$ is constant on $[a,b]$</li>
+</ul>
+<p>We can find critical values of $f$, divide $I$ into subintervals, then pick any values in the subinterval and find its derivative.</p>
+<h3 id="Concavity"><a href="#Concavity" class="headerlink" title="Concavity"></a>Concavity</h3><p>Suppose $f$ is differentiable on an interval I. The graph of f is concave up if $f’’&gt; 0 \ on \ I$, and is concave down if $f’’&lt; 0\ on\ I$. If $(c, f(c))$ is a point of inﬂection on the graph of $f$, then either $f’’(c) &#x3D; 0$ or $f’’$ is not deﬁned at $c$.</p>
+<ul>
+<li>If $f’’(c) &gt; 0$, then $f$ has a local minimum at $(c, f(c))$.</li>
+<li>If $f’’ (c) &lt; 0$, then $f$ has a local maximum at $(c, f(c))$.</li>
+</ul>
+<h3 id="Newton’s-Method"><a href="#Newton’s-Method" class="headerlink" title="Newton’s Method"></a>Newton’s Method</h3><p>Let $f$ be a diﬀerentiable function on an interval I with a root in I, $ x_{n+1} &#x3D; x_n - \dfrac {f(x)} {f’(x)}$ (Because the tangent line of $f$ will meet the x-axis). Sometimes, it is hard to use Newtons’s Method because of the uncertainty of $f(x_0)$</p>
+<h3 id="Related-Rates"><a href="#Related-Rates" class="headerlink" title="Related Rates"></a>Related Rates</h3><p>When two quantities are related by an equation, knowing the value of one quantity can determine the value of the other.</p>
+<h3 id="Differentials"><a href="#Differentials" class="headerlink" title="Differentials"></a>Differentials</h3><p>Let $y &#x3D; f(x)$ be diﬀerentiable. The diﬀerential of $x$, denoted $dx$, is any nonzero real number (usually taken to be a small number). The diﬀerential of $y$, denoted $dy$, is $ dy &#x3D; f’(x)dx$</p>
+<h3 id="Numerical-Integration"><a href="#Numerical-Integration" class="headerlink" title="Numerical Integration"></a>Numerical Integration</h3><p>Let f be a continuous function on $[a, b]$, let $n$ be a positive integer, and let $\Delta x &#x3D; \displaystyle\frac {b-a} n$.Set $x_1 &#x3D; a, x_x&#x3D; a + \Delta x, . . ., x_i &#x3D; a + (i − 1)\Delta x, x_n+1 &#x3D; b$. Consider $\displaystyle\int_a^b f(x)dx$<br>$$<br>\begin{align*}<br>&amp;\text {Left Hand Rule}: \displaystyle\int_a^b f(x)dx \approx \Delta x[f(x_1)+f(x_2)+…+f(x_n)]\\<br>&amp;\text {Right Hand Rule}: \displaystyle\int_a^b f(x)dx \approx \Delta x[f(x_2)+f(x_3)+…+f(x_{n+1})]\\<br>&amp;\text {Trapezoidal Rule}:\displaystyle\int_a^b f(x)dx \approx \frac {\Delta x} 2 [f(x_1)+2f(x_2)+…+2f(x_n)+f(x_{n+1})]\\<br>&amp;\text {Simpson’s Rule}:\displaystyle\int_a^b f(x)dx \approx \frac {\Delta x} 3 [f(x_1)+4f(x_2)+2f(x_3)…+2f(x_{n-1})+4f(x_n)+f(x_{n+1})]\text{(n is even)}\\<br>\end{align*}<br>$$</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Category</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Definition"><span class="toc-number">1.</span> <span class="toc-text">Definition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Common-Derivative-Functions"><span class="toc-number">2.</span> <span class="toc-text">Common Derivative Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-Derivatives"><span class="toc-number">3.</span> <span class="toc-text">Properties of Derivatives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chain-Rule"><span class="toc-number">4.</span> <span class="toc-text">Chain Rule</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implicit-Di%EF%AC%80erentiation"><span class="toc-number">5.</span> <span class="toc-text">Implicit Diﬀerentiation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Inverse-Function"><span class="toc-number">6.</span> <span class="toc-text">Inverse Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Common-Inverse-Derivative-Functions"><span class="toc-number">7.</span> <span class="toc-text">Common Inverse Derivative Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extreme-Value"><span class="toc-number">8.</span> <span class="toc-text">Extreme Value</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mean-value-theorem"><span class="toc-number">9.</span> <span class="toc-text">Mean value theorem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Increasing-or-Decreasing"><span class="toc-number">10.</span> <span class="toc-text">Increasing or Decreasing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Concavity"><span class="toc-number">11.</span> <span class="toc-text">Concavity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Newton%E2%80%99s-Method"><span class="toc-number">12.</span> <span class="toc-text">Newton’s Method</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Related-Rates"><span class="toc-number">13.</span> <span class="toc-text">Related Rates</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Differentials"><span class="toc-number">14.</span> <span class="toc-text">Differentials</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Numerical-Integration"><span class="toc-number">15.</span> <span class="toc-text">Numerical Integration</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Calculus/Calculus/Derivative/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&text=Derivative"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&is_video=false&description=Derivative"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Derivative&body=Check out this article: http://callmeeric5.life/Calculus/Calculus/Derivative/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&title=Derivative"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Calculus/Calculus/Derivative/&name=Derivative&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Calculus/Calculus/Derivative/&t=Derivative"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

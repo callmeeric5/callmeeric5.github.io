@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Antiderivatives and Indeﬁnite IntegralsLet a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) &#x3D; f(x)$. The set of all antiderivatives of $f(x)$ is the">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Integration">
+<meta property="og:url" content="http://callmeeric5.life/Calculus/Calculus/Integration/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="Antiderivatives and Indeﬁnite IntegralsLet a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) &#x3D; f(x)$. The set of all antiderivatives of $f(x)$ is the">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-04-25T06:40:43.000Z">
+<meta property="article:modified_time" content="2023-06-19T15:48:16.367Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="Derivatives of function">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Integration</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M8HRCVL2N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3M8HRCVL2N');
+</script>
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js' async></script> -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/Calculus/Calculus/Antidifferentiation/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/Calculus/Calculus/Derivative/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Calculus/Calculus/Integration/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Calculus/Calculus/Integration/&text=Integration"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Calculus/Calculus/Integration/&is_video=false&description=Integration"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Integration&body=Check out this article: http://callmeeric5.life/Calculus/Calculus/Integration/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Calculus/Calculus/Integration/&name=Integration&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Calculus/Calculus/Integration/&t=Integration"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Antiderivatives-and-Inde%EF%AC%81nite-Integrals"><span class="toc-number">1.</span> <span class="toc-text">Antiderivatives and Indeﬁnite Integrals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Definite-Integral"><span class="toc-number">2.</span> <span class="toc-text">Definite Integral</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-the-De%EF%AC%81nite-Integral"><span class="toc-number">3.</span> <span class="toc-text">Properties of the Deﬁnite Integral</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-Summations"><span class="toc-number">4.</span> <span class="toc-text">Properties of Summations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Fundamental-Theorem-of-Calculus"><span class="toc-number">5.</span> <span class="toc-text">The Fundamental Theorem of Calculus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Area-Between-Curves"><span class="toc-number">6.</span> <span class="toc-text">Area Between Curves</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Mean-Value-Theorem-of-Integration"><span class="toc-number">7.</span> <span class="toc-text">The Mean Value Theorem of Integration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Average-Value-of-f-on-a-b"><span class="toc-number">8.</span> <span class="toc-text">The Average Value of f on [a, b]</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Integration
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-04-25T06:40:43.000Z" class="dt-published" itemprop="datePublished">2023-04-25</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Calculus/">Calculus</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Derivatives-of-function/" rel="tag">Derivatives of function</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Antiderivatives-and-Indeﬁnite-Integrals"><a href="#Antiderivatives-and-Indeﬁnite-Integrals" class="headerlink" title="Antiderivatives and Indeﬁnite Integrals"></a>Antiderivatives and Indeﬁnite Integrals</h3><p>Let a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) &#x3D; f(x)$.</p>
+<p>The set of all antiderivatives of $f(x)$ is the indeﬁnite integral of $f$, denoted by $\displaystyle\int f(x) dx &#x3D; F(x)+C$ </p>
+<h3 id="Definite-Integral"><a href="#Definite-Integral" class="headerlink" title="Definite Integral"></a>Definite Integral</h3><p>The deﬁnite integral of $f$ on $[a, b]$ is the total signed area of $f$ on $[a, b]$, denoted</p>
+<p>$\displaystyle\int _a ^bf(x) dx$ </p>
+<h3 id="Properties-of-the-Deﬁnite-Integral"><a href="#Properties-of-the-Deﬁnite-Integral" class="headerlink" title="Properties of the Deﬁnite Integral"></a>Properties of the Deﬁnite Integral</h3><p>Let $f$ and $g$ be deﬁned on a closed interval $I$ that contains the values $a, b$ and $c$, and let $k$ be a constant. The following hold:<br>$$<br>\begin{align*}<br>&amp; \displaystyle\int _a ^a f(x) dx &#x3D; 0 \\<br>&amp; \displaystyle\int _a ^bf(x) dx + \displaystyle\int _b ^c f(x) dx  &#x3D; \displaystyle\int _a ^c f(x) dx\\<br>&amp; \displaystyle\int _a ^b f(x) dx &#x3D; - \displaystyle\int _b ^a f(x) dx\\<br>&amp;\displaystyle\int _a ^b ((f(x) \pm g(x)) dx &#x3D; \displaystyle\int_a^b f(x)dx \pm \displaystyle\int_a^b g(x)dx\\<br>&amp;\displaystyle\int_a^b k \cdot f(x)dx &#x3D; k\cdot\displaystyle\int_a^bf(x)dx<br>\end{align*}<br>$$</p>
+<h3 id="Properties-of-Summations"><a href="#Properties-of-Summations" class="headerlink" title="Properties of Summations"></a>Properties of Summations</h3><p>$$<br>\begin{align*}<br>&amp;\sum_{i&#x3D;1}^n c &#x3D; c\cdot n<br>&amp;\sum_{i&#x3D;1}^n i &#x3D;\frac {(n+1)n} 2 \\<br>&amp;\sum_{i&#x3D;m}^n (a_i \pm b_i) &#x3D; \sum_{i&#x3D;m}^n a_i \pm \sum_{i&#x3D;m}^n b_i<br>&amp;\sum_{i&#x3D;1}^n i^2 &#x3D; \frac {n(n+1)(2n+1)} 6\\<br>&amp;\sum_{i&#x3D;m}^n c\cdot a_i &#x3D; c\cdot \sum_{i&#x3D;m}^n a_i<br>&amp;\sum_{i&#x3D;1}^n i^3 &#x3D;  (\frac {(n+1)n} 2)^2 \\<br>&amp;\sum_{i&#x3D;m}^j a_i + \sum_{i&#x3D;j+1}^n a_i &#x3D; \sum_{i&#x3D;m}^n a_i\\<br>\end{align*}<br>$$</p>
+<h3 id="The-Fundamental-Theorem-of-Calculus"><a href="#The-Fundamental-Theorem-of-Calculus" class="headerlink" title="The Fundamental Theorem of Calculus"></a>The Fundamental Theorem of Calculus</h3><ol>
+<li><p>Let f be continuous on [a, b] and let $F(x) &#x3D; \displaystyle\int_a^x f(t) dt$. Then $F$ is a diﬀerentiable function on (a, b), and $F ′ (x) &#x3D; f(x)$.</p>
+</li>
+<li><p>Let f be continuous on [a, b] and let $F$ be any antiderivative of $f$. Then $\displaystyle \int_a^b f(x) dx &#x3D; F(b) − F(a)&#x3D;F(x)|_a^b$.</p>
+</li>
+</ol>
+<h3 id="Area-Between-Curves"><a href="#Area-Between-Curves" class="headerlink" title="Area Between Curves"></a>Area Between Curves</h3><p>$\displaystyle \int_a^b f(x) dx - \displaystyle \int_a^b g(x) dx &#x3D; \displaystyle \int_a^b (f(x)-g(x)) dx$</p>
+<h3 id="The-Mean-Value-Theorem-of-Integration"><a href="#The-Mean-Value-Theorem-of-Integration" class="headerlink" title="The Mean Value Theorem of Integration"></a>The Mean Value Theorem of Integration</h3><p>Let f be continuous on $[a, b]$. There exists a value $c \ in \ [a, b]$ such that</p>
+<p>$\displaystyle \int_a^b f(x) dx &#x3D; f(c)\cdot(a-b)$</p>
+<h3 id="The-Average-Value-of-f-on-a-b"><a href="#The-Average-Value-of-f-on-a-b" class="headerlink" title="The Average Value of f on [a, b]"></a>The Average Value of f on [a, b]</h3><p> Let $f$ be continuous on $[a, b]$. The average value of $f$ on $[a, b]$ is $f(c)$, where $c$ is a value in $[a, b]$ guaranteed by the Mean Value Theorem.</p>
+<p>Mean Value of $f$ on $[a,b]$  &#x3D; $\displaystyle \frac 1 {b-a}\displaystyle \int_a^b f(x) dx$</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Category</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Antiderivatives-and-Inde%EF%AC%81nite-Integrals"><span class="toc-number">1.</span> <span class="toc-text">Antiderivatives and Indeﬁnite Integrals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Definite-Integral"><span class="toc-number">2.</span> <span class="toc-text">Definite Integral</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-the-De%EF%AC%81nite-Integral"><span class="toc-number">3.</span> <span class="toc-text">Properties of the Deﬁnite Integral</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties-of-Summations"><span class="toc-number">4.</span> <span class="toc-text">Properties of Summations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Fundamental-Theorem-of-Calculus"><span class="toc-number">5.</span> <span class="toc-text">The Fundamental Theorem of Calculus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Area-Between-Curves"><span class="toc-number">6.</span> <span class="toc-text">Area Between Curves</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Mean-Value-Theorem-of-Integration"><span class="toc-number">7.</span> <span class="toc-text">The Mean Value Theorem of Integration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Average-Value-of-f-on-a-b"><span class="toc-number">8.</span> <span class="toc-text">The Average Value of f on [a, b]</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Calculus/Calculus/Integration/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Calculus/Calculus/Integration/&text=Integration"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Calculus/Calculus/Integration/&is_video=false&description=Integration"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Integration&body=Check out this article: http://callmeeric5.life/Calculus/Calculus/Integration/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Calculus/Calculus/Integration/&title=Integration"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Calculus/Calculus/Integration/&name=Integration&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Calculus/Calculus/Integration/&t=Integration"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

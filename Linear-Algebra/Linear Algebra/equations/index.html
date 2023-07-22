@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Linear equationsAn equation in the unknowns $x, y,z,…$ is called linear if both sides of the equation are a sum of (constant) multiples of $x, y,z,…,$ plus an optional constant. For instance, $3x + 4y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="System of linear equations">
+<meta property="og:url" content="http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="Linear equationsAn equation in the unknowns $x, y,z,…$ is called linear if both sides of the equation are a sum of (constant) multiples of $x, y,z,…,$ plus an optional constant. For instance, $3x + 4y">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-07-01T05:58:14.000Z">
+<meta property="article:modified_time" content="2023-07-02T06:13:16.516Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="blog,artificial intelligence,math,caculus,machine learning,data science">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>System of linear equations</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M8HRCVL2N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3M8HRCVL2N');
+</script>
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js' async></script> -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/Linear-Algebra/Geometry/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/French/French/Pronunciation/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&text=System of linear equations"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&is_video=false&description=System of linear equations"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=System of linear equations&body=Check out this article: http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&name=System of linear equations&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&t=System of linear equations"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-equations"><span class="toc-number">1.</span> <span class="toc-text">Linear equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Line-Plane-Space"><span class="toc-number">2.</span> <span class="toc-text">Line, Plane, Space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Row-Reduction"><span class="toc-number">3.</span> <span class="toc-text">Row Reduction</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#The-Elimination-Method"><span class="toc-number">3.1.</span> <span class="toc-text">The Elimination Method</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Parametric-form"><span class="toc-number">4.</span> <span class="toc-text">Parametric form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix"><span class="toc-number">5.</span> <span class="toc-text">Matrix</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        System of linear equations
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-07-01T05:58:14.000Z" class="dt-published" itemprop="datePublished">2023-07-01</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Linear-Algebra/">Linear Algebra</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Linear-equations"><a href="#Linear-equations" class="headerlink" title="Linear equations"></a>Linear equations</h3><p>An equation in the unknowns $x, y,z,…$ is called linear if both sides of the equation are a sum of (constant) multiples of $x, y,z,…,$ plus an optional constant. For instance, $3x + 4y &#x3D; 2z$ and $−x − z &#x3D; 100$. A system of linear equations is a collection of several linear equations, as below:<br>$$<br>\begin{cases}<br>x + 2y &#x3D; -3 \\<br>x + 2y &#x3D; 3<br>\end{cases}<br>$$<br>A system of equations is called <strong>inconsistent</strong> if it has no solutions. It is called <strong>consistent</strong> otherwise.</p>
+<h3 id="Line-Plane-Space"><a href="#Line-Plane-Space" class="headerlink" title="Line, Plane, Space"></a>Line, Plane, Space</h3><p>$R_n$ is the set of all ordered n-tuples of real numbers like $(x_1 , x_2 , x_3 ,…, x_n).$ Particularly, when $n&#x3D;1,2, \text{or}3$ , it represents line, plane and space respectively</p>
+<h3 id="Row-Reduction"><a href="#Row-Reduction" class="headerlink" title="Row Reduction"></a>Row Reduction</h3><h4 id="The-Elimination-Method"><a href="#The-Elimination-Method" class="headerlink" title="The Elimination Method"></a>The Elimination Method</h4><p>We can do the scaling, replacement and swap to edit our equations which does not change the solution set of the corresponding linear equations. As the system of linear equations below:<br>$$<br>\begin{cases}<br>x + 2y + 3z &#x3D; 6\\<br>2x− 3y + 2z &#x3D; 14\\<br>3x + y − z &#x3D; −2<br>\end{cases}<br>$$<br>Also can be denoted as augmented matrix.:<br>$$<br>\left[<br>\begin{array}{ccc|c}<br>1 &amp; 2 &amp; 3 &amp; 6 \\<br>2 &amp; -3 &amp; 2 &amp; 14 \\<br>3 &amp; 1 &amp; -1 &amp; -2<br>\end{array}<br>\right]<br>$$<br>A matrix is in row echelon form if it matches points(1:4) or a reduced row echelon if it matches all:</p>
+<ol>
+<li>All zero rows are at the bottom.</li>
+<li>The ﬁrst nonzero entry of a row is to the right of the ﬁrst nonzero entry of the row above.</li>
+<li>Below the ﬁrst nonzero entry of a row, all entries are zero.</li>
+<li>A pivot is the ﬁrst nonzero entry of a row of a matrix in row echelon form.</li>
+<li>Each pivot is equal to 1.</li>
+<li>Each pivot is the only nonzero entry in its column.</li>
+</ol>
+<p>It can be writed as :<br>$$<br>\left[<br>\begin{array}{ccc|c}<br>1 &amp; 0 &amp; 0 &amp; 1 \\<br>0 &amp; 1 &amp; 0 &amp; -2 \\<br>0 &amp; 0 &amp; 1 &amp; 3<br>\end{array}<br>\right]<br>$$</p>
+<h3 id="Parametric-form"><a href="#Parametric-form" class="headerlink" title="Parametric form"></a>Parametric form</h3><p>The parametric form of the solution set of a consistent system of linear equations is obtained as follows.</p>
+<ol>
+<li>Write the system as an augmented matrix.</li>
+<li>Row reduce to reduced row echelon form.</li>
+<li>Write the corresponding (solved) system of linear equations.</li>
+<li>Move all free variables to the right hand side of the equations.</li>
+</ol>
+<p>We can write the former equations in Parametric form as:<br>$$<br>\begin{align*}<br>&amp;\begin{cases}<br>2x + y + 12z &#x3D; 1\\<br>x + 2y + 9z &#x3D; −1<br>\end{cases}\\<br>&amp;\text{in Parametric form:}\\<br>&amp;\begin{cases}<br>x &#x3D; 1 − 5z\\<br>y &#x3D; −1 − 2z<br>\end{cases}\\<br>&amp;\text{also can be written as a parameterized equation for the same line:}\\<br>&amp;(x, y, z) &#x3D; (1 − 5z, −1 − 2z, z)<br>\end{align*}<br>$$</p>
+<h3 id="Matrix"><a href="#Matrix" class="headerlink" title="Matrix"></a>Matrix</h3><p>A matrix is defined to be a rectangular array of numbers, like this:<br>$$<br>\begin{equation*}<br>A &#x3D;<br>\begin{bmatrix}<br>a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\<br>a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\<br>\vdots &amp; \vdots &amp; \vdots &amp; \vdots \\<br>a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}<br>\end{bmatrix}<br>\end{equation*}<br>$$</p>
+<p>whose dimension is $m$ by $n$. $A$ is called square if $m &#x3D; n$. The numbers $a_{ij}$ are referred to as the elements of $A$.</p>
+<p>A k-by-1 matrix is called a column vector and a 1-by-k matrix is called a row vector. The coefficients in row $i$ of the matrix $A$ determine a row vector $A_i &#x3D; (a_{i1}, a_{i2}, …, a_{in})$, and the coefficients of column $j$ of $A$ determine a column vector $A_j &#x3D; \langle a_{1j}, a_{2j}, . . . , a_{mj} \rangle.$</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Category</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-equations"><span class="toc-number">1.</span> <span class="toc-text">Linear equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Line-Plane-Space"><span class="toc-number">2.</span> <span class="toc-text">Line, Plane, Space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Row-Reduction"><span class="toc-number">3.</span> <span class="toc-text">Row Reduction</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#The-Elimination-Method"><span class="toc-number">3.1.</span> <span class="toc-text">The Elimination Method</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Parametric-form"><span class="toc-number">4.</span> <span class="toc-text">Parametric form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix"><span class="toc-number">5.</span> <span class="toc-text">Matrix</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&text=System of linear equations"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&is_video=false&description=System of linear equations"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=System of linear equations&body=Check out this article: http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&title=System of linear equations"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&name=System of linear equations&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/&t=System of linear equations"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
