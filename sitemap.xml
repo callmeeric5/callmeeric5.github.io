@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://callmeeric5.life/Basic/French/week1/</loc>
+    <loc>http://callmeeric5.life/French/French/week1/</loc>
     
     <lastmod>2023-10-15</lastmod>
     
@@ -153,13 +153,6 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/tags/French/</loc>
-    <lastmod>2023-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://callmeeric5.life/tags/Vector/</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -181,13 +174,6 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/tags/Limits-of-function/</loc>
-    <lastmod>2023-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://callmeeric5.life/tags/Sequences-Series/</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -201,17 +187,17 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://callmeeric5.life/categories/French/</loc>
+    <loc>http://callmeeric5.life/tags/Limits-of-function/</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>http://callmeeric5.life/categories/Basic/</loc>
+    <loc>http://callmeeric5.life/categories/French/</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
