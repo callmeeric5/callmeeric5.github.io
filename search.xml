@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Data Privacy</title>
+      <link href="/Data/Privacy/"/>
+      <url>/Data/Privacy/</url>
+      
+        <content type="html"><![CDATA[<h3 id="What-is-data"><a href="#What-is-data" class="headerlink" title="What is data?"></a>What is data?</h3><p>Data are the facts and statistics collected together for reference or analysis according to Oxford Dict.</p><p>There is a DIWD pyramid to help us understand and use data, as following:</p><p><strong>Data</strong> (Base, 1st): represents raw, unprocessed facts and figures. </p><p><strong>Information</strong> (2nd): It results from organizing and processing data to provide context and relevance. Information answers the questions of who, what, where, and when</p><p><strong>Knowledge</strong> (3rd): Knowledge is a step higher than information. It goes beyond “what” and “where” to address “how” and “why.” Knowledge is derived from analyzing and understanding information in a way that allows you to make decisions, solve problems, or create new insights. </p><p><strong>Wisdom</strong> (Top, 4th): It involves the ability to make sound judgments and decisions based on knowledge and experience. Wisdom goes beyond just understanding “how” and “why” to apply that understanding in a way that is ethical and beneficial.</p><p>There are two main categories of data: quantitive data and qualitative data. The data that can be understood or read by humans but may not be accepted by machines, we say the former is unstructured data and say the machine-friendly data is structured data.</p><h3 id="Data-Privacy-by-Design"><a href="#Data-Privacy-by-Design" class="headerlink" title="Data Privacy by Design"></a>Data Privacy by Design</h3><p>Users are concerned that their collected data be safe and well-storage, they expect to stay in control of their personal data.</p><p>The legal laws and obligations are set up based on this point like GDPR, HIGBA, GLBA, etc.</p><p>The <strong>fundamental principle</strong>s for data privacy are:</p><ul><li><p>Proactive not Reactive; Preventive not remedial</p></li><li><p>Privacy as the default setting</p></li><li><p>Privacy Embedded into Design</p></li><li><p>Full functionality - Positive-Sum, not Zero-sum</p></li><li><p>End-to-end security – Full lifecycle protection</p></li><li><p>Visibility and transparency – keep it open</p></li><li><p>Respect for user privacy – keep it user-centric</p></li></ul><p><strong>Overall goal: Minimizing privacy risks and trust other consumptions placed on other entities.</strong></p><p><strong>Main Strategies:</strong></p><ul><li>Minimize Collection</li><li>Minimize Disclosure</li><li>Minimize Linkability</li><li>Minimize Centralization</li><li>Minimize Replication</li><li>Minimize Retention</li></ul><h4 id="LINDDUN-Privacy-engineering-framework"><a href="#LINDDUN-Privacy-engineering-framework" class="headerlink" title="LINDDUN Privacy engineering framework:"></a>LINDDUN Privacy engineering framework:</h4><ul><li><strong>Linkability</strong>: Linkability refers to the ability to link various pieces of information or actions to a single entity or individual. This can be a concern for privacy. For example, in the context of online advertising, if a user’s online activity across multiple websites is linkable to their real-world identity, it can lead to privacy issues.</li><li><strong>Identifiability</strong>: Identifiability is closely related to linkability. It involves the extent to which an entity or individual can be identified based on the data or information available. An example of this is the use of anonymized medical records. While the records are anonymized, there is a risk of re-identifying individuals based on specific details.</li><li><strong>Non-repudiation</strong>: Non-repudiation ensures that a party cannot deny the authenticity of a transaction or action they have taken. In the context of digital signatures, non-repudiation ensures that a person who has digitally signed a document cannot later claim they did not do it.</li><li><strong>Detectability</strong>: Detectability refers to the ability to detect certain actions or events. For example, in cybersecurity, the ability to detect unauthorized access or suspicious activity on a network is crucial for identifying and responding to potential threats.</li><li><strong>Disclosure of Information</strong>: This principle concerns the intentional or unintentional disclosure of sensitive information. For instance, an accidental data breach by a company leading to the exposure of customer data is a disclosure of information that can have legal and ethical implications.</li><li><strong>Unawareness</strong>: Unawareness refers to the state of not being aware of certain actions or events. For example, a user might be unaware that their online behavior is being tracked for advertising purposes, which can raise privacy concerns.</li><li><strong>Non-compliance</strong>: Non-compliance refers to the failure to adhere to established rules, regulations, or security policies. In the context of data protection regulations like GDPR, non-compliance can result in legal consequences for organizations that do not follow the required data protection practices.</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Data </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Data Privacy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>complexity</title>
       <link href="/Advanced-Algorithm/complexity/"/>
       <url>/Advanced-Algorithm/complexity/</url>
