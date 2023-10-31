@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Week1&2/</loc>
+    <loc>http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Linear%20Algebra%20Week1&2/</loc>
     
     <lastmod>2023-10-31</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/Advanced-Algorithm/complexity/</loc>
+    <loc>http://callmeeric5.life/Advanced-Algorithm/complexity/complexity/</loc>
     
     <lastmod>2023-10-30</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/Data/Privacy/</loc>
+    <loc>http://callmeeric5.life/Data/Privacy/Privacy/</loc>
     
     <lastmod>2023-10-30</lastmod>
     
@@ -173,41 +173,6 @@
 
   
   <url>
-    <loc>http://callmeeric5.life/tags/Data-Privacy/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/tags/time-complexity/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/tags/Basic/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/tags/Vector/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/tags/Epita/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://callmeeric5.life/tags/Application/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,17 +207,45 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://callmeeric5.life/categories/Data/</loc>
+    <loc>http://callmeeric5.life/tags/Vector/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/categories/Advanced-Algorithm/</loc>
+    <loc>http://callmeeric5.life/tags/Basic/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/tags/Epita/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/tags/Data-Privacy/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/tags/time-complexity/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://callmeeric5.life/categories/Calculus/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -273,7 +266,14 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/categories/Calculus/</loc>
+    <loc>http://callmeeric5.life/categories/Data/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/categories/Advanced-Algorithm/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
