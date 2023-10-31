@@ -1,4 +1,4 @@
-http://callmeeric5.life/uncategorized/Linear%20Algebra/Week1&2/
+http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Week1&2/
 http://callmeeric5.life/Advanced-Algorithm/complexity/
 http://callmeeric5.life/Data/Privacy/
 http://callmeeric5.life/French/French/week1/
@@ -19,15 +19,16 @@ http://callmeeric5.life/categories/index.html
 http://callmeeric5.life/
 http://callmeeric5.life/tags/Data-Privacy/
 http://callmeeric5.life/tags/time-complexity/
+http://callmeeric5.life/tags/Basic/
+http://callmeeric5.life/tags/Vector/
+http://callmeeric5.life/tags/Epita/
 http://callmeeric5.life/tags/Application/
 http://callmeeric5.life/tags/Derivatives-of-function/
 http://callmeeric5.life/tags/Limits-of-function/
 http://callmeeric5.life/tags/Integration/
 http://callmeeric5.life/tags/Sequences-Series/
-http://callmeeric5.life/tags/Vector/
-http://callmeeric5.life/tags/Basic/
 http://callmeeric5.life/categories/Data/
 http://callmeeric5.life/categories/Advanced-Algorithm/
-http://callmeeric5.life/categories/Calculus/
 http://callmeeric5.life/categories/French/
 http://callmeeric5.life/categories/Linear-Algebra/
+http://callmeeric5.life/categories/Calculus/
