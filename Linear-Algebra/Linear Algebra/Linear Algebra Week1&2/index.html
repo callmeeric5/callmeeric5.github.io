@@ -14,7 +14,7 @@
 <meta property="og:description" content="Data Science: Math + CS + Business AI: Let the computer make an intellectual task as well as a human being (e.g.: Chess game [Decison Tree]) Machine Learning: Teaching skills via data. Data learn how">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-31T11:52:57.000Z">
-<meta property="article:modified_time" content="2023-10-31T11:54:44.859Z">
+<meta property="article:modified_time" content="2023-10-31T12:00:34.536Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -197,13 +197,14 @@
 <p>$\vec 0$ is colinear to each vector.</p>
 <h3 id="Orthogonal-vectors"><a href="#Orthogonal-vectors" class="headerlink" title="Orthogonal vectors"></a>Orthogonal vectors</h3><p>$\vec u,\vec v $ are orthogonal vectors if $\vec u \cdot \vec v &#x3D;0$</p>
 <h3 id="Product-of-Matrix"><a href="#Product-of-Matrix" class="headerlink" title="Product of Matrix"></a>Product of Matrix</h3><p>for $m \in  M_{\displaystyle{m,n}^{(\mathbb{R})}}$ and $n \in M_{\displaystyle{n,p}^{(\mathbb{R})}}$, $m \cdot n &#x3D; C_{\displaystyle{m,p}^{(\mathbb{R})}}$</p>
-<p>$\det(A) \neq 0 \lrarr A\cdot A^{-1}&#x3D;A^{-1} \cdot A &#x3D; I(\text{Indentity matrix})$ and $I\cdot A &#x3D;A\cdot I &#x3D; A$</p>
-<p>(Reminder: $$I_2 &#x3D; \begin{bmatrix} {10}\{01} \end{bmatrix}$$ and $$I_3 &#x3D; \begin{bmatrix}{100}\ {010}\ {001} \end{bmatrix}$$)</p>
+<p>$\det(A) \neq 0 \Leftrightarrow A\cdot A^{-1}&#x3D;A^{-1} \cdot A &#x3D; I(\text{Indentity matrix})$ and $I\cdot A &#x3D;A\cdot I &#x3D; A$</p>
+<p>(Reminder: </p>
+<p>$$I_2 &#x3D; \begin{bmatrix} 1&amp;0\0&amp;1 \end{bmatrix}$$ and $$I_3 &#x3D; \begin{bmatrix}1&amp;0&amp;0\0&amp;1&amp;0\0&amp;0&amp;1\end{bmatrix}$$)</p>
 <p>In general, $A \cdot B \neq B \cdot A$</p>
 <h3 id="Determinant-of-Matrix"><a href="#Determinant-of-Matrix" class="headerlink" title="Determinant of Matrix"></a>Determinant of Matrix</h3><p>In the $R^2$, the determinant is the area, in the $R^3 \quad\text{or}\quad R^n$, it is the volume.</p>
 <p>for $$A &#x3D; \begin{bmatrix} a b \ c d\end{bmatrix}$$, $\det(A) &#x3D; ad-bc$</p>
 <p>for the higher dimention matrix, such as</p>
-<p> $$\begin{align*}<br>\text{det}(A) &amp;&#x3D; \begin{vmatrix}<br>a &amp; b &amp; c &amp; d \<br>e &amp; f &amp; g &amp; h \<br>i &amp; j &amp; k &amp; l \<br>m &amp; n &amp; o &amp; p<br>\end{vmatrix} \<br>&amp;&#x3D; a \begin{vmatrix}<br>f &amp; g &amp; h \<br>j &amp; k &amp; l \<br>n &amp; o &amp; p<br>\end{vmatrix} - b \begin{vmatrix}<br>e &amp; g &amp; h \<br>i &amp; k &amp; l \<br>m &amp; o &amp; p<br>\end{vmatrix} + c \begin{vmatrix}<br>e &amp; f &amp; h \<br>i &amp; j &amp; l \<br>m &amp; n &amp; p<br>\end{vmatrix} - d \begin{vmatrix}<br>e &amp; f &amp; g \<br>i &amp; j &amp; k \<br>m &amp; n &amp; o<br>\end{vmatrix}<br>\end{align*}$$</p>
+<p> $$\begin{align*}<br>\text{det}(A) &amp;&#x3D; \begin{vmatrix}<br>a &amp; b &amp; c &amp; d \\<br>e &amp; f &amp; g &amp; h \\<br>i &amp; j &amp; k &amp; l \\<br>m &amp; n &amp; o &amp; p<br>\end{vmatrix} \\<br>&amp;&#x3D; a \begin{vmatrix}<br>f &amp; g &amp; h \\<br>j &amp; k &amp; l \\<br>n &amp; o &amp; p<br>\end{vmatrix} - b \begin{vmatrix}<br>e &amp; g &amp; h \\<br>i &amp; k &amp; l \\<br>m &amp; o &amp; p<br>\end{vmatrix} + c \begin{vmatrix}<br>e &amp; f &amp; h \\<br>i &amp; j &amp; l \\<br>m &amp; n &amp; p<br>\end{vmatrix} - d \begin{vmatrix}<br>e &amp; f &amp; g \\<br>i &amp; j &amp; k \\<br>m &amp; n &amp; o<br>\end{vmatrix}<br>\end{align*}$$</p>
 <p>If A has a row that is all zeros, then $\det A &#x3D; 0$.</p>
 <p>$\det AB &#x3D; (\det A)(\det B)$</p>
 <p>If there are 2 same rows in the matrix A, the $\det A &#x3D; 0$</p>
