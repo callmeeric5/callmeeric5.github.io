@@ -1,5 +1,6 @@
-http://callmeeric5.life/Data/Privacy/
+http://callmeeric5.life/uncategorized/Linear%20Algebra/Week1&2/
 http://callmeeric5.life/Advanced-Algorithm/complexity/
+http://callmeeric5.life/Data/Privacy/
 http://callmeeric5.life/French/French/week1/
 http://callmeeric5.life/French/French/Pronunciation/
 http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Geometry/
@@ -7,4 +8,3 @@ http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/equations/
 http://callmeeric5.life/Calculus/Calculus/Sequences/
 http://callmeeric5.life/Calculus/Calculus/Antidifferentiation/
 http://callmeeric5.life/Calculus/Calculus/Vector/
-http://callmeeric5.life/Calculus/Calculus/Limit/
