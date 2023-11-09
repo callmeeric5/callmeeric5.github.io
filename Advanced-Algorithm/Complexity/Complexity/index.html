@@ -14,7 +14,7 @@
 <meta property="og:description" content="Intro to ComplexityIn CS, we have different ways to solve the same question. Depending on the chosen criteria, one of them is the “best” solution. An algorithm is defined as complex based on the amoun">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-26T08:59:13.000Z">
-<meta property="article:modified_time" content="2023-11-08T20:33:55.163Z">
+<meta property="article:modified_time" content="2023-11-09T20:13:04.091Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta property="article:tag" content="Time complexity">
@@ -334,8 +334,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fibo3(n,f_1,f_0)&#123;</span><br><span class="line"><span class="keyword">if</span> n&lt;=<span class="number">2</span> <span class="keyword">return</span> f_1</span><br><span class="line">    <span class="keyword">return</span> fibo3(n-<span class="number">1</span>,f_n-<span class="number">1</span>+f_n-<span class="number">2</span>,f_n-<span class="number">2</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>$$<br>\begin{cases}<br>C_0 &amp;&#x3D; C_1 &#x3D;0\\<br>C_n &amp;&#x3D; C_{n-1}+1\\<br>&amp;&#x3D;C_{n-2}+2\\<br>&amp;&#x3D;C_{n-3}+3\\<br>&amp;&#x3D;\cdot\cdot\cdot \\<br>&amp;&#x3D;C_{n-k} + k\\<br>&amp;&#x3D;\theta(C_n)<br>\end{cases}<br>$$</p>
-<p>$$</p>
-<p>$$</p>
 
   </div>
 </article>
