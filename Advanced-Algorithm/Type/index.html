@@ -14,7 +14,7 @@
 <meta property="og:description" content="Abstract Data Types (ADTs)An ADT is a tuple （T, U, O, P,  A） where    T is the name of the ADT we are defining.  U is a set of （already defined） ADTs used in the definition of T. Notice that this impl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-08T16:15:16.000Z">
-<meta property="article:modified_time" content="2023-11-08T17:40:30.960Z">
+<meta property="article:modified_time" content="2023-11-09T20:09:40.440Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -226,13 +226,13 @@
 <p>$A_4: 0&#x3D;sx \equiv false$</p>
 <p>$A_5: sx&#x3D;0 \equiv false$</p>
 <p>$A_6: sx &#x3D; sy \equiv x&#x3D;y $</p>
-<p>Example: Is 2 &#x3D; 3? Proof with axiom<br>$$<br>ss0 &amp;&#x3D; sss0…A_6\\<br>s0 &amp;&#x3D; ss0…A_6\\<br>0 &amp;&#x3D; s0 \rightarrow false …A_3<br>$$</p>
+<p>Example: Is 2 &#x3D; 3? Proof with axiom<br>$$<br>\begin{align*}<br>ss0 &amp;&#x3D; sss0…A_6\\<br>s0 &amp;&#x3D; ss0…A_6\\<br>0 &amp;&#x3D; s0 \rightarrow false …A_3<br>\end{align*}<br>$$</p>
 <h4 id="ADT-counter"><a href="#ADT-counter" class="headerlink" title="ADT counter"></a>ADT counter</h4><p>a counter has a natural value (0 at inial time). It can only be incremented or decremented by 1 each time. Decrementing a null has no effect</p>
 <p>Operations:</p>
 <p>new: -&gt; counter</p>
 <p>increment: counter-&gt; counter</p>
 <p>decrement: counter-&gt; counter</p>
-<p>value: counter -&gt; natural<br>$$<br>&amp;A_1: dec(new) \equiv new\\<br>&amp;A_2: dec(inc(c)) \equiv c…\text{both c and new are counters}\\<br>&amp;A_3: value(new) \equiv 0\\<br>&amp;A_4: value(inc(c)) \equiv value(c)+1<br>$$<br>another example: $value(inc(dec(inc(new))))&#x3D;value(0+1-1+1)&#x3D;0$</p>
+<p>value: counter -&gt; natural<br>$$<br>\begin{align*}<br>&amp;A_1: dec(new) \equiv new\\<br>&amp;A_2: dec(inc(c)) \equiv c…\text{both c and new are counters}\\<br>&amp;A_3: value(new) \equiv 0\\<br>&amp;A_4: value(inc(c)) \equiv value(c)+1<br>\end{align*}<br>$$<br>another example: $value(inc(dec(inc(new))))&#x3D;value(0+1-1+1)&#x3D;0$</p>
 <h4 id="ADT-Stack"><a href="#ADT-Stack" class="headerlink" title="ADT Stack"></a>ADT Stack</h4><p>A stack in computer science can be seen as a homogeneous collection of elements for which only the topmost element is accessible. For instance, a stack of plates is almost always accessed by its top, be it to take plates before lunch or dinner, or to put them back after washing up. One commonly uses the term LIFO （for Last In, First Out） to refer to that kind of data structure:</p>
 <p>• Tell wether the stack is empty.</p>
 <p>• Push a new element on top of the stack.</p>
