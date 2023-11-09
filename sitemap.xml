@@ -207,7 +207,14 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/tags/Time-complexity/</loc>
+    <loc>http://callmeeric5.life/tags/Vector/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/tags/Data-Privacy/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -242,20 +249,6 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/tags/Sequences-Series/</loc>
-    <lastmod>2023-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/tags/Vector/</loc>
-    <lastmod>2023-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://callmeeric5.life/tags/Basic/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -263,7 +256,14 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/tags/Data-Privacy/</loc>
+    <loc>http://callmeeric5.life/tags/Time-complexity/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://callmeeric5.life/tags/Sequences-Series/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -279,6 +279,13 @@
   </url>
   
   <url>
+    <loc>http://callmeeric5.life/categories/Linear-Algebra/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://callmeeric5.life/categories/Probability-Statistics-For-Machine-Learning/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -286,7 +293,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/categories/French/</loc>
+    <loc>http://callmeeric5.life/categories/Data-Privacy/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -300,14 +307,7 @@
   </url>
   
   <url>
-    <loc>http://callmeeric5.life/categories/Linear-Algebra/</loc>
-    <lastmod>2023-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://callmeeric5.life/categories/Data-Privacy/</loc>
+    <loc>http://callmeeric5.life/categories/French/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
