@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Abstract Data Types (ADTs)An ADT is a tuple （T, U, O, P,  A） where    T is the name of the ADT we are defining.  U is a set of （already defined） ADTs used in the definition of T. Notice that this impl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Abstract Data Types">
+<meta property="og:url" content="http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/index.html">
+<meta property="og:site_name" content="Eric Windsor">
+<meta property="og:description" content="Abstract Data Types (ADTs)An ADT is a tuple （T, U, O, P,  A） where    T is the name of the ADT we are defining.  U is a set of （already defined） ADTs used in the definition of T. Notice that this impl">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-08T16:15:16.000Z">
+<meta property="article:modified_time" content="2023-11-15T18:10:03.237Z">
+<meta property="article:author" content="Eric W">
+<meta property="article:tag" content="Epita">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Abstract Data Types</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M8HRCVL2N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3M8HRCVL2N');
+</script>
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+  </script>
+    <script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+			},
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/Probability-Statistics-For-Machine-Learning/Possibility&Statistics/Possibility/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/French/French/Week2/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&text=Abstract Data Types"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&is_video=false&description=Abstract Data Types"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Abstract Data Types&body=Check out this article: http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&name=Abstract Data Types&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&t=Abstract Data Types"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Abstract Data Types
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Eric W</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-11-08T16:15:16.000Z" class="dt-published" itemprop="datePublished">2023-11-08</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/Advanced-Algorithm/">Advanced Algorithm</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Epita/" rel="tag">Epita</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h3 id="Abstract-Data-Types-ADTs"><a href="#Abstract-Data-Types-ADTs" class="headerlink" title="Abstract Data Types (ADTs)"></a>Abstract Data Types (ADTs)</h3><p>An ADT is a tuple （<strong>T, U, O, P,  A</strong>） where  </p>
+<ul>
+<li><p><strong>T</strong> is the name of the ADT we are defining.</p>
+</li>
+<li><p><strong>U</strong> is a set of （already defined） ADTs used in the definition of T. Notice that this implies a notion of a hierarchy of ADTs.</p>
+</li>
+<li><p><strong>O</strong> is a set of operation signatures that defines the syntax for the legal use of T objects.</p>
+</li>
+<li><p><strong>P</strong> is a set of pre-conditions （logical expressions that always must hold true） to using some of the operations in O.</p>
+</li>
+<li><p><strong>A</strong> is a set of axioms （logical expressions that are admittedly true） defining the behaviour of the operations in O.</p>
+</li>
+</ul>
+<h4 id="Operation-signature"><a href="#Operation-signature" class="headerlink" title="Operation signature"></a>Operation signature</h4><p>The signature of an operation is made of</p>
+<ol>
+<li>its name;</li>
+<li>a （possibly empty） set of ADT describing the domains for parameter values for the operation;</li>
+<li>an ADT describing the domain of the result of the operation. The ADT specifying the parameter types are called input ADT （or source ADT）, and that specifying the result is called output （or target） ADT.</li>
+</ol>
+<p>For example:</p>
+<p>ADT boolean</p>
+<p>operations</p>
+<p>true: -&gt; boolean</p>
+<p>false:  -&gt; boolean</p>
+<p>$ !_ $: boolean -&gt; boolean</p>
+<p>$ _∧_ $: boolean x boolean -&gt;  boolean </p>
+<p>$ _∨_ $: boolean x boolean -&gt;  boolean</p>
+<p>axioms</p>
+<p>$!true &#x3D; false$</p>
+<p>$!!a &#x3D; a$</p>
+<p>$a ∧ true&#x3D;a$</p>
+<p>$a ∧ false &#x3D; false$</p>
+<p>$a ∨b&#x3D;!(!a∧ !b)$</p>
+<h4 id="Axioms"><a href="#Axioms" class="headerlink" title="Axioms:"></a>Axioms:</h4><p>$A_1: 0+x \equiv x$</p>
+<p>$A_2: sx+y \equiv x + sy$</p>
+<p>$A_3: 0&#x3D;0 \equiv true$</p>
+<p>$A_4: 0&#x3D;sx \equiv false$</p>
+<p>$A_5: sx&#x3D;0 \equiv false$</p>
+<p>$A_6: sx &#x3D; sy \equiv x&#x3D;y $</p>
+<p>Example: Is 2 &#x3D; 3? Proof with axiom<br>$$<br>\begin{align*}<br>ss0 &amp;&#x3D; sss0…A_6\\<br>s0 &amp;&#x3D; ss0…A_6\\<br>0 &amp;&#x3D; s0 \rightarrow false …A_3<br>\end{align*}<br>$$</p>
+<h4 id="ADT-counter"><a href="#ADT-counter" class="headerlink" title="ADT counter"></a>ADT counter</h4><p>a counter has a natural value (0 at inial time). It can only be incremented or decremented by 1 each time. Decrementing a null has no effect</p>
+<p>Operations:</p>
+<p>new: -&gt; counter</p>
+<p>increment: counter-&gt; counter</p>
+<p>decrement: counter-&gt; counter</p>
+<p>value: counter -&gt; natural<br>$$<br>\begin{align*}<br>&amp;A_1: dec(new) \equiv new\\<br>&amp;A_2: dec(inc(c)) \equiv c…\text{both c and new are counters}\\<br>&amp;A_3: value(new) \equiv 0\\<br>&amp;A_4: value(inc(c)) \equiv value(c)+1<br>\end{align*}<br>$$<br>another example: $value(inc(dec(inc(new))))&#x3D;value(0+1-1+1)&#x3D;1$</p>
+<h4 id="ADT-Stack"><a href="#ADT-Stack" class="headerlink" title="ADT Stack"></a>ADT Stack</h4><p>A stack in computer science can be seen as a homogeneous collection of elements for which only the topmost element is accessible. For instance, a stack of plates is almost always accessed by its top, be it to take plates before lunch or dinner, or to put them back after washing up. One commonly uses the term LIFO （for Last In, First Out） to refer to that kind of data structure:</p>
+<p>• Tell wether the stack is empty.</p>
+<p>• Push a new element on top of the stack.</p>
+<p>• Pop the top element out of the stack.</p>
+<p>• Tell what the top element is.</p>
+<p>ADT Stack Uses Element, boolean</p>
+<p><strong>Operations</strong></p>
+<p>$create : -&gt; Stack$</p>
+<p>$isEmpty: Stack -&gt; boolean$ </p>
+<p>$push:Stack\quad \text{x}\quad Element - Stack$ </p>
+<p>$pop: Stack Stack$</p>
+<p>$top:Stack -&gt; Element$</p>
+<p><strong>Preconditions</strong></p>
+<p>$pop（p） \iff !isEmpty（p)$</p>
+<p>$top（p） \iff !isEmpty（p)$</p>
+<p><strong>Axioms</strong></p>
+<p>$A_1: isEmpty (create) &#x3D; true$</p>
+<p>$A_2: isEmpty (push(p,e))&#x3D; false$ </p>
+<p>$A_3: top (push(p,e))&#x3D; e$ </p>
+<p>$A_4: pop(push(p,e)) &#x3D; p$</p>
+<h4 id="ADT-Queue"><a href="#ADT-Queue" class="headerlink" title="ADT Queue"></a>ADT Queue</h4><p>A queue is an homogeneous collection of elements accessed by one of the two ends of the structure: insertion at the one end, removals at the other end.</p>
+<p>Intuitively, it mirrors the behaviour of a real queue, such as the one that can appear at the entrance of a cinema for instance. It can be called FIFO, for First In, First Out: the first element that entered the queue is the first to leave it.</p>
+<p>Expected functionalities are as follows:</p>
+<p>• Tell wether the queue is empty</p>
+<p>• Add an element to the end of the queue </p>
+<p>• Remove the first （head） element from the queue</p>
+<p>• Tell which is the head element</p>
+<p><strong>Uses boolean,Element</strong></p>
+<p><strong>operations</strong></p>
+<p>$create: queue$</p>
+<p>$isEmpty:queue \to boolean$</p>
+<p>$add : queue \quad \text{x}\quad Element \to queue$</p>
+<p>$remove:queue \to queue$</p>
+<p>$head:queue \to Element$</p>
+<p><strong>pre-conditions</strong></p>
+<p>$remove (f, e)\iff !isEmpty(f)$</p>
+<p>$head (f)\iff !isEmpty(f)$</p>
+<p><strong>axioms</strong></p>
+<p>$A_1:isEmpty （create） \equiv true$</p>
+<p>$A_2: isEmpty(add(f,e)) \equiv false$</p>
+<p>$A_3: isEmpty(f) \Rightarrow head(add(f,e))\equiv e$ </p>
+<p>$A_4: !isEmpty （f） \Rightarrow head(add(f, e))&#x3D; head(f)$</p>
+<p>$A_5: isEmpty(f) \Rightarrow remove(add(f,e))&#x3D; create$ </p>
+<p>$A_6:!isEmpty(f)\Rightarrow remove(add (f, e))&#x3D; add(remove (f),e)$</p>
+<h4 id="Tower-of-Hanoi"><a href="#Tower-of-Hanoi" class="headerlink" title="Tower of Hanoi"></a>Tower of Hanoi</h4><p><code>hanoi(n,from,to,use) </code> n is the amount of disks, from is the inital stick, to is the destination stick, use is the aux stick</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line"></span><br><span class="line">hanoi(n-<span class="number">1</span>,<span class="keyword">from</span>,use,to)</span><br><span class="line"></span><br><span class="line">move(<span class="keyword">from</span>,to)</span><br><span class="line"></span><br><span class="line">hanoi(n-<span class="number">1</span>,use,to,<span class="keyword">from</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="List-ADT"><a href="#List-ADT" class="headerlink" title="List ADT"></a>List ADT</h4><p>Inside a list, each element is associated with its （unique） position （a strictly positive integer）. Unlike the previous two ADT, any element of the list can be accessed, whatever its position is.</p>
+<p>The minimum functionalities expected from a basic list are as follows:</p>
+<p>• access the top element （first） of the list</p>
+<p>• access the rest of the list （i.e.the list minus its first element） • tell the length of the list</p>
+<p>• access an element based on its position in the list</p>
+<p>• add an element at a given position in the list</p>
+<p>• remove an element at a given position in the list</p>
+<p>As a first step, we just define the ADT with its constructors and access functions （accessors） to the frst element and to the rest of the list （the other operations can then be expressed using those basic ones):</p>
+<p><strong>ADT List</strong></p>
+<p><strong>Uses boolean,Element,Natural operations</strong></p>
+<p>$create : \to list$</p>
+<p>$isEmpty: list \to boolean$</p>
+<p>$rest : list \to list$</p>
+<p>$cons : Element \quad\text{x}\quad list \to list$</p>
+<p>$first: list \to Element$</p>
+<p><strong>pre-conditions</strong></p>
+<p>$first(1)\iff !isEmpty(1)$</p>
+<p>$rest(1)\iff !isEmpty(1)$</p>
+<p><strong>axioms</strong></p>
+<p>$A_1: isEmpty（create） \equiv true$ </p>
+<p>$A_2: isEmpty (cons(e, l))\equiv false$ </p>
+<p>$A_3: first(cons(e, l))\equiv e$ </p>
+<p>$A_4:rest(cons(e, l)) \equiv l$</p>
+<h4 id="Minimum-list-extension"><a href="#Minimum-list-extension" class="headerlink" title="Minimum list extension"></a>Minimum list extension</h4><p>Based on the functions described above, we can now define all the classical operations about lists. We get the following ADT:</p>
+<p>extension ADT list</p>
+<p><strong>Uses Natural</strong></p>
+<p><strong>operations</strong></p>
+<p>$length:1ist \to Natural$</p>
+<p>$add : list \quad\text{x}\quad Natural \quad\text{x}\quad Element \to list$ </p>
+<p>$remove :list \quad{x} Natural \to list nth : list x Natural Element$ </p>
+<p><strong>pre-conditions</strong></p>
+<p>$remove (1,n)) \iff 1 ≤n ≤ length(1)$ </p>
+<p>$nth(l,n))\iff 1≤n ≤ length(1)$ </p>
+<p>$add（1,n,e））\iff 1 ≤n ≤ length（1） + 1$</p>
+<p><strong>axioms</strong></p>
+<p>$A_5: length（create） &#x3D; 0$ </p>
+<p>$A_6: 1!&#x3D;create \Rightarrow length(1) \equiv length(rest(1))+ 1$ </p>
+<p>$A_7: nth（1,1） \equiv first(1)$ </p>
+<p>$A_8: i&gt;1&#x3D;nth(1,i) \equiv nth(rest(1),i-1)$ </p>
+<p>$A_9: add(1,1,e) \equiv cons(e,1)$ </p>
+<p>$A_{10}:i&gt;1&#x3D;add（l,i,e）\equiv cons (first(1),add(rest(1),i-1,e)$  </p>
+<p>$A_{11}: remove (1,1) &#x3D; rest(1)$ </p>
+<p>$A_{12}: i&gt;1 \Rightarrow remove(1,i) \equiv cons(first(1),remove (rest(1),i-1)$ </p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Category</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&text=Abstract Data Types"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&is_video=false&description=Abstract Data Types"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Abstract Data Types&body=Check out this article: http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&title=Abstract Data Types"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&name=Abstract Data Types&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/&t=Abstract Data Types"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Eric W
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

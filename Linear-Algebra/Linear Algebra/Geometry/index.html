@@ -14,9 +14,9 @@
 <meta property="og:description" content="Three equivalent ways of thinking about a linear system: As a system of equations:  $$\begin{cases}2x + 3x_2 − 2x_3 &#x3D; 7\\x_1− x_2− 3x_3&#x3D; 5\end{cases}$$  As an augmented matrix:  $$\left(\beg">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-03T11:20:22.000Z">
-<meta property="article:modified_time" content="2023-07-22T16:48:27.430Z">
+<meta property="article:modified_time" content="2023-11-13T14:37:28.442Z">
 <meta property="article:author" content="Eric W">
-<meta property="article:tag" content="Vector">
+<meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
     
     
@@ -137,7 +137,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-equivalent-ways-of-thinking-about-a-linear-system"><span class="toc-number">1.</span> <span class="toc-text">Three equivalent ways of thinking about a linear system:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Span"><span class="toc-number">2.</span> <span class="toc-text">Span</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Equations"><span class="toc-number">3.</span> <span class="toc-text">Matrix Equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solution-Sets"><span class="toc-number">4.</span> <span class="toc-text">Solution Sets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-Independence"><span class="toc-number">5.</span> <span class="toc-text">Linear Independence</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Criteria-for-Linear-Independence"><span class="toc-number">5.1.</span> <span class="toc-text">Criteria for Linear Independence</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Subspaces"><span class="toc-number">6.</span> <span class="toc-text">Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Common-Types-of-Subspaces"><span class="toc-number">6.1.</span> <span class="toc-text">Common Types of Subspaces</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basis-of-a-Subspace"><span class="toc-number">7.</span> <span class="toc-text">Basis of a Subspace</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basis-Theorm"><span class="toc-number">7.1.</span> <span class="toc-text">Basis Theorm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bases-as-Coordinate-Systems"><span class="toc-number">7.2.</span> <span class="toc-text">Bases as Coordinate Systems</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rank"><span class="toc-number">8.</span> <span class="toc-text">Rank</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-equivalent-ways-of-thinking-about-a-linear-system"><span class="toc-number">1.</span> <span class="toc-text">Three equivalent ways of thinking about a linear system:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Span"><span class="toc-number">2.</span> <span class="toc-text">Span</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Equations"><span class="toc-number">3.</span> <span class="toc-text">Matrix Equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solution-Sets"><span class="toc-number">4.</span> <span class="toc-text">Solution Sets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-Independence"><span class="toc-number">5.</span> <span class="toc-text">Linear Independence</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Criteria-for-Linear-Independence"><span class="toc-number">5.1.</span> <span class="toc-text">Criteria for Linear Independence</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Subspaces"><span class="toc-number">6.</span> <span class="toc-text">Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Common-Types-of-Subspaces"><span class="toc-number">6.1.</span> <span class="toc-text">Common Types of Subspaces</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basis-of-a-Subspace"><span class="toc-number">7.</span> <span class="toc-text">Basis of a Subspace</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basis-Theorm"><span class="toc-number">7.1.</span> <span class="toc-text">Basis Theorm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bases-as-Coordinate-Systems"><span class="toc-number">7.2.</span> <span class="toc-text">Bases as Coordinate Systems</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Standard-Basis"><span class="toc-number">7.3.</span> <span class="toc-text">Standard Basis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rank"><span class="toc-number">8.</span> <span class="toc-text">Rank</span></a></li></ol>
       </div>
     
   </span>
@@ -178,7 +178,7 @@
       
     <div class="article-tag">
         <i class="fa-solid fa-tag"></i>
-        <a class="p-category" href="/tags/Vector/" rel="tag">Vector</a>
+        <a class="p-category" href="/tags/Epita/" rel="tag">Epita</a>
     </div>
 
 
@@ -254,11 +254,11 @@
 </ol>
 <p><strong>Conclusion:</strong> A subspace is a subset that happens to satisfy the three additional deﬁning properties.</p>
 <h4 id="Common-Types-of-Subspaces"><a href="#Common-Types-of-Subspaces" class="headerlink" title="Common Types of Subspaces"></a>Common Types of Subspaces</h4><p>(Spans are Subspaces and Subspaces are Spans). If $v_1, v_2,…, v_p$ are any vectors in $R^n$ , then $\text{Span}\lbrace v_1 , v_2 ,…, v_p\rbrace $is a subspace of $R^n$ . Moreover, any subspace of $R^n$ can be written as a span of a set of $p$ linearly independent vectors in $R^n$ for $p ≤ n$.</p>
-<h3 id="Basis-of-a-Subspace"><a href="#Basis-of-a-Subspace" class="headerlink" title="Basis of a Subspace"></a>Basis of a Subspace</h3><p>Let $V$ be a subspace of $R^n$. A basis of $V$ is a set of vectors $\lbrace v_1 , v_2 ,…, v_m \rbrace$ in $V$ such that:</p>
+<h3 id="Basis-of-a-Subspace"><a href="#Basis-of-a-Subspace" class="headerlink" title="Basis of a Subspace"></a>Basis of a Subspace</h3><p>Let $V$ be a subspace of $R^n$. A basis of $V$ is a set of vectors $\lbrace v_1 , v_2 ,…, v_n \rbrace$ in $V$ such that:</p>
 <ol>
-<li><p>$V &#x3D; \text{Span}\lbrace v_1 , v_2 ,…, v_m \rbrace$, and</p>
+<li><p>$V &#x3D; \text{Span}\lbrace v_1 , v_2 ,…, v_n \rbrace$, and</p>
 </li>
-<li><p>the set $\lbrace v_1 , v_2 ,…, v_m \rbrace$ is linearly independent.</p>
+<li><p>the set $\lbrace v_1 , v_2 ,…, v_n \rbrace$ is linearly independent.</p>
 </li>
 </ol>
 <p>The number of vectors in any basis of $V$ is called the dimension of $V$, and is written $\dim V$.</p>
@@ -269,6 +269,14 @@
 <p>$x &#x3D; c_1 v_1 + c_2 v_2 + ··· + c_mv_m$ in exactly one way.</p>
 <p>Let $\mathcal {B} &#x3D; \lbrace v_1, v_2,…, v_m\rbrace$ be a basis of a subspace $V$, and let</p>
 <p>$x &#x3D; c_1 v_1 + c_2 v_2 + ··· + c_mv_m$ be a vector in $V$. The coefﬁcients $c_1 , c_2 ,…, c_m$ are the coordinates of $x$ with respect to $\mathcal {B}$ . The $\mathcal {B}$-coordinate vector of $x$ is the vector<br>$$<br>[x]_{\mathcal{B}}\begin{pmatrix}c_1\\c_2\\…\\c_m\end{pmatrix} \quad\text{in}\quad R^m<br>$$</p>
+<h4 id="Standard-Basis"><a href="#Standard-Basis" class="headerlink" title="Standard Basis"></a>Standard Basis</h4><ul>
+<li><p>$dim(R^n) &#x3D; n$</p>
+</li>
+<li><p>$dim(P_n) &#x3D; n + 1$, P is the polynomial, can be detoned as $P(x) &#x3D; a_0+ a_1x+…+a_nx$</p>
+</li>
+<li><p>$dim(M_{mn})&#x3D;mn$</p>
+</li>
+</ul>
 <h3 id="Rank"><a href="#Rank" class="headerlink" title="Rank"></a>Rank</h3><p>The rank of a matrix $A$, written rank$(A)$, is the dimension of the column space Col$(A)$.</p>
 <p>The nullity of a matrix $A$, written $\text{nullity}(A)$, is the dimension of the null space Nul$(A)$.</p>
 <p>If $A$ is a matrix with $n$ columns, then rank$(A)$ + nullity$(A) &#x3D; n$. In other words, for any consistent system of linear equations, <strong>(dim of column span) + (dim of solution set) &#x3D; (number of variables).</strong></p>
@@ -301,7 +309,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-equivalent-ways-of-thinking-about-a-linear-system"><span class="toc-number">1.</span> <span class="toc-text">Three equivalent ways of thinking about a linear system:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Span"><span class="toc-number">2.</span> <span class="toc-text">Span</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Equations"><span class="toc-number">3.</span> <span class="toc-text">Matrix Equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solution-Sets"><span class="toc-number">4.</span> <span class="toc-text">Solution Sets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-Independence"><span class="toc-number">5.</span> <span class="toc-text">Linear Independence</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Criteria-for-Linear-Independence"><span class="toc-number">5.1.</span> <span class="toc-text">Criteria for Linear Independence</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Subspaces"><span class="toc-number">6.</span> <span class="toc-text">Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Common-Types-of-Subspaces"><span class="toc-number">6.1.</span> <span class="toc-text">Common Types of Subspaces</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basis-of-a-Subspace"><span class="toc-number">7.</span> <span class="toc-text">Basis of a Subspace</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basis-Theorm"><span class="toc-number">7.1.</span> <span class="toc-text">Basis Theorm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bases-as-Coordinate-Systems"><span class="toc-number">7.2.</span> <span class="toc-text">Bases as Coordinate Systems</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rank"><span class="toc-number">8.</span> <span class="toc-text">Rank</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-equivalent-ways-of-thinking-about-a-linear-system"><span class="toc-number">1.</span> <span class="toc-text">Three equivalent ways of thinking about a linear system:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Span"><span class="toc-number">2.</span> <span class="toc-text">Span</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Equations"><span class="toc-number">3.</span> <span class="toc-text">Matrix Equations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solution-Sets"><span class="toc-number">4.</span> <span class="toc-text">Solution Sets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-Independence"><span class="toc-number">5.</span> <span class="toc-text">Linear Independence</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Criteria-for-Linear-Independence"><span class="toc-number">5.1.</span> <span class="toc-text">Criteria for Linear Independence</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Subspaces"><span class="toc-number">6.</span> <span class="toc-text">Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Common-Types-of-Subspaces"><span class="toc-number">6.1.</span> <span class="toc-text">Common Types of Subspaces</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basis-of-a-Subspace"><span class="toc-number">7.</span> <span class="toc-text">Basis of a Subspace</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basis-Theorm"><span class="toc-number">7.1.</span> <span class="toc-text">Basis Theorm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bases-as-Coordinate-Systems"><span class="toc-number">7.2.</span> <span class="toc-text">Bases as Coordinate Systems</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Standard-Basis"><span class="toc-number">7.3.</span> <span class="toc-text">Standard Basis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rank"><span class="toc-number">8.</span> <span class="toc-text">Rank</span></a></li></ol>
       </div>
     
 
