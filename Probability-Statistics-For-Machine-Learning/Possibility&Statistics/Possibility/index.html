@@ -14,7 +14,7 @@
 <meta property="og:description" content="IntroPossibility: calculating the likelihood of future events Statistics: gathering, and analyzing data Machine learning: models which are accurate most of the time. It contains 2 important factors, a">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-09T09:09:54.000Z">
-<meta property="article:modified_time" content="2023-11-09T20:19:16.912Z">
+<meta property="article:modified_time" content="2023-11-20T10:05:20.099Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -104,7 +104,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Previous post" href="/Linear-Algebra/Diagonalization/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Previous post" href="/Linear-Algebra/Linear%20Algebra/Diagonalization/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Next post" href="/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -137,7 +137,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Possibility"><span class="toc-number">2.</span> <span class="toc-text">Possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-properties-of-probability"><span class="toc-number">2.1.</span> <span class="toc-text">Basic properties of probability:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Marginalization"><span class="toc-number">2.2.</span> <span class="toc-text">Marginalization</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Possibility"><span class="toc-number">2.</span> <span class="toc-text">Possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-properties-of-probability"><span class="toc-number">2.1.</span> <span class="toc-text">Basic properties of probability:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Marginalisation"><span class="toc-number">2.2.</span> <span class="toc-text">Marginalisation</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mean-variance-standard-deviation"><span class="toc-number">3.</span> <span class="toc-text">Mean, variance, standard deviation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Bernoulli-Distribution"><span class="toc-number">3.1.</span> <span class="toc-text">Bernoulli Distribution</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Covariance"><span class="toc-number">4.</span> <span class="toc-text">Covariance</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional-possibility"><span class="toc-number">5.</span> <span class="toc-text">Conditional possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Bayes-Theorem"><span class="toc-number">5.1.</span> <span class="toc-text">Bayes Theorem</span></a></li></ol></li></ol>
       </div>
     
   </span>
@@ -225,7 +225,25 @@
 </li>
 </ol>
 <hr>
-<h4 id="Marginalization"><a href="#Marginalization" class="headerlink" title="Marginalization"></a>Marginalization</h4><p>$P(x&#x3D;x_i) &#x3D;\displaystyle \sum_{j&#x3D;1}^n P(x&#x3D;x_i,y&#x3D;y_j)$</p>
+<h4 id="Marginalisation"><a href="#Marginalisation" class="headerlink" title="Marginalisation"></a>Marginalisation</h4><p>$P(x&#x3D;x_i) &#x3D;\displaystyle \sum_{j&#x3D;1}^n P(x&#x3D;x_i,y&#x3D;y_j)$</p>
+<h3 id="Mean-variance-standard-deviation"><a href="#Mean-variance-standard-deviation" class="headerlink" title="Mean, variance, standard deviation"></a>Mean, variance, standard deviation</h3><p>$\mu &#x3D; E[x] &#x3D;\displaystyle \sum_{i&#x3D;1}^nx_iP_i$ </p>
+<p>$Var(x) &#x3D; E[(x-\mu)^2]&#x3D;E[(x-E[x])^2] &#x3D; E[x^2-2xE[x]+(E[x])^2]&#x3D;E[x^2]-2E[x]E[x]+(E[x])^2&#x3D;E[x^2]-(E[x])^2&#x3D;E[x^2]-\mu^2$</p>
+<h4 id="Bernoulli-Distribution"><a href="#Bernoulli-Distribution" class="headerlink" title="Bernoulli Distribution"></a>Bernoulli Distribution</h4><p>$Bern(x|\mu)&#x3D;\mu^x(1-\mu)^{1-x}$</p>
+<p>$Var(x)&#x3D;\mu(1-\mu)$</p>
+<h3 id="Covariance"><a href="#Covariance" class="headerlink" title="Covariance"></a>Covariance</h3><p>$Cov(x,y)&#x3D;E[(x-\mu_x)(y-\mu_y)]$</p>
+<p><strong>N.B.</strong>: </p>
+<ol>
+<li>If $Cov(x,y)&#x3D;0$, just means there is no linear relationship between $x$ and $y$! It doesn’t mean $x$ and $y$ are independent. eg:$x^2+y^2 &#x3D; 1$</li>
+<li>If $Cov(x,y)&gt;0$, when $x$ increase, y increase</li>
+<li>if $Cov(x,y)&lt;0$, when x decrease, y decrease</li>
+</ol>
+<h3 id="Conditional-possibility"><a href="#Conditional-possibility" class="headerlink" title="Conditional possibility"></a>Conditional possibility</h3><p>If $A,B$ are independent events, $P(A \cap B)&#x3D; P(A)\cdot P(B)$</p>
+<p>If $A,B$ are not necessarily independent events, $P(A \cap B)&#x3D;P(B|A)\cdot P(A)$ also can be written as $P(A|B) &#x3D; \frac {P(A \cap B)} {P(B)}$</p>
+<p>$P(A)&#x3D;P(A|B_1)P(B_1)+P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$</p>
+<p>If $A,B$ are independent events, $P(A | B)&#x3D; \displaystyle \frac {P(A)\cdot P(B)}{P(B)}&#x3D; P(A)$</p>
+<h4 id="Bayes-Theorem"><a href="#Bayes-Theorem" class="headerlink" title="Bayes Theorem"></a>Bayes Theorem</h4><p>By definition of conditional probability $𝑃(𝐴\cap 𝐵) &#x3D;𝑃(𝐴|𝐵)𝑃(𝐵)$ </p>
+<p>Swapping A, B and gives $P(B\cap A) &#x3D;P(B|A)P(A)$ But $P(A\cap B) &#x3D;P(B∩A)$, so $𝑃(𝐴|𝐵)𝑃(𝐵) &#x3D;𝑃(𝐵|𝐴)𝑃(𝐴)$ </p>
+<p>Dividing both sides by $P(B)$ gives $𝑃(𝐴|𝐵) &#x3D;\frac {𝑃(𝐵|𝐴)𝑃(𝐴)} {𝑃(𝐵)}<br>$</p>
 
   </div>
 </article>
@@ -255,7 +273,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Possibility"><span class="toc-number">2.</span> <span class="toc-text">Possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-properties-of-probability"><span class="toc-number">2.1.</span> <span class="toc-text">Basic properties of probability:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Marginalization"><span class="toc-number">2.2.</span> <span class="toc-text">Marginalization</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Possibility"><span class="toc-number">2.</span> <span class="toc-text">Possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-properties-of-probability"><span class="toc-number">2.1.</span> <span class="toc-text">Basic properties of probability:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Marginalisation"><span class="toc-number">2.2.</span> <span class="toc-text">Marginalisation</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mean-variance-standard-deviation"><span class="toc-number">3.</span> <span class="toc-text">Mean, variance, standard deviation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Bernoulli-Distribution"><span class="toc-number">3.1.</span> <span class="toc-text">Bernoulli Distribution</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Covariance"><span class="toc-number">4.</span> <span class="toc-text">Covariance</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional-possibility"><span class="toc-number">5.</span> <span class="toc-text">Conditional possibility</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Bayes-Theorem"><span class="toc-number">5.1.</span> <span class="toc-text">Bayes Theorem</span></a></li></ol></li></ol>
       </div>
     
 

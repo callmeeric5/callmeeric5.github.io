@@ -14,7 +14,7 @@
 <meta property="og:description" content="Abstract Data Types (ADTs)An ADT is a tuple （T, U, O, P,  A） where    T is the name of the ADT we are defining.  U is a set of （already defined） ADTs used in the definition of T. Notice that this impl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-08T16:15:16.000Z">
-<meta property="article:modified_time" content="2023-11-15T18:10:03.237Z">
+<meta property="article:modified_time" content="2023-11-20T13:29:30.775Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -137,7 +137,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Merging-sorted-list"><span class="toc-number">2.</span> <span class="toc-text">Merging sorted list</span></a></li></ol>
       </div>
     
   </span>
@@ -296,15 +296,15 @@
 <p>$cons : Element \quad\text{x}\quad list \to list$</p>
 <p>$first: list \to Element$</p>
 <p><strong>pre-conditions</strong></p>
-<p>$first(1)\iff !isEmpty(1)$</p>
-<p>$rest(1)\iff !isEmpty(1)$</p>
+<p>$first(l)\iff !isEmpty(l)$</p>
+<p>$rest(l)\iff !isEmpty(l)$</p>
 <p><strong>axioms</strong></p>
 <p>$A_1: isEmpty（create） \equiv true$ </p>
 <p>$A_2: isEmpty (cons(e, l))\equiv false$ </p>
 <p>$A_3: first(cons(e, l))\equiv e$ </p>
 <p>$A_4:rest(cons(e, l)) \equiv l$</p>
 <h4 id="Minimum-list-extension"><a href="#Minimum-list-extension" class="headerlink" title="Minimum list extension"></a>Minimum list extension</h4><p>Based on the functions described above, we can now define all the classical operations about lists. We get the following ADT:</p>
-<p>extension ADT list</p>
+<p><strong>extension ADT list</strong></p>
 <p><strong>Uses Natural</strong></p>
 <p><strong>operations</strong></p>
 <p>$length:1ist \to Natural$</p>
@@ -312,17 +312,81 @@
 <p>$remove :list \quad{x} Natural \to list nth : list x Natural Element$ </p>
 <p><strong>pre-conditions</strong></p>
 <p>$remove (1,n)) \iff 1 ≤n ≤ length(1)$ </p>
-<p>$nth(l,n))\iff 1≤n ≤ length(1)$ </p>
+<p>$n^{th}(l,n))\iff 1≤n ≤ length(1)$ </p>
 <p>$add（1,n,e））\iff 1 ≤n ≤ length（1） + 1$</p>
 <p><strong>axioms</strong></p>
 <p>$A_5: length（create） &#x3D; 0$ </p>
 <p>$A_6: 1!&#x3D;create \Rightarrow length(1) \equiv length(rest(1))+ 1$ </p>
-<p>$A_7: nth（1,1） \equiv first(1)$ </p>
-<p>$A_8: i&gt;1&#x3D;nth(1,i) \equiv nth(rest(1),i-1)$ </p>
+<p>$A_7: n^{th}（1,1） \equiv first(1)$ </p>
+<p>$A_8: i&gt;1&#x3D;n^{th}(1,i) \equiv n^{th}(rest(1),i-1)$ </p>
 <p>$A_9: add(1,1,e) \equiv cons(e,1)$ </p>
 <p>$A_{10}:i&gt;1&#x3D;add（l,i,e）\equiv cons (first(1),add(rest(1),i-1,e)$  </p>
 <p>$A_{11}: remove (1,1) &#x3D; rest(1)$ </p>
 <p>$A_{12}: i&gt;1 \Rightarrow remove(1,i) \equiv cons(first(1),remove (rest(1),i-1)$ </p>
+<h3 id="Merging-sorted-list"><a href="#Merging-sorted-list" class="headerlink" title="Merging sorted list"></a>Merging sorted list</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls1 = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>]</span><br><span class="line">ls2 = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">merging ls1+ls2 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+
+<p><strong>ADT merged list</strong></p>
+<p><strong>Use element in lists</strong></p>
+<p><strong>Operation</strong></p>
+<p>$issorted: list \to boolean$</p>
+<p>$merge: list \quad\text{x}\quad list \to list$</p>
+<p><strong>Precondition</strong></p>
+<p>$merge(l_1,l_2) \iff issorted(l_1) \quad\text{and}\quad issorted(l_2)$</p>
+<p><strong>Axioms</strong></p>
+<p>$A_1: issorted(new)\equiv T$</p>
+<p>$A_2: issorted(cons(l,new)) \equiv T$</p>
+<p>$A_3: issorted(cons(e,l))\equiv e&lt;&#x3D;first(l) \quad\text{and}\quad issorted(l)$</p>
+<p>$A_4:issorted(l) \equiv first(l) &lt;&#x3D;first(rest(l)) \quad\text{and}\quad issorted(rest(l))$</p>
+<p>$A_5: merge(new,l) \equiv l$</p>
+<p>$A_6: merge(l,new)\equiv l$</p>
+<p>$A_7: first(l_1)&lt;&#x3D;first(l_2) \Rightarrow merge(l_1,l_2) \equiv cons(first(l_1),merge(rest(l_1),l_2))$</p>
+<p>$A_8: first(l_1)&gt;first(l_2) \Rightarrow merge(l_1,l_2) \equiv cons(first(l_2),merge(rest(l_2),l_1))$</p>
+<p><strong>ADT indexof list</strong></p>
+<p><strong>operations</strong></p>
+<p>$indexof: list \quad \text{x}\quad element \to Natutral$</p>
+<p><strong>Precondition</strong></p>
+<p>$indexof(l,e) \iff cons(l,e)$</p>
+<p><strong>Axioms</strong></p>
+<p>$A_1: indexof(new,e)\equiv 0$</p>
+<p>$A_2: indexof(cons(e,l),e) \equiv 1$</p>
+<p>$A_2^*:indexof(l,first(l))\equiv 1$</p>
+<p>$A_3: indexof(cons(e_1,l,e_2))\equiv l+indexof(l,e_2)$</p>
+<p>$A_3^*:indexof(l,e)\equiv 1+indexof(rest(l),e)$</p>
+<p><strong>ADT index3</strong>(3 refers to 3 parameters in total and this function is used to check the postion of the 3^th element)</p>
+<p><strong>Operations</strong></p>
+<p>$index3: list \quad\text{x}\quad element\quad\text{x}\quad natural \to natural$</p>
+<p><strong>Axiom</strong></p>
+<p>$A_1: indexof(l,e)\equiv index3(l,e,1)$</p>
+<p>$A_2: index3(new,e,n)\equiv 0$</p>
+<p>$A_3: index3(cons(e,l),e,n) \equiv n$</p>
+<p>$A_4:index3(cons(e_1,l),e_2,n)\equiv index3(l,e_2,n+1)$</p>
+<p><strong>ADT revere list</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reverse([A,B,C,D]) = [D,C,B,A]</span><br></pre></td></tr></table></figure>
+
+<p>$last((A,B,C,D)) \to D$</p>
+<p>$allbutlast((A,B,C,D))\to(A,B,C)$</p>
+<p><strong>Operations</strong></p>
+<p>$last: list \to element$</p>
+<p>$allbutlast: list \to list$</p>
+<p>$reverse: list \to list$</p>
+<p><strong>Axioms</strong></p>
+<p>$A_1: last(cons(e,new))\equiv e$</p>
+<p>$A_2: last(cons(e,l))\equiv last(l)$</p>
+<p>$A_3: allbutlast(cons(e,new))\equiv new$</p>
+<p>$A_4: allbutlast(cons(e,l)) \equiv cons(e,allbutlast(l))$</p>
+<p>$A_5: reverse(new) \equiv new$</p>
+<p>$A_6: reverse(l) \equiv cons(last(l),reverse(allbutlast(l)))$</p>
+<p><strong>Complexity</strong></p>
+<p>last:</p>
+<p>$C(1) &#x3D; 1$</p>
+<p>$C(n) &#x3D;1+C(n-1)&#x3D;2+C(n-2)+…+i+C(n-i)$, suppose $i &#x3D;n-1$, then we get $C(n)&#x3D;n$</p>
+<p>allbutlast:</p>
+<p>$C(1) &#x3D; 0$</p>
+<p>$C(n)&#x3D;C(n-1)+3 &#x3D;C(n-2)+6 &#x3D;…&#x3D;C(n-i)+3(n-i)$,suppose $i &#x3D; n-1$, then we get $C(n) &#x3D; 3(n-1)$</p>
+<p>reverse:</p>
+<p>$C(0) &#x3D; 0$<br>$$<br>\begin{align*}<br>C(n) &amp;&#x3D; 1+n+3(n-1)+C(n-1)\\<br>&amp;&#x3D;C(n-1)+4n-2\\</p>
+<p>&amp;&#x3D;C(n-2)+4(n+(n-1))-2-2\\<br>&amp;&#x3D;C(n-3)+4(n+(n-1)+(n-2))-2-2-2\\<br>&amp;&#x3D;…\\<br>&amp;&#x3D;C(n-i)+4\sum_{k&#x3D;n-i+1}^nk-2i\\<br>&amp;&#x3D;C(0)+4\frac {n(n+1)} 2 -2n ….\text{(suppose i &#x3D;n)}\\<br>&amp;&#x3D;2n^2</p>
+<p>\end{align*}<br>$$</p>
 
   </div>
 </article>
@@ -352,7 +416,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Abstract-Data-Types-ADTs"><span class="toc-number">1.</span> <span class="toc-text">Abstract Data Types (ADTs)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Operation-signature"><span class="toc-number">1.1.</span> <span class="toc-text">Operation signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Axioms"><span class="toc-number">1.2.</span> <span class="toc-text">Axioms:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-counter"><span class="toc-number">1.3.</span> <span class="toc-text">ADT counter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Stack"><span class="toc-number">1.4.</span> <span class="toc-text">ADT Stack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ADT-Queue"><span class="toc-number">1.5.</span> <span class="toc-text">ADT Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Tower-of-Hanoi"><span class="toc-number">1.6.</span> <span class="toc-text">Tower of Hanoi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-ADT"><span class="toc-number">1.7.</span> <span class="toc-text">List ADT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Minimum-list-extension"><span class="toc-number">1.8.</span> <span class="toc-text">Minimum list extension</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Merging-sorted-list"><span class="toc-number">2.</span> <span class="toc-text">Merging sorted list</span></a></li></ol>
       </div>
     
 
