@@ -14,7 +14,7 @@
 <meta property="og:description" content="Optimizationwe are looking for the min or max of a function on a specific domain. Generally, optimization problems &gt; convex problems &gt; linear programming problems  if $X^* \in \mathbb{R}$ such t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-20T13:40:05.000Z">
-<meta property="article:modified_time" content="2023-11-26T19:02:53.376Z">
+<meta property="article:modified_time" content="2023-12-07T09:14:22.346Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -135,7 +135,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li></ol>
       </div>
     
   </span>
@@ -207,6 +207,61 @@
 <p>$f(\lambda x)&#x3D; \lambda f(x)$<br>$$<br>\begin{cases}<br>ax+by &#x3D;c_1\\<br>mx+by &#x3D; c_2<br>\end{cases}<br>$$<br>$a,b,c_1,c_2$ are constraints of this linear equation.</p>
 <p>The area contributed by the feasible solutions(where all constraints are satisfied) is called the feasible region.</p>
 <h4 id="Simplex-method"><a href="#Simplex-method" class="headerlink" title="Simplex method"></a>Simplex method</h4><p>If we deal with an LPP which is a maximization problem with a non-negativity constraint, we can use the simplex method.</p>
+<p>The idea of the simplex method is finding all solutions, the <strong>vertex</strong> of the graph</p>
+<p>To solve a linear programming problem in standard form, use the following steps. </p>
+<ol>
+<li>Convert each inequality in the set of constraints to an equation by adding slack variables. </li>
+<li>Create the initial simplex tableau. </li>
+<li>Locate the most negative entry in the bottom row. The column for this entry is called the entering column. (If ties occur, any of the tied entries can be used to determine the entering column.) </li>
+<li>From the ratios of the entries in the “b-column” with their corresponding positive entries in the entering column. The departing row corresponds to the smallest nonnegative ratio (If all entries in the entering column are 0 or negative, then there is no maximum solution. For ties, choose either entry.) The entry in the departing row and the entering column is called the pivot. </li>
+<li>Use elementary row operations so that the pivot is 1, and all other entries in the entering column are 0. This process is called pivoting. </li>
+<li>If all entries in the bottom row are zero or positive, this is the final tableau. If not, go back to Step 3. </li>
+<li>If you obtain a final tableau, then the linear programming problem has a maximum solution, which is given by the entry in the lower-right corner of the tableau.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$x_1$</th>
+<th>$x_2$</th>
+<th>$u$</th>
+<th>$v$</th>
+<th>$z$</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$u$</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$v$</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$z$</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>So, the basic feasible solution is formed as:</p>
+<p>$(x_1,x_2,x_3,….,x_n,s_1,s_2,s_3,….s_m) &#x3D; (0,0,0,..0,b_1,b_2,b_3,…b_m)$</p>
+<h4 id="Dual-simplex-method"><a href="#Dual-simplex-method" class="headerlink" title="Dual simplex method"></a>Dual simplex method</h4><p>Finding the minimum value is the same as finding the maximum value because</p>
+<p>If we meet a minimum problem, we can convert it to the finding maximum value by transverse the initial tableau we create via the simplex method</p>
 
   </div>
 </article>
@@ -236,7 +291,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li></ol>
       </div>
     
 
