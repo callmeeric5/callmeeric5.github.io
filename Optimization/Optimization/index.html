@@ -14,7 +14,7 @@
 <meta property="og:description" content="Optimizationwe are looking for the min or max of a function on a specific domain. Generally, optimization problems &gt; convex problems &gt; linear programming problems  if $X^* \in \mathbb{R}$ such t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-20T13:40:05.000Z">
-<meta property="article:modified_time" content="2023-12-07T09:14:22.346Z">
+<meta property="article:modified_time" content="2023-12-12T08:33:51.269Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -104,6 +104,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" aria-label="Previous post" href="/Probability-Statistics-For-Machine-Learning/Distribution/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
         
         <li><a class="icon" aria-label="Next post" href="/Linear-Algebra/Linear%20Algebra/Diagonalization/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
@@ -135,7 +137,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Degeneracy"><span class="toc-number">4.</span> <span class="toc-text">Degeneracy</span></a></li></ol>
       </div>
     
   </span>
@@ -262,6 +264,10 @@
 <p>$(x_1,x_2,x_3,….,x_n,s_1,s_2,s_3,….s_m) &#x3D; (0,0,0,..0,b_1,b_2,b_3,…b_m)$</p>
 <h4 id="Dual-simplex-method"><a href="#Dual-simplex-method" class="headerlink" title="Dual simplex method"></a>Dual simplex method</h4><p>Finding the minimum value is the same as finding the maximum value because</p>
 <p>If we meet a minimum problem, we can convert it to the finding maximum value by transverse the initial tableau we create via the simplex method</p>
+<h3 id="Degeneracy"><a href="#Degeneracy" class="headerlink" title="Degeneracy"></a>Degeneracy</h3><p>We have a case of degeneracy if one basic variable is equal to zero.</p>
+<p>Degeneracy can lead to cycling (&#x3D;repeating the same steps in the implementation of the simplex) and an infinite loop (not all the time)</p>
+<p>From the geometric explanation, that means more than two constraint lines are intersecting at the same point. So there must exist one redundant constraint. The objective function, is parallel to one constraint (non-redundant one)</p>
+<p>When determining the leaving variable of any tableau, if all entries of the pivot column are negative or zero</p>
 
   </div>
 </article>
@@ -291,7 +297,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimization"><span class="toc-number">1.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convex-problems"><span class="toc-number">2.</span> <span class="toc-text">Convex problems</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-sets"><span class="toc-number">2.1.</span> <span class="toc-text">Convex sets</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Convex-functions"><span class="toc-number">2.2.</span> <span class="toc-text">Convex functions</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linear-programming-problem"><span class="toc-number">3.</span> <span class="toc-text">Linear programming problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Simplex-method"><span class="toc-number">3.1.</span> <span class="toc-text">Simplex method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dual-simplex-method"><span class="toc-number">3.2.</span> <span class="toc-text">Dual simplex method</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Degeneracy"><span class="toc-number">4.</span> <span class="toc-text">Degeneracy</span></a></li></ol>
       </div>
     
 
