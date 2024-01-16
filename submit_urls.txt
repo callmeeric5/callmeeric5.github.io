@@ -1,10 +1,10 @@
-http://callmeeric5.life/Probability-Statistics-For-Machine-Learning/Distribution/
-http://callmeeric5.life/Probability-Statistics-For-Machine-Learning/Possibility&Statistics/Possibility/
-http://callmeeric5.life/Optimization/Optimization/
 http://callmeeric5.life/Advanced-Algorithm/Complexity/Abstract%20Data%20Types/
+http://callmeeric5.life/Epita/Optimization2/
+http://callmeeric5.life/Probability-Statistics-For-Machine-Learning/Distribution/Distribution/
+http://callmeeric5.life/Probability-Statistics-For-Machine-Learning/Possibility&Statistics/Possibility/
+http://callmeeric5.life/Optimization/optimization/Optimization/
 http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Equations/
 http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Geometry/
 http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Diagonalization/
 http://callmeeric5.life/Linear-Algebra/Linear%20Algebra/Linear%20Algebra%20Week1&2/
 http://callmeeric5.life/Advanced-Algorithm/Complexity/Complexity/
-http://callmeeric5.life/French/French/Week2/

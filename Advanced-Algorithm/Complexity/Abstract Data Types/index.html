@@ -14,7 +14,7 @@
 <meta property="og:description" content="Abstract Data Types (ADTs)An ADT is a tuple （T, U, O, P,  A） where    T is the name of the ADT we are defining.  U is a set of （already defined） ADTs used in the definition of T. Notice that this impl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-08T16:15:16.000Z">
-<meta property="article:modified_time" content="2023-11-29T14:10:39.442Z">
+<meta property="article:modified_time" content="2024-01-16T21:04:55.909Z">
 <meta property="article:author" content="Eric W">
 <meta property="article:tag" content="Epita">
 <meta name="twitter:card" content="summary">
@@ -211,9 +211,9 @@
 <p>operations</p>
 <p>true: -&gt; boolean</p>
 <p>false:  -&gt; boolean</p>
-<p>$ !_ $: boolean -&gt; boolean</p>
-<p>$ _∧_ $: boolean x boolean -&gt;  boolean </p>
-<p>$ _∨_ $: boolean x boolean -&gt;  boolean</p>
+<p>!_ : boolean -&gt; boolean</p>
+<p>_∧_ : boolean x boolean -&gt;  boolean </p>
+<p><em>∨</em>: boolean x boolean -&gt;  boolean</p>
 <p>axioms</p>
 <p>$!true &#x3D; false$</p>
 <p>$!!a &#x3D; a$</p>
@@ -391,15 +391,15 @@
 <p><strong>ADT Tree</strong></p>
 <p><strong>Use integer</strong></p>
 <p><strong>Oporations</strong></p>
-<p>$new: element \cross forest \to tree$</p>
+<p>$new: element \times forest \to tree$</p>
 <p>$newforest: forest$</p>
-<p>$addtree: forest \cross tree\cross integer \to forest$</p>
+<p>$addtree: forest \times tree\times integer \to forest$</p>
 <p>$root: tree \to element$</p>
 <p>$subTrees: tree \to fortest$</p>
 <p>$ntree: forest \to integer$</p>
-<p>$nth: forest \cross interger \to tree$</p>
-<p>$remTree: forest \cross integer \to forest$</p>
-<p><strong>Particial conditions</strong></p>
+<p>$nth: forest \times interger \to tree$</p>
+<p>$remTree: forest \times integer \to forest$</p>
+<p>** Preconditions**</p>
 <p>$nth(f,n) \iff 1\le n \le nTree$</p>
 <p>$newTree(f,n)\iff 1\le n \le nTree$</p>
 <p>$addTree(f,t,n) \iff 1\le n \le nTree+1$</p>
@@ -418,8 +418,8 @@
 <p><strong>ADT extension tree, forest</strong></p>
 <p><strong>Use Boolean</strong></p>
 <p><strong>Operations</strong></p>
-<p>$contains: tree \cross element \to boolean$</p>
-<p>$containsF: forest \cross element \to boolean$</p>
+<p>$contains: tree \times element \to boolean$</p>
+<p>$containsF: forest \times element \to boolean$</p>
 <p><strong>Axioms</strong></p>
 <p>$A_1: contains(new(e,f),e) \equiv true$</p>
 <p>$A_2:contains(t,e) \equiv containsF(subTrees(t),e)$</p>
@@ -469,11 +469,11 @@
 <p><strong>Use boolean, element</strong></p>
 <p><strong>Opreations</strong></p>
 <p>$new: \to BT$</p>
-<p>$element \cross BT \cross BT \to BT$</p>
+<p>$element \times BT \times BT \to BT$</p>
 <p>$BT \to element$</p>
 <p>$left: BT \to BT$</p>
 <p>$right: BT\to BT$</p>
-<p>$contains: BT \cross element \to boolean$</p>
+<p>$contains: BT \times element \to boolean$</p>
 <p><strong>Preconditions</strong></p>
 <p>$root(t)\iff t \neq new$</p>
 <p>$left(t)\iff t \neq new$</p>
@@ -593,7 +593,7 @@
 <h4 id="ADT-AVL-extend-BST"><a href="#ADT-AVL-extend-BST" class="headerlink" title="ADT AVL extend BST"></a>ADT AVL extend BST</h4><p><strong>Operations</strong></p>
 <p>$rRot: BST \to AVL$</p>
 <p><strong>Precondition</strong></p>
-<p>$rRot(t) \iff t ! \equiv new \and left(t) !\equiv new \and left(left(t)) !\equiv new$</p>
+<p>$rRot(t) \iff t ! \equiv new \text{and} left(t) !\equiv new \text{and} left(left(t)) !\equiv new$</p>
 <p><strong>Axioms</strong></p>
 <p>$rRot(&lt;r,&lt;lr,&lt;llr,lll,llr&gt;,lr&gt;,r&gt;) \equiv &lt;lr,&lt;llr,lll,llr&gt;,&lt;r,lr,r&gt;&gt;$</p>
 
@@ -664,7 +664,7 @@
     Copyright &copy;
     
     
-    2022-2023
+    2022-2024
     Eric W
   </div>
   <div class="footer-right">
