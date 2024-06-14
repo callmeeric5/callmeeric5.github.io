@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Integration on Eric Windsor</title>
-    <link>http://localhost:1313/tags/integration/</link>
+    <link>https://callmeeric5.github.io/tags/integration/</link>
     <description>Recent content in Integration on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Jun 2023 21:46:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://callmeeric5.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple integration</title>
-      <link>http://localhost:1313/posts/calculus/multiple-integration/</link>
+      <link>https://callmeeric5.github.io/posts/calculus/multiple-integration/</link>
       <pubDate>Mon, 12 Jun 2023 21:46:51 +0000</pubDate>
-      <guid>http://localhost:1313/posts/calculus/multiple-integration/</guid>
+      <guid>https://callmeeric5.github.io/posts/calculus/multiple-integration/</guid>
       <description>Iterated Integrals and Area Iterated integration is the process of repeatedly integrating the results of previous integrations. Integrating one integral is denoted as follows.
 Let $a, b, c$ and $d$ be numbers and let $g_1 (x)$, $g_2 (x)$, $h_1 (y)$ and $h_2 (y)$ be functions of $x$ and $y$, respectively. Then: $$ \begin{align} \int_c^d \int_{h_1(y)}^{h_2(y)}f(x,y)dx dy = \int_c^d(\int_{h_1(y)}^{h_2(y)}f(x,y)dx)dy\\\\ \int_a^b \int_{g_1(y)}^{g_2(y)}f(x,y)dx dy = \int_a^b (\int_{g_1(y)}^{g_2(y)}f(x,y)dy) dx \end{align} $$ $x$ varies from $h_1(y)$ to $h_2(y)$, whereas $y$ varies from $c$ to $d$.</description>
     </item>

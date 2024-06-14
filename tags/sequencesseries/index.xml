@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sequences&amp;Series on Eric Windsor</title>
-    <link>http://localhost:1313/tags/sequencesseries/</link>
+    <link>https://callmeeric5.github.io/tags/sequencesseries/</link>
     <description>Recent content in Sequences&amp;Series on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 21 May 2023 22:23:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sequencesseries/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://callmeeric5.github.io/tags/sequencesseries/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sequences</title>
-      <link>http://localhost:1313/posts/calculus/sequences/</link>
+      <link>https://callmeeric5.github.io/posts/calculus/sequences/</link>
       <pubDate>Sun, 21 May 2023 22:23:53 +0000</pubDate>
-      <guid>http://localhost:1313/posts/calculus/sequences/</guid>
+      <guid>https://callmeeric5.github.io/posts/calculus/sequences/</guid>
       <description>Sequence A sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$.
 The terms of a sequence are the values $a(1), a(2), …,a(n)$ which are usually denoted with subscripts as $a_1 , a_2 , ….a_n$
 A sequence $a(n)$ is often denoted as ${a_n}$ .

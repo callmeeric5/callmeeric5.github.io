@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Derivatives of Function on Eric Windsor</title>
-    <link>http://localhost:1313/tags/derivatives-of-function/</link>
+    <link>https://callmeeric5.github.io/tags/derivatives-of-function/</link>
     <description>Recent content in Derivatives of Function on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 25 Apr 2023 14:40:43 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/derivatives-of-function/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://callmeeric5.github.io/tags/derivatives-of-function/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integration</title>
-      <link>http://localhost:1313/posts/calculus/integration/</link>
+      <link>https://callmeeric5.github.io/posts/calculus/integration/</link>
       <pubDate>Tue, 25 Apr 2023 14:40:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/calculus/integration/</guid>
+      <guid>https://callmeeric5.github.io/posts/calculus/integration/</guid>
       <description>Antiderivatives and Indeﬁnite Integrals Let a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) = f(x)$.
 The set of all antiderivatives of $f(x)$ is the indeﬁnite integral of $f$, denoted by $\displaystyle\int f(x) dx = F(x)+C$
 Definite Integral The deﬁnite integral of $f$ on $[a, b]$ is the total signed area of $f$ on $[a, b]$, denoted
@@ -25,9 +25,9 @@ $\displaystyle\int _a ^bf(x) dx$</description>
     </item>
     <item>
       <title>Derivative</title>
-      <link>http://localhost:1313/posts/calculus/derivative/</link>
+      <link>https://callmeeric5.github.io/posts/calculus/derivative/</link>
       <pubDate>Fri, 25 Nov 2022 14:04:05 +0000</pubDate>
-      <guid>http://localhost:1313/posts/calculus/derivative/</guid>
+      <guid>https://callmeeric5.github.io/posts/calculus/derivative/</guid>
       <description>Definition Instantaneous rate of change at the point of the function. Presentation in Math,$f&amp;rsquo;(c)=\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c))$, the equation is $l(x)=f&amp;rsquo;(c)(x-c)+f(c)$.
 If we draw the derivatives of each point in the graph, we can get a new function called the derivative function, the equation is $f&amp;rsquo;(x)=\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)} h$, It also writen as $f&amp;rsquo;(x)=y&amp;rsquo;=\dfrac {dy} {dx}=\dfrac {df} {dx}=\dfrac d {dx}(y)=\dfrac d {dx}(f)$</description>
     </item>
