@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 05 Jan 2024 11:19:23 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm</title>
-      <link>https://callmeeric5.github.io/tags/algorithm/</link>
+      <link>http://localhost:1313/tags/algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/algorithm/</guid>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistics</title>
-      <link>https://callmeeric5.github.io/tags/statistics/</link>
+      <link>http://localhost:1313/tags/statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/statistics/</guid>
+      <guid>http://localhost:1313/tags/statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>https://callmeeric5.github.io/tags/optimization/</link>
+      <link>http://localhost:1313/tags/optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/optimization/</guid>
+      <guid>http://localhost:1313/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Algebra</title>
-      <link>https://callmeeric5.github.io/tags/linear-algebra/</link>
+      <link>http://localhost:1313/tags/linear-algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/linear-algebra/</guid>
+      <guid>http://localhost:1313/tags/linear-algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>French</title>
-      <link>https://callmeeric5.github.io/tags/french/</link>
+      <link>http://localhost:1313/tags/french/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/french/</guid>
+      <guid>http://localhost:1313/tags/french/</guid>
       <description></description>
     </item>
     <item>
       <title>Integration</title>
-      <link>https://callmeeric5.github.io/tags/integration/</link>
+      <link>http://localhost:1313/tags/integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/integration/</guid>
+      <guid>http://localhost:1313/tags/integration/</guid>
       <description></description>
     </item>
     <item>
       <title>Vector</title>
-      <link>https://callmeeric5.github.io/tags/vector/</link>
+      <link>http://localhost:1313/tags/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/vector/</guid>
+      <guid>http://localhost:1313/tags/vector/</guid>
       <description></description>
     </item>
     <item>
       <title>Sequences&amp;Series</title>
-      <link>https://callmeeric5.github.io/tags/sequencesseries/</link>
+      <link>http://localhost:1313/tags/sequencesseries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/sequencesseries/</guid>
+      <guid>http://localhost:1313/tags/sequencesseries/</guid>
       <description></description>
     </item>
     <item>
       <title>Application</title>
-      <link>https://callmeeric5.github.io/tags/application/</link>
+      <link>http://localhost:1313/tags/application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/application/</guid>
+      <guid>http://localhost:1313/tags/application/</guid>
       <description></description>
     </item>
     <item>
       <title>Derivatives of Function</title>
-      <link>https://callmeeric5.github.io/tags/derivatives-of-function/</link>
+      <link>http://localhost:1313/tags/derivatives-of-function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/derivatives-of-function/</guid>
+      <guid>http://localhost:1313/tags/derivatives-of-function/</guid>
       <description></description>
     </item>
     <item>
       <title>Limits of Function</title>
-      <link>https://callmeeric5.github.io/tags/limits-of-function/</link>
+      <link>http://localhost:1313/tags/limits-of-function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/tags/limits-of-function/</guid>
+      <guid>http://localhost:1313/tags/limits-of-function/</guid>
       <description></description>
     </item>
   </channel>

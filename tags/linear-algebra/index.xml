@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linear Algebra on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/linear-algebra/</link>
+    <link>http://localhost:1313/tags/linear-algebra/</link>
     <description>Recent content in Linear Algebra on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 13 Nov 2023 16:19:09 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diagonalization</title>
-      <link>https://callmeeric5.github.io/posts/linear-algebra/diagonalization/</link>
+      <link>http://localhost:1313/posts/linear-algebra/diagonalization/</link>
       <pubDate>Mon, 13 Nov 2023 16:19:09 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/linear-algebra/diagonalization/</guid>
+      <guid>http://localhost:1313/posts/linear-algebra/diagonalization/</guid>
       <description>Diagonalisation An n × n matrix A is diagonalisable if it is similar to a diagonal matrix: that is if there exists an invertible n × n matrix C and a diagonal matrix D such that $A= CDC^{−1}$.
 Compute powers of a diagonalisable matrix. If $A= CDC^{−1}$, where $D$ is a diagonal matrix, then $A^n = CD^nC^{−1}$: $$ A = C \begin{bmatrix} x &amp;0 &amp;0\\\\ 0 &amp;y &amp;0\\\\ 0 &amp;0 &amp;z \end{bmatrix} C^{-1} \iff A^n = C \begin{bmatrix} x^n &amp;0 &amp;0\\\\ 0 &amp;y^n &amp;0\\\\ 0 &amp;0 &amp;z^n \end{bmatrix} C^{-1} $$ </description>
     </item>
     <item>
       <title>Linear Algebra Week1&amp;2</title>
-      <link>https://callmeeric5.github.io/posts/linear-algebra/linear-algebra-week12/</link>
+      <link>http://localhost:1313/posts/linear-algebra/linear-algebra-week12/</link>
       <pubDate>Tue, 31 Oct 2023 12:52:57 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/linear-algebra/linear-algebra-week12/</guid>
+      <guid>http://localhost:1313/posts/linear-algebra/linear-algebra-week12/</guid>
       <description>Data Science: Math + CS + Business
 AI: Let the computer make an intellectual task as well as a human being (e.g.: Chess game [Decison Tree])
 Machine Learning: Teaching skills via data. Data learn how to make the task itself via a specific algorithm (e.g.: Netflix recommendation engine)
@@ -34,16 +34,16 @@ Deep Learning: Neural Network + several layers in the middle</description>
     </item>
     <item>
       <title>Geometry</title>
-      <link>https://callmeeric5.github.io/posts/linear-algebra/geometry/</link>
+      <link>http://localhost:1313/posts/linear-algebra/geometry/</link>
       <pubDate>Mon, 03 Jul 2023 13:20:22 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/linear-algebra/geometry/</guid>
+      <guid>http://localhost:1313/posts/linear-algebra/geometry/</guid>
       <description>Three equivalent ways of thinking about a linear system: As a system of equations: $$ \begin{cases} 2x + 3x_2 − 2x_3 = 7\\\\ x_1− x_2− 3x_3= 5 \end{cases} $$ As an augmented matrix: $$ \left( \begin{array}{ccc} 2 &amp; 3 &amp; -2 \\\\ 1 &amp; -1 &amp; -3 \end{array} \middle| \begin{array}{c} 7 \\\\ 5 \end{array} \right) $$ As a vector equation $(x_1v_1 + x_2v_2 + ··· + x_nv_n = b)$: $$ x_1\begin{pmatrix}2\\\\1\end{pmatrix}+x_2\begin{pmatrix}3\\\\-1\end{pmatrix}+x_3\begin{pmatrix}-2\\\\-3\end{pmatrix}=\begin{pmatrix}7\\\\5\end{pmatrix} $$ Span Given a set of vectors ${v_1, v_2, \ldots, v_n}$ in a vector space $V$, the span of that set, denoted by $\text{Span}{v_1, v_2, \ldots, v_n}$, is the set of all linear combinations of those vectors: $$ \text{Span}\lbrace v_1, v_2, \ldots, v_n\rbrace = \lbrace a_1v_1 + a_2v_2 + \ldots + a_nv_n \mid a_1, a_2, \ldots, a_n \in \mathbb{R}\rbrace $$ In other words, the span is the set of all possible vectors that can be written as a linear combination of the given vectors.</description>
     </item>
     <item>
       <title>System of linear equations</title>
-      <link>https://callmeeric5.github.io/posts/linear-algebra/equations/</link>
+      <link>http://localhost:1313/posts/linear-algebra/equations/</link>
       <pubDate>Sat, 01 Jul 2023 13:58:14 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/linear-algebra/equations/</guid>
+      <guid>http://localhost:1313/posts/linear-algebra/equations/</guid>
       <description>Linear equations An equation in the unknowns $x, y,z,&amp;hellip;$ is called linear if both sides of the equation are a sum of (constant) multiples of $x, y,z,&amp;hellip;,$ plus an optional constant. For instance, $3x + 4y = 2z$ and $−x − z = 100$. A system of linear equations is a collection of several linear equations, as below: $$ \begin{cases} x + 2y = -3 \\\\ x + 2y = 3 \end{cases} $$ A system of equations is called inconsistent if it has no solutions.</description>
     </item>
   </channel>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Statistics on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/statistics/</link>
+    <link>http://localhost:1313/tags/statistics/</link>
     <description>Recent content in Statistics on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Dec 2023 10:52:49 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distribution</title>
-      <link>https://callmeeric5.github.io/posts/distribution/distribution/</link>
+      <link>http://localhost:1313/posts/distribution/distribution/</link>
       <pubDate>Fri, 15 Dec 2023 10:52:49 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/distribution/distribution/</guid>
+      <guid>http://localhost:1313/posts/distribution/distribution/</guid>
       <description>Probability distribution PDF(probability density function) Definition : $f$ is a continuous function with:
 $f(x) \ge 0, \forall x$ $\int_{-x}^{x} dx = 1$ $P(a&amp;lt;x&amp;lt;b) = \int_a^bdx$ Random variables - usually denoted by uppercase letters near the end of our alphabet （e.g. X, Y）.
 Particular value - now use lowercase letters, such as x, which correspond to the r.v. X.
@@ -26,9 +26,9 @@ $P(x=a)=P(a\le x \le a)=\int_a^af(x)dx=0,a\in\mathbb{R}$ $$ P(x&lt;=a) \equiv P(
     </item>
     <item>
       <title>Possibility</title>
-      <link>https://callmeeric5.github.io/posts/possibilitystatistics/possibility/</link>
+      <link>http://localhost:1313/posts/possibilitystatistics/possibility/</link>
       <pubDate>Thu, 09 Nov 2023 10:09:54 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/possibilitystatistics/possibility/</guid>
+      <guid>http://localhost:1313/posts/possibilitystatistics/possibility/</guid>
       <description>Intro Possibility: calculating the likelihood of future events
 Statistics: gathering, and analyzing data
 Machine learning: models which are accurate most of the time. It contains 2 important factors, accuracy (how close the predictions are from the true value) and robustness (the ability to generalize to unknown data)

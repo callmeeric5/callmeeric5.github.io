@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vector on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/vector/</link>
+    <link>http://localhost:1313/tags/vector/</link>
     <description>Recent content in Vector on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 25 May 2023 14:42:28 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/vector/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vector/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector</title>
-      <link>https://callmeeric5.github.io/posts/calculus/vector/</link>
+      <link>http://localhost:1313/posts/calculus/vector/</link>
       <pubDate>Thu, 25 May 2023 14:42:28 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/vector/</guid>
+      <guid>http://localhost:1313/posts/calculus/vector/</guid>
       <description>Defination of Vector A vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be the initial point of the vector, and the point $Q$ is the terminal point.
 The magnitude, length or norm of $\vec {PQ}$ is the length of the line segment $\overline {PQ}$: $|| \overline{PQ} ||$ = $||\vec {PQ} ||$ .</description>
     </item>

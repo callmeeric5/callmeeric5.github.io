@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Algorithm on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/algorithm/</link>
+    <link>http://localhost:1313/tags/algorithm/</link>
     <description>Recent content in Algorithm on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 05 Jan 2024 11:19:23 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimization2</title>
-      <link>https://callmeeric5.github.io/posts/optimization2/optimization2/</link>
+      <link>http://localhost:1313/posts/optimization2/optimization2/</link>
       <pubDate>Fri, 05 Jan 2024 11:19:23 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/optimization2/optimization2/</guid>
+      <guid>http://localhost:1313/posts/optimization2/optimization2/</guid>
       <description>Critical Value $x = c$ is a critical value if $f&amp;rsquo;(c) = 0$ or $f&amp;rsquo;(c)$ doesn&amp;rsquo;t exist
 N.B.: If $f&amp;rsquo;(c) = 0$ doesn&amp;rsquo;t imply $x = c$ is a critical value
 Second derivative test If $x=c$ is a critical value of $f(x)$, such that $f&amp;rsquo;(c)=0$ then $x=c$
@@ -27,9 +27,9 @@ $f(c)$ is a local max (the maximum around one peak) if $f&amp;rsquo;&amp;rsquo;(
     </item>
     <item>
       <title>Abstract Data Types</title>
-      <link>https://callmeeric5.github.io/posts/complexity/abstract-data-types/</link>
+      <link>http://localhost:1313/posts/complexity/abstract-data-types/</link>
       <pubDate>Wed, 08 Nov 2023 17:15:16 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/complexity/abstract-data-types/</guid>
+      <guid>http://localhost:1313/posts/complexity/abstract-data-types/</guid>
       <description>Abstract Data Types (ADTs) An ADT is a tuple （T, U, O, P, A） where
 T is the name of the ADT we are defining.
 U is a set of （already defined） ADTs used in the definition of T. Notice that this implies a notion of a hierarchy of ADTs.
@@ -38,9 +38,9 @@ P is a set of pre-conditions （logical expressions that always must hold true�
     </item>
     <item>
       <title>Complexity</title>
-      <link>https://callmeeric5.github.io/posts/complexity/complexity/</link>
+      <link>http://localhost:1313/posts/complexity/complexity/</link>
       <pubDate>Thu, 26 Oct 2023 10:59:13 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/complexity/complexity/</guid>
+      <guid>http://localhost:1313/posts/complexity/complexity/</guid>
       <description>Intro to Complexity In CS, we have different ways to solve the same question. Depending on the chosen criteria, one of them is the &amp;ldquo;best&amp;rdquo; solution. An algorithm is defined as complex based on the amount of Space and Time it consumes. Hence the Complexity of an algorithm refers to the measure of the time it will need to execute and get the expected output and the Space it will need to store all the data (input, temporary data, and output).</description>
     </item>
   </channel>

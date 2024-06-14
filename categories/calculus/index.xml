@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Calculus on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/categories/calculus/</link>
+    <link>http://localhost:1313/categories/calculus/</link>
     <description>Recent content in Calculus on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Jun 2023 21:46:51 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple integration</title>
-      <link>https://callmeeric5.github.io/posts/calculus/multiple-integration/</link>
+      <link>http://localhost:1313/posts/calculus/multiple-integration/</link>
       <pubDate>Mon, 12 Jun 2023 21:46:51 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/multiple-integration/</guid>
+      <guid>http://localhost:1313/posts/calculus/multiple-integration/</guid>
       <description>Iterated Integrals and Area Iterated integration is the process of repeatedly integrating the results of previous integrations. Integrating one integral is denoted as follows.
 Let $a, b, c$ and $d$ be numbers and let $g_1 (x)$, $g_2 (x)$, $h_1 (y)$ and $h_2 (y)$ be functions of $x$ and $y$, respectively. Then: $$ \begin{align} \int_c^d \int_{h_1(y)}^{h_2(y)}f(x,y)dx dy = \int_c^d(\int_{h_1(y)}^{h_2(y)}f(x,y)dx)dy\\\\ \int_a^b \int_{g_1(y)}^{g_2(y)}f(x,y)dx dy = \int_a^b (\int_{g_1(y)}^{g_2(y)}f(x,y)dy) dx \end{align} $$ $x$ varies from $h_1(y)$ to $h_2(y)$, whereas $y$ varies from $c$ to $d$.</description>
     </item>
     <item>
       <title>Vector</title>
-      <link>https://callmeeric5.github.io/posts/calculus/vector/</link>
+      <link>http://localhost:1313/posts/calculus/vector/</link>
       <pubDate>Thu, 25 May 2023 14:42:28 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/vector/</guid>
+      <guid>http://localhost:1313/posts/calculus/vector/</guid>
       <description>Defination of Vector A vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be the initial point of the vector, and the point $Q$ is the terminal point.
 The magnitude, length or norm of $\vec {PQ}$ is the length of the line segment $\overline {PQ}$: $|| \overline{PQ} ||$ = $||\vec {PQ} ||$ .</description>
     </item>
     <item>
       <title>Sequences</title>
-      <link>https://callmeeric5.github.io/posts/calculus/sequences/</link>
+      <link>http://localhost:1313/posts/calculus/sequences/</link>
       <pubDate>Sun, 21 May 2023 22:23:53 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/sequences/</guid>
+      <guid>http://localhost:1313/posts/calculus/sequences/</guid>
       <description>Sequence A sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$.
 The terms of a sequence are the values $a(1), a(2), …,a(n)$ which are usually denoted with subscripts as $a_1 , a_2 , ….a_n$
 A sequence $a(n)$ is often denoted as ${a_n}$ .
@@ -41,9 +41,9 @@ Limit of a Sequence Let ${a_n}$ be a sequence and let $L$ be a real number.</des
     </item>
     <item>
       <title>Antidifferentiation</title>
-      <link>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</link>
+      <link>http://localhost:1313/posts/calculus/antidifferentiation/</link>
       <pubDate>Tue, 16 May 2023 15:01:09 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</guid>
+      <guid>http://localhost:1313/posts/calculus/antidifferentiation/</guid>
       <description>Integration by Substitution Let $F$ and $g$ be diﬀerentiable functions, where the range of $g$ is an interval $I$ contained in the domain of $F$. Then
 $\displaystyle \int F&amp;rsquo;(g(x))g&amp;rsquo;(x) dx =F(g(x))+C $
 If $u = g(x)$, then $du = g&amp;rsquo;(x)dx$ and
@@ -53,9 +53,9 @@ Consider $\int F ′ (ax + b) dx$, where $a$ and $b$ are constants. Letting $u =
     </item>
     <item>
       <title>Integration</title>
-      <link>https://callmeeric5.github.io/posts/calculus/integration/</link>
+      <link>http://localhost:1313/posts/calculus/integration/</link>
       <pubDate>Tue, 25 Apr 2023 14:40:43 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/integration/</guid>
+      <guid>http://localhost:1313/posts/calculus/integration/</guid>
       <description>Antiderivatives and Indeﬁnite Integrals Let a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) = f(x)$.
 The set of all antiderivatives of $f(x)$ is the indeﬁnite integral of $f$, denoted by $\displaystyle\int f(x) dx = F(x)+C$
 Definite Integral The deﬁnite integral of $f$ on $[a, b]$ is the total signed area of $f$ on $[a, b]$, denoted
@@ -63,17 +63,17 @@ $\displaystyle\int _a ^bf(x) dx$</description>
     </item>
     <item>
       <title>Derivative</title>
-      <link>https://callmeeric5.github.io/posts/calculus/derivative/</link>
+      <link>http://localhost:1313/posts/calculus/derivative/</link>
       <pubDate>Fri, 25 Nov 2022 14:04:05 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/derivative/</guid>
+      <guid>http://localhost:1313/posts/calculus/derivative/</guid>
       <description>Definition Instantaneous rate of change at the point of the function. Presentation in Math,$f&amp;rsquo;(c)=\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c))$, the equation is $l(x)=f&amp;rsquo;(c)(x-c)+f(c)$.
 If we draw the derivatives of each point in the graph, we can get a new function called the derivative function, the equation is $f&amp;rsquo;(x)=\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)} h$, It also writen as $f&amp;rsquo;(x)=y&amp;rsquo;=\dfrac {dy} {dx}=\dfrac {df} {dx}=\dfrac d {dx}(y)=\dfrac d {dx}(f)$</description>
     </item>
     <item>
       <title>Limit</title>
-      <link>https://callmeeric5.github.io/posts/calculus/limit/</link>
+      <link>http://localhost:1313/posts/calculus/limit/</link>
       <pubDate>Tue, 22 Nov 2022 14:20:31 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/limit/</guid>
+      <guid>http://localhost:1313/posts/calculus/limit/</guid>
       <description>Introduction The graph of the function is contributed by many points in the same set. It is a straight line, curve or anything else. When the x-value of points approaching constant c, we&amp;rsquo;ll find the y-values of these points also approaching constant L.
 Definition $$ \lim_{x \to c}f(x)=L \iff \forall \ \epsilon &gt; 0, \exists \ \delta &gt; 0 \ s.t. |x-c| &lt; \delta \rightarrow |f(x)-L|&lt;\epsilon $$ Means that given any $ε &amp;gt; 0$, there exists $\delta &amp;gt; 0$ such that for all x in I, where x $\neq$ c, if $ | x − c | &amp;lt; \delta $, then $| f(x) − L | &amp;lt; ε$.</description>
     </item>

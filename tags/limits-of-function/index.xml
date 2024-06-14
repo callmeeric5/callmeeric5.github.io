@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Limits of Function on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/limits-of-function/</link>
+    <link>http://localhost:1313/tags/limits-of-function/</link>
     <description>Recent content in Limits of Function on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Nov 2022 14:20:31 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/limits-of-function/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/limits-of-function/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Limit</title>
-      <link>https://callmeeric5.github.io/posts/calculus/limit/</link>
+      <link>http://localhost:1313/posts/calculus/limit/</link>
       <pubDate>Tue, 22 Nov 2022 14:20:31 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/calculus/limit/</guid>
+      <guid>http://localhost:1313/posts/calculus/limit/</guid>
       <description>Introduction The graph of the function is contributed by many points in the same set. It is a straight line, curve or anything else. When the x-value of points approaching constant c, we&amp;rsquo;ll find the y-values of these points also approaching constant L.
 Definition $$ \lim_{x \to c}f(x)=L \iff \forall \ \epsilon &gt; 0, \exists \ \delta &gt; 0 \ s.t. |x-c| &lt; \delta \rightarrow |f(x)-L|&lt;\epsilon $$ Means that given any $ε &amp;gt; 0$, there exists $\delta &amp;gt; 0$ such that for all x in I, where x $\neq$ c, if $ | x − c | &amp;lt; \delta $, then $| f(x) − L | &amp;lt; ε$.</description>
     </item>

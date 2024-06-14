@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>French on Eric Windsor</title>
-    <link>https://callmeeric5.github.io/tags/french/</link>
+    <link>http://localhost:1313/tags/french/</link>
     <description>Recent content in French on Eric Windsor</description>
     <image>
       <title>Eric Windsor</title>
-      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
-      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+      <url>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>http://localhost:1313/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Nov 2023 14:54:02 +0000</lastBuildDate>
-    <atom:link href="https://callmeeric5.github.io/tags/french/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/french/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>French Week2&amp;3</title>
-      <link>https://callmeeric5.github.io/posts/french/week2/</link>
+      <link>http://localhost:1313/posts/french/week2/</link>
       <pubDate>Wed, 01 Nov 2023 14:54:02 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/french/week2/</guid>
+      <guid>http://localhost:1313/posts/french/week2/</guid>
       <description>Building Basic Sentences Statement Noun [N] or Pronoun [P]+Verb [V] + Adjective [Adj] or Adverb [Adv] or Noun [N]
 Ma chambre [N] est [V] grande [Adj] = My bedroom is big.
 Mon frère [N] aime [V] le fromage [N] = My brother likes cheese.
@@ -26,16 +26,16 @@ Negative Statement ne (+verbe) pas” is the typical form to make a negative sen
     </item>
     <item>
       <title>French Week1</title>
-      <link>https://callmeeric5.github.io/posts/french/french-week1/</link>
+      <link>http://localhost:1313/posts/french/french-week1/</link>
       <pubDate>Sat, 14 Oct 2023 14:05:57 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/french/french-week1/</guid>
+      <guid>http://localhost:1313/posts/french/french-week1/</guid>
       <description>Numbers Num(1-10) French Num(11-20) French 0 Zéro 11 Onze 1 Un 12 Douze 2 Duex 13 Treize 3 Trois 14 Quatorze 4 Quatre 15 Quinze 5 Cinq 16 Seize 6 Six 17 Dix-sept 7 Sept 18 Dix-huit 8 Huit 19 Dix-neuf 9 Neuf 20 Vingt 10 Dix Num(&amp;lt;100) French Num(&amp;gt;=100) French 21 Vingt et tun 100 Cent 22-29 Vingt-deux &amp;hellip; Vingt-neuf 101 Cent et un 30 Trente 102 Cent-deux 31 Trente et un 200 Duex Cents 32-39 Trente-deux &amp;hellip; Trent-neuf 1,000 Mille 40 Quarante 1,200 Mille deux-cents 41 Quarante et un 1,900 Mille neuf-cents 42-49 Quarante-deux &amp;hellip; Quarante-neuf 1,910 Mille neuf-cent-dix 50 Cinquante 1,000,000 Un million 51 Cinquate et un 5,000,000 Cinq millions 52-59 Cinquate-deux &amp;hellip; Cinquate-neuf 60 Soixante 61 Soixante et tun 62-69 Soixante deus &amp;hellip; Soixante-neuf 70 Soixante-dix 71 Soxiante et onze 72-79 Soixante-dix-deux &amp;hellip; Soxiante-dix-neuf 80 Quatre-vingts 81 Quatre-vingt-un 82-89 Quatre-vingt-deux &amp;hellip; Quatre-vingt-neuf 90 Quatre-vingt-dix 91 Quatre-vingt-onze 92-99 Quatre-vingt-dix-deux &amp;hellip; Quatre-vingt-dix-neuf Pronouns Pronoun Singular Plural I Je - You Tu - He/It Il - She/It Elle - We - Nous You (formal) - Vous They (masculine) - Ils They (feminine) - Elles Nouns Masculine Ending Feminine Ending Example (Masculine) Example (Feminine) -eur -euse un vendeur (sale) une vendeuse (female sale) -(i)er -(i)ère un boulanger (baker) une boulangère (female baker) -en -enne un citoyen (citizen) une citoyenne (female citizen) -teur -trice un acteur (actor) une actrice (actress) -eur -euse un menteur (liar) une menteuse (female liar) Verbs - Regular Present Pronoun -er Verbs -ir Verbs -re Verbs Example Parler (to speak) Finir (to finish) Vendre (to sell) Je (I) Je Parle (I speak) Je Finis (I finish) Je Vends (I sell) Tu (You) Tu Parles (You speak) Tu Finis (You finish) Tu Vends (You sell) Il/Elle (He/She) Il/Elle Parle (He/She speaks) Il/Elle Finit (He/She finishes) Il/Elle Vend (He/She sells) Nous (We) Nous Parlons (We speak) Nous Finissons (We finish) Nous Vendons (We sell) Vous (You all/You formal) Vous Parlez (You speak) Vous Finissez (You finish) Vous Vendez (You sell) Ils/Elles (They) Ils/Elles Parlent (They speak) Ils/Elles Finissent (They finish) Ils/Elles Vendent (They sell) Verbs - Irregular Present être (to be) one of the most common French verbs used to describe states, feelings, location, identity, origin, and much more.</description>
     </item>
     <item>
       <title>Pronunciation</title>
-      <link>https://callmeeric5.github.io/posts/french/pronunciation/</link>
+      <link>http://localhost:1313/posts/french/pronunciation/</link>
       <pubDate>Sun, 25 Jun 2023 13:56:19 +0000</pubDate>
-      <guid>https://callmeeric5.github.io/posts/french/pronunciation/</guid>
+      <guid>http://localhost:1313/posts/french/pronunciation/</guid>
       <description>Letters Letter Phonic Name Accented letters Example A /a/ a Àà, â, Ææ avion (plane) B /be/ bé bateau (boat) C /ʃ/, /k/ or /s/ cé Çç chien (dog) cœur (heart) or cerise (cherry) D /de/ dé dauphin (dolphin) E /ə/ e Éé, Èè, Êê, Ëë. Œœ éléphant (elephant) F /ɛf/ effe fleur (flower) G /ʒe/ or /g/ gé grenouille (frog) or genou (knee) H Mostly silent, or /aʃ/ ache hotel (hotel) or hibou (owl) I /i/ i Îî, Ïï iglou (Igloo) J /ʒi/ ji jus (juice) K /ka/ ka kangourou (kangaroo) L /ɛl/ elle lapin (rabbit) M /ɛm/ emme maison (house) N /ɛn/ enne nid (nest) O /o/ o Ôô orange (orange) P /pe/ pé pomme (apple) Q /ky/ qu quatre (four) R /ɛʁ/ erre raisin (grape) S /ɛs/ esse souris (mouse) Psst: this is one of many different ways to pronounce ‘s’ in French!</description>
     </item>
   </channel>
