@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Application on Eric Windsor</title>
+    <link>https://callmeeric5.github.io/tags/application/</link>
+    <description>Recent content in Application on Eric Windsor</description>
+    <image>
+      <title>Eric Windsor</title>
+      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+    </image>
+    <generator>Hugo -- 0.126.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2023 15:01:09 +0000</lastBuildDate>
+    <atom:link href="https://callmeeric5.github.io/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Antidifferentiation</title>
+      <link>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</link>
+      <pubDate>Tue, 16 May 2023 15:01:09 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</guid>
+      <description>Integration by Substitution Let $F$ and $g$ be diﬀerentiable functions, where the range of $g$ is an interval $I$ contained in the domain of $F$. Then
+$\displaystyle \int F&amp;rsquo;(g(x))g&amp;rsquo;(x) dx =F(g(x))+C $
+If $u = g(x)$, then $du = g&amp;rsquo;(x)dx$ and
+$\displaystyle\int F&amp;rsquo;(g(x))g&amp;rsquo;(x) dx = \displaystyle\int F&amp;rsquo;(u)du = F(u)+C = F(g(x))+C$
+Substitution With A Linear Function
+Consider $\int F ′ (ax + b) dx$, where $a$ and $b$ are constants. Letting $u = ax + b$ gives $du = a · dx$, leading to the result</description>
+    </item>
+  </channel>
+</rss>

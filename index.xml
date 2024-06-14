@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eric Windsor</title>
+    <link>https://callmeeric5.github.io/</link>
+    <description>Recent content on Eric Windsor</description>
+    <image>
+      <title>Eric Windsor</title>
+      <url>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</url>
+      <link>https://callmeeric5.github.io/Users/ericwindsor/Documents/blog/hugo/assets/logo.jpg</link>
+    </image>
+    <generator>Hugo -- 0.126.3</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Jan 2024 11:19:23 +0000</lastBuildDate>
+    <atom:link href="https://callmeeric5.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimization2</title>
+      <link>https://callmeeric5.github.io/posts/optimization2/optimization2/</link>
+      <pubDate>Fri, 05 Jan 2024 11:19:23 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/optimization2/optimization2/</guid>
+      <description>Critical Value $x = c$ is a critical value if $f&amp;rsquo;(c) = 0$ or $f&amp;rsquo;(c)$ doesn&amp;rsquo;t exist
+N.B.: If $f&amp;rsquo;(c) = 0$ doesn&amp;rsquo;t imply $x = c$ is a critical value
+Second derivative test If $x=c$ is a critical value of $f(x)$, such that $f&amp;rsquo;(c)=0$ then $x=c$
+$f&amp;rsquo;&amp;rsquo;(c)&amp;lt;0$ the graph of the function is concave, A-shape
+$f&amp;rsquo;&amp;rsquo;(c)&amp;gt;0$ the graph of the function is convex, U-shape
+$f(c)$ is a local max (the maximum around one peak) if $f&amp;rsquo;&amp;rsquo;(c)&amp;lt;0$</description>
+    </item>
+    <item>
+      <title>Distribution</title>
+      <link>https://callmeeric5.github.io/posts/distribution/distribution/</link>
+      <pubDate>Fri, 15 Dec 2023 10:52:49 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/distribution/distribution/</guid>
+      <description>Probability distribution PDF(probability density function) Definition : $f$ is a continuous function with:
+$f(x) \ge 0, \forall x$ $\int_{-x}^{x} dx = 1$ $P(a&amp;lt;x&amp;lt;b) = \int_a^bdx$ Random variables - usually denoted by uppercase letters near the end of our alphabet （e.g. X, Y）.
+Particular value - now use lowercase letters, such as x, which correspond to the r.v. X.
+if $f$ is a continuous function and
+$P(x=a)=P(a\le x \le a)=\int_a^af(x)dx=0,a\in\mathbb{R}$ $$ P(x&lt;=a) \equiv P(x</description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>https://callmeeric5.github.io/posts/optimization/optimization/</link>
+      <pubDate>Mon, 20 Nov 2023 14:40:05 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/optimization/optimization/</guid>
+      <description>Optimization we are looking for the min or max of a function on a specific domain. Generally, optimization problems &amp;gt; convex problems &amp;gt; linear programming problems
+if $X^* \in \mathbb{R}$ such that $f(x^*)\geq f(n), \forall n \in \mathbb{R}$
+Convex problems An optimization problem is convex to find $min(f(x)), x\in D$, $D$ is a convex set and $f$ is a convex function. In brief, finding a local min or global min is enough</description>
+    </item>
+    <item>
+      <title>Diagonalization</title>
+      <link>https://callmeeric5.github.io/posts/linear-algebra/diagonalization/</link>
+      <pubDate>Mon, 13 Nov 2023 16:19:09 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/linear-algebra/diagonalization/</guid>
+      <description>Diagonalisation An n × n matrix A is diagonalisable if it is similar to a diagonal matrix: that is if there exists an invertible n × n matrix C and a diagonal matrix D such that $A= CDC^{−1}$.
+Compute powers of a diagonalisable matrix. If $A= CDC^{−1}$, where $D$ is a diagonal matrix, then $A^n = CD^nC^{−1}$: $$ A = C \begin{bmatrix} x &amp;0 &amp;0\\\\ 0 &amp;y &amp;0\\\\ 0 &amp;0 &amp;z \end{bmatrix} C^{-1} \iff A^n = C \begin{bmatrix} x^n &amp;0 &amp;0\\\\ 0 &amp;y^n &amp;0\\\\ 0 &amp;0 &amp;z^n \end{bmatrix} C^{-1} $$ </description>
+    </item>
+    <item>
+      <title>Possibility</title>
+      <link>https://callmeeric5.github.io/posts/possibilitystatistics/possibility/</link>
+      <pubDate>Thu, 09 Nov 2023 10:09:54 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/possibilitystatistics/possibility/</guid>
+      <description>Intro Possibility: calculating the likelihood of future events
+Statistics: gathering, and analyzing data
+Machine learning: models which are accurate most of the time. It contains 2 important factors, accuracy (how close the predictions are from the true value) and robustness (the ability to generalize to unknown data)
+Possibility Sample space ($\Omega$) is a set of all possible outcomes or results of a random experiment.
+Points $\omega$ in $\Omega$ are called sample outcomes, realizations, or elements.</description>
+    </item>
+    <item>
+      <title>Abstract Data Types</title>
+      <link>https://callmeeric5.github.io/posts/complexity/abstract-data-types/</link>
+      <pubDate>Wed, 08 Nov 2023 17:15:16 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/complexity/abstract-data-types/</guid>
+      <description>Abstract Data Types (ADTs) An ADT is a tuple （T, U, O, P, A） where
+T is the name of the ADT we are defining.
+U is a set of （already defined） ADTs used in the definition of T. Notice that this implies a notion of a hierarchy of ADTs.
+O is a set of operation signatures that defines the syntax for the legal use of T objects.
+P is a set of pre-conditions （logical expressions that always must hold true） to using some of the operations in O.</description>
+    </item>
+    <item>
+      <title>French Week2&amp;3</title>
+      <link>https://callmeeric5.github.io/posts/french/week2/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:02 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/french/week2/</guid>
+      <description>Building Basic Sentences Statement Noun [N] or Pronoun [P]+Verb [V] + Adjective [Adj] or Adverb [Adv] or Noun [N]
+Ma chambre [N] est [V] grande [Adj] = My bedroom is big.
+Mon frère [N] aime [V] le fromage [N] = My brother likes cheese.
+Elle [P] travaille [V] trop [Adv] = She works too much.
+Negative Statement ne (+verbe) pas” is the typical form to make a negative sentence. The verb located in between “ne” and “pas” is conjugated.</description>
+    </item>
+    <item>
+      <title>Linear Algebra Week1&amp;2</title>
+      <link>https://callmeeric5.github.io/posts/linear-algebra/linear-algebra-week12/</link>
+      <pubDate>Tue, 31 Oct 2023 12:52:57 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/linear-algebra/linear-algebra-week12/</guid>
+      <description>Data Science: Math + CS + Business
+AI: Let the computer make an intellectual task as well as a human being (e.g.: Chess game [Decison Tree])
+Machine Learning: Teaching skills via data. Data learn how to make the task itself via a specific algorithm (e.g.: Netflix recommendation engine)
+Neural Network: Each point link each other and each of them is a small computer
+Deep Learning: Neural Network + several layers in the middle</description>
+    </item>
+    <item>
+      <title>Complexity</title>
+      <link>https://callmeeric5.github.io/posts/complexity/complexity/</link>
+      <pubDate>Thu, 26 Oct 2023 10:59:13 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/complexity/complexity/</guid>
+      <description>Intro to Complexity In CS, we have different ways to solve the same question. Depending on the chosen criteria, one of them is the &amp;ldquo;best&amp;rdquo; solution. An algorithm is defined as complex based on the amount of Space and Time it consumes. Hence the Complexity of an algorithm refers to the measure of the time it will need to execute and get the expected output and the Space it will need to store all the data (input, temporary data, and output).</description>
+    </item>
+    <item>
+      <title>French Week1</title>
+      <link>https://callmeeric5.github.io/posts/french/french-week1/</link>
+      <pubDate>Sat, 14 Oct 2023 14:05:57 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/french/french-week1/</guid>
+      <description>Numbers Num(1-10) French Num(11-20) French 0 Zéro 11 Onze 1 Un 12 Douze 2 Duex 13 Treize 3 Trois 14 Quatorze 4 Quatre 15 Quinze 5 Cinq 16 Seize 6 Six 17 Dix-sept 7 Sept 18 Dix-huit 8 Huit 19 Dix-neuf 9 Neuf 20 Vingt 10 Dix Num(&amp;lt;100) French Num(&amp;gt;=100) French 21 Vingt et tun 100 Cent 22-29 Vingt-deux &amp;hellip; Vingt-neuf 101 Cent et un 30 Trente 102 Cent-deux 31 Trente et un 200 Duex Cents 32-39 Trente-deux &amp;hellip; Trent-neuf 1,000 Mille 40 Quarante 1,200 Mille deux-cents 41 Quarante et un 1,900 Mille neuf-cents 42-49 Quarante-deux &amp;hellip; Quarante-neuf 1,910 Mille neuf-cent-dix 50 Cinquante 1,000,000 Un million 51 Cinquate et un 5,000,000 Cinq millions 52-59 Cinquate-deux &amp;hellip; Cinquate-neuf 60 Soixante 61 Soixante et tun 62-69 Soixante deus &amp;hellip; Soixante-neuf 70 Soixante-dix 71 Soxiante et onze 72-79 Soixante-dix-deux &amp;hellip; Soxiante-dix-neuf 80 Quatre-vingts 81 Quatre-vingt-un 82-89 Quatre-vingt-deux &amp;hellip; Quatre-vingt-neuf 90 Quatre-vingt-dix 91 Quatre-vingt-onze 92-99 Quatre-vingt-dix-deux &amp;hellip; Quatre-vingt-dix-neuf Pronouns Pronoun Singular Plural I Je - You Tu - He/It Il - She/It Elle - We - Nous You (formal) - Vous They (masculine) - Ils They (feminine) - Elles Nouns Masculine Ending Feminine Ending Example (Masculine) Example (Feminine) -eur -euse un vendeur (sale) une vendeuse (female sale) -(i)er -(i)ère un boulanger (baker) une boulangère (female baker) -en -enne un citoyen (citizen) une citoyenne (female citizen) -teur -trice un acteur (actor) une actrice (actress) -eur -euse un menteur (liar) une menteuse (female liar) Verbs - Regular Present Pronoun -er Verbs -ir Verbs -re Verbs Example Parler (to speak) Finir (to finish) Vendre (to sell) Je (I) Je Parle (I speak) Je Finis (I finish) Je Vends (I sell) Tu (You) Tu Parles (You speak) Tu Finis (You finish) Tu Vends (You sell) Il/Elle (He/She) Il/Elle Parle (He/She speaks) Il/Elle Finit (He/She finishes) Il/Elle Vend (He/She sells) Nous (We) Nous Parlons (We speak) Nous Finissons (We finish) Nous Vendons (We sell) Vous (You all/You formal) Vous Parlez (You speak) Vous Finissez (You finish) Vous Vendez (You sell) Ils/Elles (They) Ils/Elles Parlent (They speak) Ils/Elles Finissent (They finish) Ils/Elles Vendent (They sell) Verbs - Irregular Present être (to be) one of the most common French verbs used to describe states, feelings, location, identity, origin, and much more.</description>
+    </item>
+    <item>
+      <title>Geometry</title>
+      <link>https://callmeeric5.github.io/posts/linear-algebra/geometry/</link>
+      <pubDate>Mon, 03 Jul 2023 13:20:22 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/linear-algebra/geometry/</guid>
+      <description>Three equivalent ways of thinking about a linear system: As a system of equations: $$ \begin{cases} 2x + 3x_2 − 2x_3 = 7\\\\ x_1− x_2− 3x_3= 5 \end{cases} $$ As an augmented matrix: $$ \left( \begin{array}{ccc} 2 &amp; 3 &amp; -2 \\\\ 1 &amp; -1 &amp; -3 \end{array} \middle| \begin{array}{c} 7 \\\\ 5 \end{array} \right) $$ As a vector equation $(x_1v_1 + x_2v_2 + ··· + x_nv_n = b)$: $$ x_1\begin{pmatrix}2\\\\1\end{pmatrix}+x_2\begin{pmatrix}3\\\\-1\end{pmatrix}+x_3\begin{pmatrix}-2\\\\-3\end{pmatrix}=\begin{pmatrix}7\\\\5\end{pmatrix} $$ Span Given a set of vectors ${v_1, v_2, \ldots, v_n}$ in a vector space $V$, the span of that set, denoted by $\text{Span}{v_1, v_2, \ldots, v_n}$, is the set of all linear combinations of those vectors: $$ \text{Span}\lbrace v_1, v_2, \ldots, v_n\rbrace = \lbrace a_1v_1 + a_2v_2 + \ldots + a_nv_n \mid a_1, a_2, \ldots, a_n \in \mathbb{R}\rbrace $$ In other words, the span is the set of all possible vectors that can be written as a linear combination of the given vectors.</description>
+    </item>
+    <item>
+      <title>System of linear equations</title>
+      <link>https://callmeeric5.github.io/posts/linear-algebra/equations/</link>
+      <pubDate>Sat, 01 Jul 2023 13:58:14 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/linear-algebra/equations/</guid>
+      <description>Linear equations An equation in the unknowns $x, y,z,&amp;hellip;$ is called linear if both sides of the equation are a sum of (constant) multiples of $x, y,z,&amp;hellip;,$ plus an optional constant. For instance, $3x + 4y = 2z$ and $−x − z = 100$. A system of linear equations is a collection of several linear equations, as below: $$ \begin{cases} x + 2y = -3 \\\\ x + 2y = 3 \end{cases} $$ A system of equations is called inconsistent if it has no solutions.</description>
+    </item>
+    <item>
+      <title>Pronunciation</title>
+      <link>https://callmeeric5.github.io/posts/french/pronunciation/</link>
+      <pubDate>Sun, 25 Jun 2023 13:56:19 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/french/pronunciation/</guid>
+      <description>Letters Letter Phonic Name Accented letters Example A /a/ a Àà, â, Ææ avion (plane) B /be/ bé bateau (boat) C /ʃ/, /k/ or /s/ cé Çç chien (dog) cœur (heart) or cerise (cherry) D /de/ dé dauphin (dolphin) E /ə/ e Éé, Èè, Êê, Ëë. Œœ éléphant (elephant) F /ɛf/ effe fleur (flower) G /ʒe/ or /g/ gé grenouille (frog) or genou (knee) H Mostly silent, or /aʃ/ ache hotel (hotel) or hibou (owl) I /i/ i Îî, Ïï iglou (Igloo) J /ʒi/ ji jus (juice) K /ka/ ka kangourou (kangaroo) L /ɛl/ elle lapin (rabbit) M /ɛm/ emme maison (house) N /ɛn/ enne nid (nest) O /o/ o Ôô orange (orange) P /pe/ pé pomme (apple) Q /ky/ qu quatre (four) R /ɛʁ/ erre raisin (grape) S /ɛs/ esse souris (mouse) Psst: this is one of many different ways to pronounce ‘s’ in French!</description>
+    </item>
+    <item>
+      <title>Multiple integration</title>
+      <link>https://callmeeric5.github.io/posts/calculus/multiple-integration/</link>
+      <pubDate>Mon, 12 Jun 2023 21:46:51 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/multiple-integration/</guid>
+      <description>Iterated Integrals and Area Iterated integration is the process of repeatedly integrating the results of previous integrations. Integrating one integral is denoted as follows.
+Let $a, b, c$ and $d$ be numbers and let $g_1 (x)$, $g_2 (x)$, $h_1 (y)$ and $h_2 (y)$ be functions of $x$ and $y$, respectively. Then: $$ \begin{align} \int_c^d \int_{h_1(y)}^{h_2(y)}f(x,y)dx dy = \int_c^d(\int_{h_1(y)}^{h_2(y)}f(x,y)dx)dy\\\\ \int_a^b \int_{g_1(y)}^{g_2(y)}f(x,y)dx dy = \int_a^b (\int_{g_1(y)}^{g_2(y)}f(x,y)dy) dx \end{align} $$ $x$ varies from $h_1(y)$ to $h_2(y)$, whereas $y$ varies from $c$ to $d$.</description>
+    </item>
+    <item>
+      <title>Vector</title>
+      <link>https://callmeeric5.github.io/posts/calculus/vector/</link>
+      <pubDate>Thu, 25 May 2023 14:42:28 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/vector/</guid>
+      <description>Defination of Vector A vector is a directed line segment. Given points $P$ and $Q$ (either in the plane or in space), we denote with $\vec {PQ}$ the vector from $P$ to $Q$. The point $P$ is said to be the initial point of the vector, and the point $Q$ is the terminal point.
+The magnitude, length or norm of $\vec {PQ}$ is the length of the line segment $\overline {PQ}$: $|| \overline{PQ} ||$ = $||\vec {PQ} ||$ .</description>
+    </item>
+    <item>
+      <title>Sequences</title>
+      <link>https://callmeeric5.github.io/posts/calculus/sequences/</link>
+      <pubDate>Sun, 21 May 2023 22:23:53 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/sequences/</guid>
+      <description>Sequence A sequence is a function $a(n)$ whose domain is $\mathbb{N}$. The range of sequence is the set of all distinct values of $a(n)$.
+The terms of a sequence are the values $a(1), a(2), …,a(n)$ which are usually denoted with subscripts as $a_1 , a_2 , ….a_n$
+A sequence $a(n)$ is often denoted as ${a_n}$ .
+Limit of a Sequence Let ${a_n}$ be a sequence and let $L$ be a real number.</description>
+    </item>
+    <item>
+      <title>Antidifferentiation</title>
+      <link>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</link>
+      <pubDate>Tue, 16 May 2023 15:01:09 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/antidifferentiation/</guid>
+      <description>Integration by Substitution Let $F$ and $g$ be diﬀerentiable functions, where the range of $g$ is an interval $I$ contained in the domain of $F$. Then
+$\displaystyle \int F&amp;rsquo;(g(x))g&amp;rsquo;(x) dx =F(g(x))+C $
+If $u = g(x)$, then $du = g&amp;rsquo;(x)dx$ and
+$\displaystyle\int F&amp;rsquo;(g(x))g&amp;rsquo;(x) dx = \displaystyle\int F&amp;rsquo;(u)du = F(u)+C = F(g(x))+C$
+Substitution With A Linear Function
+Consider $\int F ′ (ax + b) dx$, where $a$ and $b$ are constants. Letting $u = ax + b$ gives $du = a · dx$, leading to the result</description>
+    </item>
+    <item>
+      <title>Integration</title>
+      <link>https://callmeeric5.github.io/posts/calculus/integration/</link>
+      <pubDate>Tue, 25 Apr 2023 14:40:43 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/integration/</guid>
+      <description>Antiderivatives and Indeﬁnite Integrals Let a function $f(x)$ be given. An antiderivative of $f(x)$ is a function $F(x)$ such that $F ′ (x) = f(x)$.
+The set of all antiderivatives of $f(x)$ is the indeﬁnite integral of $f$, denoted by $\displaystyle\int f(x) dx = F(x)+C$
+Definite Integral The deﬁnite integral of $f$ on $[a, b]$ is the total signed area of $f$ on $[a, b]$, denoted
+$\displaystyle\int _a ^bf(x) dx$</description>
+    </item>
+    <item>
+      <title>Derivative</title>
+      <link>https://callmeeric5.github.io/posts/calculus/derivative/</link>
+      <pubDate>Fri, 25 Nov 2022 14:04:05 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/derivative/</guid>
+      <description>Definition Instantaneous rate of change at the point of the function. Presentation in Math,$f&amp;rsquo;(c)=\lim\limits_{h\to0}\dfrac {f(c+h)-f(c)} h$, the tangent line of $f$ at $c$ will go through $(c,f(c))$, the equation is $l(x)=f&amp;rsquo;(c)(x-c)+f(c)$.
+If we draw the derivatives of each point in the graph, we can get a new function called the derivative function, the equation is $f&amp;rsquo;(x)=\lim\limits_{h\to0}\dfrac {f(x+h)-f(x)} h$, It also writen as $f&amp;rsquo;(x)=y&amp;rsquo;=\dfrac {dy} {dx}=\dfrac {df} {dx}=\dfrac d {dx}(y)=\dfrac d {dx}(f)$</description>
+    </item>
+    <item>
+      <title>Limit</title>
+      <link>https://callmeeric5.github.io/posts/calculus/limit/</link>
+      <pubDate>Tue, 22 Nov 2022 14:20:31 +0000</pubDate>
+      <guid>https://callmeeric5.github.io/posts/calculus/limit/</guid>
+      <description>Introduction The graph of the function is contributed by many points in the same set. It is a straight line, curve or anything else. When the x-value of points approaching constant c, we&amp;rsquo;ll find the y-values of these points also approaching constant L.
+Definition $$ \lim_{x \to c}f(x)=L \iff \forall \ \epsilon &gt; 0, \exists \ \delta &gt; 0 \ s.t. |x-c| &lt; \delta \rightarrow |f(x)-L|&lt;\epsilon $$ Means that given any $ε &amp;gt; 0$, there exists $\delta &amp;gt; 0$ such that for all x in I, where x $\neq$ c, if $ | x − c | &amp;lt; \delta $, then $| f(x) − L | &amp;lt; ε$.</description>
+    </item>
+  </channel>
+</rss>
