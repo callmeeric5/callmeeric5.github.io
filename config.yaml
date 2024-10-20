@@ -153,7 +153,10 @@ params:
     title: "About Me"
     image: "/images/Eric.jpg"
     content: |-
-      I am a passionate Data Scientist. I have a background in AI and mathematics, and I have a strong interest in the Computer Vision. I am looking for an intership as a ML engineer or data scientist.
+      Results-driven MSc Artificial Intelligence student with hands-on experience in developing end-to-end ML solutions. 
+      Proficient in building production-ready data pipelines and ML models, with particular expertise in NLP and 
+      computer vision. Seeking to leverage strong technical skills and product management background to contribute 
+      to impactful data science projects.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -248,7 +251,7 @@ params:
 
   # Achievements
   achievements:
-    enable: true
+    enable: false
     title: "Certifications"
     items:
       - title: Google Advanced Data Analytics
